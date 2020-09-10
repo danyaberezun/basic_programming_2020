@@ -1,0 +1,68 @@
+(a) id
+uid=1000(sergey) gid=1000(sergey) groups=1000(sergey),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),112(lpadmin),128(sambashare)
+
+(b) date
+Thu Sep 10 10:40:59 MSK 2020
+
+(c) pwd
+/home/sergey
+
+(d1) ls
+Desktop
+Documents
+Downloads
+Music
+Pictures
+Public
+snap
+Templates
+Videos
+
+(d2) ls -l
+total 36
+drwxr-xr-x 3 sergey sergey 4096 Sep 10 10:31 Desktop
+drwxr-xr-x 2 sergey sergey 4096 Sep  9 20:10 Documents
+drwxr-xr-x 2 sergey sergey 4096 Sep  9 20:10 Downloads
+drwxr-xr-x 2 sergey sergey 4096 Sep  9 20:10 Music
+drwxr-xr-x 2 sergey sergey 4096 Sep  9 20:10 Pictures
+drwxr-xr-x 2 sergey sergey 4096 Sep  9 20:10 Public
+drwxr-xr-x 4 sergey sergey 4096 Sep  9 21:33 snap
+drwxr-xr-x 2 sergey sergey 4096 Sep  9 20:10 Templates
+drwxr-xr-x 2 sergey sergey 4096 Sep  9 20:10 Videos
+
+(d3) ls -a
+.
+..
+.android
+.bash_history
+.bash_logout
+.bashrc
+.cache
+.cinnamon
+.config
+Desktop
+.dmrc
+Documents
+Downloads
+.gitconfig
+.gitkraken
+.gnupg
+.gtkrc-2.0
+.gtkrc-xfce
+.ICEauthority
+.java
+.local
+.mozilla
+Music
+Pictures
+.pki
+.profile
+Public
+snap
+.sudo_as_admin_successful
+Templates
+Videos
+.wget-hsts
+.Xauthority
+.xsession-errors
+.xsession-errors.old
