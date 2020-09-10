@@ -1,1 +1,23 @@
-data will be added later
+uid=1000(stephen) gid=1000(stephen) groups=1000(stephen),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),115(lpadmin),127(sambashare)
+
+Thu Sep 10 12:37:46 MSK 2020
+
+/home/stephen/linprac/basic_programming_2020/reports
+
+Ostapenko.txt
+RED.md
+
+total 8
+-rw-r--r-- 1 stephen stephen 235 Sep 10 12:38 Ostapenko.txt
+-rw-r--r-- 1 stephen stephen  18 Sep 10 12:30 RED.md
+
+.
+..
+Ostapenko.txt
+RED.md
+
+total 16
+drwxr-xr-x 2 stephen stephen 4096 Sep 10 12:37 .
+drwxr-xr-x 4 stephen stephen 4096 Sep 10 12:30 ..
+-rw-r--r-- 1 stephen stephen  382 Sep 10 12:38 Ostapenko.txt
+-rw-r--r-- 1 stephen stephen   18 Sep 10 12:30 RED.md
