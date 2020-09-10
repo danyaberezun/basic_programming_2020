@@ -1,0 +1,23 @@
+(a)
+id
+uid=1000(extraterrestrial_) gid=1000(extraterrestrial_) группы=1000(extraterrestrial_),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),112(lpadmin),127(sambashare)
+
+(b)
+date
+Чт сен 10 12:21:19 MSK 2020
+
+(c)
+pwd
+/home/extraterrestrial_/basic_programming_2020/reports
+
+(d)
+ls
+khargelia.txt  RED.md
+ls -l
+итого 8
+-rw-r--r-- 1 extraterrestrial_ extraterrestrial_ 313 сен 10 12:22 khargelia.txt
+-rw-r--r-- 1 extraterrestrial_ extraterrestrial_  18 сен 10 12:19 RED.md
+ls -a
+.  ..  khargelia.txt  RED.md
+
+
