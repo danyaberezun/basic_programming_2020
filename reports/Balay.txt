@@ -56,11 +56,41 @@
             To https://github.com/Bupaheh/basic_programming_2020
                 ed6d67d..6e8f8e3  master -> master
 
-            
-1.1
     2.
         d)
             file просто говорит, что это специальные файлы, когда file -s может определять их тип
         e)
             это ASCII text, with very long lines
-        f) обычный файл
+        f) 
+            обычный файл
+        
+    3.
+        j)
+            $ echo 0 1 2 3 4 5 6 7 8 9 > digits.txt
+            
+            $ cat digits.txt
+            0 1 2 3 4 5 6 7 8 9
+            
+        k)
+            $ cat digits.txt digits.txt > file.txt
+            
+        l)
+            $ for n in {1..65}; do cat digits.txt; done > file2.txt
+            
+        m)
+            $ wc -l file2.txt
+            65 file2.txt
+        
+        n)
+            $ head -5 /etc/passwd > 1.txt
+            $ tail -5 /etc/passwd > 2.txt
+            
+        o)
+            $ ls -l /etc > 3.txt
+            
+        p)
+            $ wc -l 3.txt
+            217 3.txt
+            на один меньше
+            
+            
