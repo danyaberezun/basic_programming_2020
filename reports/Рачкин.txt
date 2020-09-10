@@ -1,0 +1,871 @@
+1
+(a)=======================================================================
+Vladimirs-MacBook-Air:Projects vladimir$ id
+uid=501(vladimir) gid=20(staff) groups=20(staff),401(com.apple.sharepoint.group.1),12(everyone),61(localaccounts),79(_appserverusr),80(admin),81(_appserveradm),98(_lpadmin),33(_appstore),100(_lpoperator),204(_developer),250(_analyticsusers),395(com.apple.access_ftp),398(com.apple.access_screensharing),399(com.apple.access_ssh),400(com.apple.access_remote_ae)
+
+(b)=======================================================================
+Vladimirs-MacBook-Air:Projects vladimir$ date
+четверг, 10 сентября 2020 г. 11:59:40 (MSK)
+
+(c)=======================================================================
+Vladimirs-MacBook-Air:Projects vladimir$ pwd
+/Users/vladimir/Projects
+
+(d)=======================================================================
+Vladimirs-MacBook-Air:Projects vladimir$ ls
+DarkAlley		bruh
+basic_programming_2020	polygon
+Vladimirs-MacBook-Air:Projects vladimir$ ls -l
+total 0
+drwxr-xr-x  10 vladimir  staff  320  4 авг 19:18 DarkAlley
+drwxr-xr-x   4 vladimir  staff  128 10 сен 11:57 basic_programming_2020
+drwxr-xr-x   4 vladimir  staff  128 10 сен 10:35 bruh
+drwxr-xr-x@  6 vladimir  staff  192 14 мар 13:25 polygon
+Vladimirs-MacBook-Air:Projects vladimir$ ls -a
+.			DarkAlley		polygon
+..			basic_programming_2020
+.DS_Store		bruh
+
+2
+(a)=======================================================================
+53-250-19-195:~ vladimir$ cd /
+
+53-250-19-195:/ vladimir$ ls
+Applications	Volumes		etc		sbin
+Library		bin		home		tmp
+System		cores		opt		usr
+Users		dev		private		var
+
+53-250-19-195:/ vladimir$ ls -s
+total 9
+0 Applications	0 Volumes	0 etc		0 sbin
+0 Library	0 bin		0 home		0 tmp
+0 System	0 cores		0 opt		0 usr
+0 Users		9 dev		0 private	0 var
+
+53-250-19-195:/ vladimir$ ls -a
+.			Library			home
+..			System			opt
+.DS_Store		Users			private
+.VolumeIcon.icns	Volumes			sbin
+.file			bin			tmp
+.fseventsd		cores			usr
+.vol			dev			var
+Applications		etc
+
+53-250-19-195:/ vladimir$ cd dev
+
+53-250-19-195:dev vladimir$ ls
+afsc_type5			ptyw6
+auditpipe			ptyw7
+auditsessions			ptyw8
+autofs				ptyw9
+autofs_control			ptywa
+autofs_homedirmounter		ptywb
+autofs_notrigger		ptywc
+autofs_nowait			ptywd
+bpf0				ptywe
+bpf1				ptywf
+bpf2				random
+bpf3				rdisk0
+bpf4				rdisk0s1
+console				rdisk0s2
+cu.Bluetooth-Incoming-Port	rdisk1
+cu.WI-XB400-serialport		rdisk1s1
+disk0				rdisk1s2
+disk0s1				rdisk1s3
+disk0s2				rdisk1s4
+disk1				rdisk1s5
+disk1s1				sdt
+disk1s2				stderr
+disk1s3				stdin
+disk1s4				stdout
+disk1s5				systrace
+dtrace				tty
+dtracehelper			tty.Bluetooth-Incoming-Port
+fbt				tty.WI-XB400-serialport
+fd				ttyp0
+fsevents			ttyp1
+io8log				ttyp2
+io8logmt			ttyp3
+io8logtemp			ttyp4
+klog				ttyp5
+lockstat			ttyp6
+machtrace			ttyp7
+nsmb0				ttyp8
+null				ttyp9
+oslog				ttypa
+oslog_stream			ttypb
+pf				ttypc
+pfm				ttypd
+profile				ttype
+ptmx				ttypf
+ptyp0				ttyq0
+ptyp1				ttyq1
+ptyp2				ttyq2
+ptyp3				ttyq3
+ptyp4				ttyq4
+ptyp5				ttyq5
+ptyp6				ttyq6
+ptyp7				ttyq7
+ptyp8				ttyq8
+ptyp9				ttyq9
+ptypa				ttyqa
+ptypb				ttyqb
+ptypc				ttyqc
+ptypd				ttyqd
+ptype				ttyqe
+ptypf				ttyqf
+ptyq0				ttyr0
+ptyq1				ttyr1
+ptyq2				ttyr2
+ptyq3				ttyr3
+ptyq4				ttyr4
+ptyq5				ttyr5
+ptyq6				ttyr6
+ptyq7				ttyr7
+ptyq8				ttyr8
+ptyq9				ttyr9
+ptyqa				ttyra
+ptyqb				ttyrb
+ptyqc				ttyrc
+ptyqd				ttyrd
+ptyqe				ttyre
+ptyqf				ttyrf
+ptyr0				ttys0
+ptyr1				ttys000
+ptyr2				ttys001
+ptyr3				ttys002
+ptyr4				ttys1
+ptyr5				ttys2
+ptyr6				ttys3
+ptyr7				ttys4
+ptyr8				ttys5
+ptyr9				ttys6
+ptyra				ttys7
+ptyrb				ttys8
+ptyrc				ttys9
+ptyrd				ttysa
+ptyre				ttysb
+ptyrf				ttysc
+ptys0				ttysd
+ptys1				ttyse
+ptys2				ttysf
+ptys3				ttyt0
+ptys4				ttyt1
+ptys5				ttyt2
+ptys6				ttyt3
+ptys7				ttyt4
+ptys8				ttyt5
+ptys9				ttyt6
+ptysa				ttyt7
+ptysb				ttyt8
+ptysc				ttyt9
+ptysd				ttyta
+ptyse				ttytb
+ptysf				ttytc
+ptyt0				ttytd
+ptyt1				ttyte
+ptyt2				ttytf
+ptyt3				ttyu0
+ptyt4				ttyu1
+ptyt5				ttyu2
+ptyt6				ttyu3
+ptyt7				ttyu4
+ptyt8				ttyu5
+ptyt9				ttyu6
+ptyta				ttyu7
+ptytb				ttyu8
+ptytc				ttyu9
+ptytd				ttyua
+ptyte				ttyub
+ptytf				ttyuc
+ptyu0				ttyud
+ptyu1				ttyue
+ptyu2				ttyuf
+ptyu3				ttyv0
+ptyu4				ttyv1
+ptyu5				ttyv2
+ptyu6				ttyv3
+ptyu7				ttyv4
+ptyu8				ttyv5
+ptyu9				ttyv6
+ptyua				ttyv7
+ptyub				ttyv8
+ptyuc				ttyv9
+ptyud				ttyva
+ptyue				ttyvb
+ptyuf				ttyvc
+ptyv0				ttyvd
+ptyv1				ttyve
+ptyv2				ttyvf
+ptyv3				ttyw0
+ptyv4				ttyw1
+ptyv5				ttyw2
+ptyv6				ttyw3
+ptyv7				ttyw4
+ptyv8				ttyw5
+ptyv9				ttyw6
+ptyva				ttyw7
+ptyvb				ttyw8
+ptyvc				ttyw9
+ptyvd				ttywa
+ptyve				ttywb
+ptyvf				ttywc
+ptyw0				ttywd
+ptyw1				ttywe
+ptyw2				ttywf
+ptyw3				urandom
+ptyw4				xcpm
+ptyw5				zero
+
+53-250-19-195:dev vladimir$ ls -l
+total 0
+crw-------  1 root      wheel           19,   1 16 авг 14:51 afsc_type5
+crw-------  1 root      wheel           10,   0 16 авг 14:51 auditpipe
+crw-r--r--  1 root      wheel            9,   2 16 авг 14:51 auditsessions
+crw-------  1 root      wheel           21,   0 16 авг 14:51 autofs
+crw-------  1 root      wheel           33,   0 16 авг 14:51 autofs_control
+crw-rw-rw-  1 root      wheel           32,  94 16 авг 14:51 autofs_homedirmounter
+crw-rw-rw-  1 root      wheel           31,  94 16 авг 14:51 autofs_notrigger
+crw-rw-rw-  1 root      wheel           22, 0x0000cb4e 16 авг 14:51 autofs_nowait
+crw-------  1 root      wheel           23,   0 16 авг 14:52 bpf0
+crw-------  1 root      wheel           23,   1 16 авг 14:51 bpf1
+crw-------  1 root      wheel           23,   2 10 сен 12:26 bpf2
+crw-------  1 root      wheel           23,   3 10 сен 12:26 bpf3
+crw-------  1 root      wheel           23,   4 16 авг 15:39 bpf4
+crw-------  1 vladimir  staff            0,   0  8 сен 00:03 console
+crw-rw-rw-  1 root      wheel           18,   1 16 авг 14:52 cu.Bluetooth-Incoming-Port
+crw-rw-rw-  1 root      wheel           18,   3  9 сен 21:13 cu.WI-XB400-serialport
+brw-r-----  1 root      operator         1,   0 16 авг 14:51 disk0
+brw-r-----  1 root      operator         1,   1 16 авг 14:51 disk0s1
+brw-r-----  1 root      operator         1,   2 16 авг 14:51 disk0s2
+brw-r-----  1 root      operator         1,   3 16 авг 14:51 disk1
+brw-r-----  1 root      operator         1,   4 16 авг 14:51 disk1s1
+brw-r-----  1 root      operator         1,   5 16 авг 14:51 disk1s2
+brw-r-----  1 root      operator         1,   8 16 авг 14:51 disk1s3
+brw-r-----  1 root      operator         1,   6 16 авг 14:51 disk1s4
+brw-r-----  1 root      operator         1,   7 16 авг 14:51 disk1s5
+crw-rw-rw-  1 root      wheel           24,  12 16 авг 14:51 dtrace
+crw-rw-rw-  1 root      wheel           25,   0 16 авг 14:51 dtracehelper
+crw-rw-rw-  1 root      wheel            0,   0 16 авг 14:51 fbt
+dr-xr-xr-x  1 root      wheel                 0 16 авг 14:51 fd
+crw-r--r--  1 root      wheel           13,   0 16 авг 14:51 fsevents
+crw-rw-rw-  1 root      wheel           34,  13 10 сен 12:27 io8log
+cr--r--r--  1 root      wheel           34,  14 16 авг 14:52 io8logmt
+crw-rw-rw-  1 root      wheel           34,  15 10 сен 12:29 io8logtemp
+crw-------  1 root      wheel            6,   0 16 авг 14:51 klog
+crw-rw-rw-  1 root      wheel            0,   0 16 авг 14:51 lockstat
+crw-rw-rw-  1 root      wheel            0,   0 16 авг 14:51 machtrace
+crw-rw-rw-  1 root      wheel           35,   0 16 авг 14:53 nsmb0
+crw-rw-rw-  1 root      wheel            3,   2 10 сен 12:29 null
+crw-------  1 root      wheel            7,   0 16 авг 14:51 oslog
+crw-------  1 root      wheel            8,   0 16 авг 14:51 oslog_stream
+crw-------  1 root      wheel           11,   0 16 авг 14:51 pf
+crw-------  1 root      wheel           11,   1 16 авг 14:51 pfm
+crw-rw-rw-  1 root      wheel            0,   0 16 авг 14:51 profile
+crw-rw-rw-  1 root      tty             15,   3 10 сен 12:29 ptmx
+crw-rw-rw-  1 root      wheel            5,   0 16 авг 14:51 ptyp0
+crw-rw-rw-  1 root      wheel            5,   1 16 авг 14:51 ptyp1
+crw-rw-rw-  1 root      wheel            5,   2 16 авг 14:51 ptyp2
+crw-rw-rw-  1 root      wheel            5,   3 16 авг 14:51 ptyp3
+crw-rw-rw-  1 root      wheel            5,   4 16 авг 14:51 ptyp4
+crw-rw-rw-  1 root      wheel            5,   5 16 авг 14:51 ptyp5
+crw-rw-rw-  1 root      wheel            5,   6 16 авг 14:51 ptyp6
+crw-rw-rw-  1 root      wheel            5,   7 16 авг 14:51 ptyp7
+crw-rw-rw-  1 root      wheel            5,   8 16 авг 14:51 ptyp8
+crw-rw-rw-  1 root      wheel            5,   9 16 авг 14:51 ptyp9
+crw-rw-rw-  1 root      wheel            5,  10 16 авг 14:51 ptypa
+crw-rw-rw-  1 root      wheel            5,  11 16 авг 14:51 ptypb
+crw-rw-rw-  1 root      wheel            5,  12 16 авг 14:51 ptypc
+crw-rw-rw-  1 root      wheel            5,  13 16 авг 14:51 ptypd
+crw-rw-rw-  1 root      wheel            5,  14 16 авг 14:51 ptype
+crw-rw-rw-  1 root      wheel            5,  15 16 авг 14:51 ptypf
+crw-rw-rw-  1 root      wheel            5,  16 16 авг 14:51 ptyq0
+crw-rw-rw-  1 root      wheel            5,  17 16 авг 14:51 ptyq1
+crw-rw-rw-  1 root      wheel            5,  18 16 авг 14:51 ptyq2
+crw-rw-rw-  1 root      wheel            5,  19 16 авг 14:51 ptyq3
+crw-rw-rw-  1 root      wheel            5,  20 16 авг 14:51 ptyq4
+crw-rw-rw-  1 root      wheel            5,  21 16 авг 14:51 ptyq5
+crw-rw-rw-  1 root      wheel            5,  22 16 авг 14:51 ptyq6
+crw-rw-rw-  1 root      wheel            5,  23 16 авг 14:51 ptyq7
+crw-rw-rw-  1 root      wheel            5,  24 16 авг 14:51 ptyq8
+crw-rw-rw-  1 root      wheel            5,  25 16 авг 14:51 ptyq9
+crw-rw-rw-  1 root      wheel            5,  26 16 авг 14:51 ptyqa
+crw-rw-rw-  1 root      wheel            5,  27 16 авг 14:51 ptyqb
+crw-rw-rw-  1 root      wheel            5,  28 16 авг 14:51 ptyqc
+crw-rw-rw-  1 root      wheel            5,  29 16 авг 14:51 ptyqd
+crw-rw-rw-  1 root      wheel            5,  30 16 авг 14:51 ptyqe
+crw-rw-rw-  1 root      wheel            5,  31 16 авг 14:51 ptyqf
+crw-rw-rw-  1 root      wheel            5,  32 16 авг 14:51 ptyr0
+crw-rw-rw-  1 root      wheel            5,  33 16 авг 14:51 ptyr1
+crw-rw-rw-  1 root      wheel            5,  34 16 авг 14:51 ptyr2
+crw-rw-rw-  1 root      wheel            5,  35 16 авг 14:51 ptyr3
+crw-rw-rw-  1 root      wheel            5,  36 16 авг 14:51 ptyr4
+crw-rw-rw-  1 root      wheel            5,  37 16 авг 14:51 ptyr5
+crw-rw-rw-  1 root      wheel            5,  38 16 авг 14:51 ptyr6
+crw-rw-rw-  1 root      wheel            5,  39 16 авг 14:51 ptyr7
+crw-rw-rw-  1 root      wheel            5,  40 16 авг 14:51 ptyr8
+crw-rw-rw-  1 root      wheel            5,  41 16 авг 14:51 ptyr9
+crw-rw-rw-  1 root      wheel            5,  42 16 авг 14:51 ptyra
+crw-rw-rw-  1 root      wheel            5,  43 16 авг 14:51 ptyrb
+crw-rw-rw-  1 root      wheel            5,  44 16 авг 14:51 ptyrc
+crw-rw-rw-  1 root      wheel            5,  45 16 авг 14:51 ptyrd
+crw-rw-rw-  1 root      wheel            5,  46 16 авг 14:51 ptyre
+crw-rw-rw-  1 root      wheel            5,  47 16 авг 14:51 ptyrf
+crw-rw-rw-  1 root      wheel            5,  48 16 авг 14:51 ptys0
+crw-rw-rw-  1 root      wheel            5,  49 16 авг 14:51 ptys1
+crw-rw-rw-  1 root      wheel            5,  50 16 авг 14:51 ptys2
+crw-rw-rw-  1 root      wheel            5,  51 16 авг 14:51 ptys3
+crw-rw-rw-  1 root      wheel            5,  52 16 авг 14:51 ptys4
+crw-rw-rw-  1 root      wheel            5,  53 16 авг 14:51 ptys5
+crw-rw-rw-  1 root      wheel            5,  54 16 авг 14:51 ptys6
+crw-rw-rw-  1 root      wheel            5,  55 16 авг 14:51 ptys7
+crw-rw-rw-  1 root      wheel            5,  56 16 авг 14:51 ptys8
+crw-rw-rw-  1 root      wheel            5,  57 16 авг 14:51 ptys9
+crw-rw-rw-  1 root      wheel            5,  58 16 авг 14:51 ptysa
+crw-rw-rw-  1 root      wheel            5,  59 16 авг 14:51 ptysb
+crw-rw-rw-  1 root      wheel            5,  60 16 авг 14:51 ptysc
+crw-rw-rw-  1 root      wheel            5,  61 16 авг 14:51 ptysd
+crw-rw-rw-  1 root      wheel            5,  62 16 авг 14:51 ptyse
+crw-rw-rw-  1 root      wheel            5,  63 16 авг 14:51 ptysf
+crw-rw-rw-  1 root      wheel            5,  64 16 авг 14:51 ptyt0
+crw-rw-rw-  1 root      wheel            5,  65 16 авг 14:51 ptyt1
+crw-rw-rw-  1 root      wheel            5,  66 16 авг 14:51 ptyt2
+crw-rw-rw-  1 root      wheel            5,  67 16 авг 14:51 ptyt3
+crw-rw-rw-  1 root      wheel            5,  68 16 авг 14:51 ptyt4
+crw-rw-rw-  1 root      wheel            5,  69 16 авг 14:51 ptyt5
+crw-rw-rw-  1 root      wheel            5,  70 16 авг 14:51 ptyt6
+crw-rw-rw-  1 root      wheel            5,  71 16 авг 14:51 ptyt7
+crw-rw-rw-  1 root      wheel            5,  72 16 авг 14:51 ptyt8
+crw-rw-rw-  1 root      wheel            5,  73 16 авг 14:51 ptyt9
+crw-rw-rw-  1 root      wheel            5,  74 16 авг 14:51 ptyta
+crw-rw-rw-  1 root      wheel            5,  75 16 авг 14:51 ptytb
+crw-rw-rw-  1 root      wheel            5,  76 16 авг 14:51 ptytc
+crw-rw-rw-  1 root      wheel            5,  77 16 авг 14:51 ptytd
+crw-rw-rw-  1 root      wheel            5,  78 16 авг 14:51 ptyte
+crw-rw-rw-  1 root      wheel            5,  79 16 авг 14:51 ptytf
+crw-rw-rw-  1 root      wheel            5,  80 16 авг 14:51 ptyu0
+crw-rw-rw-  1 root      wheel            5,  81 16 авг 14:51 ptyu1
+crw-rw-rw-  1 root      wheel            5,  82 16 авг 14:51 ptyu2
+crw-rw-rw-  1 root      wheel            5,  83 16 авг 14:51 ptyu3
+crw-rw-rw-  1 root      wheel            5,  84 16 авг 14:51 ptyu4
+crw-rw-rw-  1 root      wheel            5,  85 16 авг 14:51 ptyu5
+crw-rw-rw-  1 root      wheel            5,  86 16 авг 14:51 ptyu6
+crw-rw-rw-  1 root      wheel            5,  87 16 авг 14:51 ptyu7
+crw-rw-rw-  1 root      wheel            5,  88 16 авг 14:51 ptyu8
+crw-rw-rw-  1 root      wheel            5,  89 16 авг 14:51 ptyu9
+crw-rw-rw-  1 root      wheel            5,  90 16 авг 14:51 ptyua
+crw-rw-rw-  1 root      wheel            5,  91 16 авг 14:51 ptyub
+crw-rw-rw-  1 root      wheel            5,  92 16 авг 14:51 ptyuc
+crw-rw-rw-  1 root      wheel            5,  93 16 авг 14:51 ptyud
+crw-rw-rw-  1 root      wheel            5,  94 16 авг 14:51 ptyue
+crw-rw-rw-  1 root      wheel            5,  95 16 авг 14:51 ptyuf
+crw-rw-rw-  1 root      wheel            5,  96 16 авг 14:51 ptyv0
+crw-rw-rw-  1 root      wheel            5,  97 16 авг 14:51 ptyv1
+crw-rw-rw-  1 root      wheel            5,  98 16 авг 14:51 ptyv2
+crw-rw-rw-  1 root      wheel            5,  99 16 авг 14:51 ptyv3
+crw-rw-rw-  1 root      wheel            5, 100 16 авг 14:51 ptyv4
+crw-rw-rw-  1 root      wheel            5, 101 16 авг 14:51 ptyv5
+crw-rw-rw-  1 root      wheel            5, 102 16 авг 14:51 ptyv6
+crw-rw-rw-  1 root      wheel            5, 103 16 авг 14:51 ptyv7
+crw-rw-rw-  1 root      wheel            5, 104 16 авг 14:51 ptyv8
+crw-rw-rw-  1 root      wheel            5, 105 16 авг 14:51 ptyv9
+crw-rw-rw-  1 root      wheel            5, 106 16 авг 14:51 ptyva
+crw-rw-rw-  1 root      wheel            5, 107 16 авг 14:51 ptyvb
+crw-rw-rw-  1 root      wheel            5, 108 16 авг 14:51 ptyvc
+crw-rw-rw-  1 root      wheel            5, 109 16 авг 14:51 ptyvd
+crw-rw-rw-  1 root      wheel            5, 110 16 авг 14:51 ptyve
+crw-rw-rw-  1 root      wheel            5, 111 16 авг 14:51 ptyvf
+crw-rw-rw-  1 root      wheel            5, 112 16 авг 14:51 ptyw0
+crw-rw-rw-  1 root      wheel            5, 113 16 авг 14:51 ptyw1
+crw-rw-rw-  1 root      wheel            5, 114 16 авг 14:51 ptyw2
+crw-rw-rw-  1 root      wheel            5, 115 16 авг 14:51 ptyw3
+crw-rw-rw-  1 root      wheel            5, 116 16 авг 14:51 ptyw4
+crw-rw-rw-  1 root      wheel            5, 117 16 авг 14:51 ptyw5
+crw-rw-rw-  1 root      wheel            5, 118 16 авг 14:51 ptyw6
+crw-rw-rw-  1 root      wheel            5, 119 16 авг 14:51 ptyw7
+crw-rw-rw-  1 root      wheel            5, 120 16 авг 14:51 ptyw8
+crw-rw-rw-  1 root      wheel            5, 121 16 авг 14:51 ptyw9
+crw-rw-rw-  1 root      wheel            5, 122 16 авг 14:51 ptywa
+crw-rw-rw-  1 root      wheel            5, 123 16 авг 14:51 ptywb
+crw-rw-rw-  1 root      wheel            5, 124 16 авг 14:51 ptywc
+crw-rw-rw-  1 root      wheel            5, 125 16 авг 14:51 ptywd
+crw-rw-rw-  1 root      wheel            5, 126 16 авг 14:51 ptywe
+crw-rw-rw-  1 root      wheel            5, 127 16 авг 14:51 ptywf
+crw-rw-rw-  1 root      wheel           14,   0 16 авг 14:51 random
+crw-r-----  1 root      operator         1,   0 16 авг 14:51 rdisk0
+crw-r-----  1 root      operator         1,   1 16 авг 14:51 rdisk0s1
+crw-r-----  1 root      operator         1,   2 16 авг 14:51 rdisk0s2
+crw-r-----  1 root      operator         1,   3 16 авг 14:51 rdisk1
+crw-r-----  1 root      operator         1,   4 16 авг 14:51 rdisk1s1
+crw-r-----  1 root      operator         1,   5 16 авг 14:51 rdisk1s2
+crw-r-----  1 root      operator         1,   8 16 авг 14:51 rdisk1s3
+crw-r-----  1 root      operator         1,   6 16 авг 14:51 rdisk1s4
+crw-r-----  1 root      operator         1,   7 16 авг 14:51 rdisk1s5
+crw-rw-rw-  1 root      wheel            0,   0 16 авг 14:51 sdt
+lr-xr-xr-x  1 root      wheel                 0 16 авг 14:51 stderr -> fd/2
+lr-xr-xr-x  1 root      wheel                 0 16 авг 14:51 stdin -> fd/0
+lr-xr-xr-x  1 root      wheel                 0 16 авг 14:51 stdout -> fd/1
+crw-rw-rw-  1 root      wheel            0,   0 16 авг 14:51 systrace
+crw-rw-rw-  1 root      wheel            2,   0 10 сен 12:24 tty
+crw-rw-rw-  1 root      wheel           18,   0 16 авг 14:52 tty.Bluetooth-Incoming-Port
+crw-rw-rw-  1 root      wheel           18,   2  9 сен 21:13 tty.WI-XB400-serialport
+crw-rw-rw-  1 root      wheel            4,   0 16 авг 14:51 ttyp0
+crw-rw-rw-  1 root      wheel            4,   1 16 авг 14:51 ttyp1
+crw-rw-rw-  1 root      wheel            4,   2 16 авг 14:51 ttyp2
+crw-rw-rw-  1 root      wheel            4,   3 16 авг 14:51 ttyp3
+crw-rw-rw-  1 root      wheel            4,   4 16 авг 14:51 ttyp4
+crw-rw-rw-  1 root      wheel            4,   5 16 авг 14:51 ttyp5
+crw-rw-rw-  1 root      wheel            4,   6 16 авг 14:51 ttyp6
+crw-rw-rw-  1 root      wheel            4,   7 16 авг 14:51 ttyp7
+crw-rw-rw-  1 root      wheel            4,   8 16 авг 14:51 ttyp8
+crw-rw-rw-  1 root      wheel            4,   9 16 авг 14:51 ttyp9
+crw-rw-rw-  1 root      wheel            4,  10 16 авг 14:51 ttypa
+crw-rw-rw-  1 root      wheel            4,  11 16 авг 14:51 ttypb
+crw-rw-rw-  1 root      wheel            4,  12 16 авг 14:51 ttypc
+crw-rw-rw-  1 root      wheel            4,  13 16 авг 14:51 ttypd
+crw-rw-rw-  1 root      wheel            4,  14 16 авг 14:51 ttype
+crw-rw-rw-  1 root      wheel            4,  15 16 авг 14:51 ttypf
+crw-rw-rw-  1 root      wheel            4,  16 16 авг 14:51 ttyq0
+crw-rw-rw-  1 root      wheel            4,  17 16 авг 14:51 ttyq1
+crw-rw-rw-  1 root      wheel            4,  18 16 авг 14:51 ttyq2
+crw-rw-rw-  1 root      wheel            4,  19 16 авг 14:51 ttyq3
+crw-rw-rw-  1 root      wheel            4,  20 16 авг 14:51 ttyq4
+crw-rw-rw-  1 root      wheel            4,  21 16 авг 14:51 ttyq5
+crw-rw-rw-  1 root      wheel            4,  22 16 авг 14:51 ttyq6
+crw-rw-rw-  1 root      wheel            4,  23 16 авг 14:51 ttyq7
+crw-rw-rw-  1 root      wheel            4,  24 16 авг 14:51 ttyq8
+crw-rw-rw-  1 root      wheel            4,  25 16 авг 14:51 ttyq9
+crw-rw-rw-  1 root      wheel            4,  26 16 авг 14:51 ttyqa
+crw-rw-rw-  1 root      wheel            4,  27 16 авг 14:51 ttyqb
+crw-rw-rw-  1 root      wheel            4,  28 16 авг 14:51 ttyqc
+crw-rw-rw-  1 root      wheel            4,  29 16 авг 14:51 ttyqd
+crw-rw-rw-  1 root      wheel            4,  30 16 авг 14:51 ttyqe
+crw-rw-rw-  1 root      wheel            4,  31 16 авг 14:51 ttyqf
+crw-rw-rw-  1 root      wheel            4,  32 16 авг 14:51 ttyr0
+crw-rw-rw-  1 root      wheel            4,  33 16 авг 14:51 ttyr1
+crw-rw-rw-  1 root      wheel            4,  34 16 авг 14:51 ttyr2
+crw-rw-rw-  1 root      wheel            4,  35 16 авг 14:51 ttyr3
+crw-rw-rw-  1 root      wheel            4,  36 16 авг 14:51 ttyr4
+crw-rw-rw-  1 root      wheel            4,  37 16 авг 14:51 ttyr5
+crw-rw-rw-  1 root      wheel            4,  38 16 авг 14:51 ttyr6
+crw-rw-rw-  1 root      wheel            4,  39 16 авг 14:51 ttyr7
+crw-rw-rw-  1 root      wheel            4,  40 16 авг 14:51 ttyr8
+crw-rw-rw-  1 root      wheel            4,  41 16 авг 14:51 ttyr9
+crw-rw-rw-  1 root      wheel            4,  42 16 авг 14:51 ttyra
+crw-rw-rw-  1 root      wheel            4,  43 16 авг 14:51 ttyrb
+crw-rw-rw-  1 root      wheel            4,  44 16 авг 14:51 ttyrc
+crw-rw-rw-  1 root      wheel            4,  45 16 авг 14:51 ttyrd
+crw-rw-rw-  1 root      wheel            4,  46 16 авг 14:51 ttyre
+crw-rw-rw-  1 root      wheel            4,  47 16 авг 14:51 ttyrf
+crw-rw-rw-  1 root      wheel            4,  48 16 авг 14:51 ttys0
+crw--w----  1 vladimir  tty             16,   0 10 сен 12:24 ttys000
+crw--w----  1 vladimir  tty             16,   1  8 сен 00:18 ttys001
+crw--w----  1 vladimir  tty             16,   2 10 сен 12:29 ttys002
+crw-rw-rw-  1 root      wheel            4,  49 16 авг 14:51 ttys1
+crw-rw-rw-  1 root      wheel            4,  50 16 авг 14:51 ttys2
+crw-rw-rw-  1 root      wheel            4,  51 16 авг 14:51 ttys3
+crw-rw-rw-  1 root      wheel            4,  52 16 авг 14:51 ttys4
+crw-rw-rw-  1 root      wheel            4,  53 16 авг 14:51 ttys5
+crw-rw-rw-  1 root      wheel            4,  54 16 авг 14:51 ttys6
+crw-rw-rw-  1 root      wheel            4,  55 16 авг 14:51 ttys7
+crw-rw-rw-  1 root      wheel            4,  56 16 авг 14:51 ttys8
+crw-rw-rw-  1 root      wheel            4,  57 16 авг 14:51 ttys9
+crw-rw-rw-  1 root      wheel            4,  58 16 авг 14:51 ttysa
+crw-rw-rw-  1 root      wheel            4,  59 16 авг 14:51 ttysb
+crw-rw-rw-  1 root      wheel            4,  60 16 авг 14:51 ttysc
+crw-rw-rw-  1 root      wheel            4,  61 16 авг 14:51 ttysd
+crw-rw-rw-  1 root      wheel            4,  62 16 авг 14:51 ttyse
+crw-rw-rw-  1 root      wheel            4,  63 16 авг 14:51 ttysf
+crw-rw-rw-  1 root      wheel            4,  64 16 авг 14:51 ttyt0
+crw-rw-rw-  1 root      wheel            4,  65 16 авг 14:51 ttyt1
+crw-rw-rw-  1 root      wheel            4,  66 16 авг 14:51 ttyt2
+crw-rw-rw-  1 root      wheel            4,  67 16 авг 14:51 ttyt3
+crw-rw-rw-  1 root      wheel            4,  68 16 авг 14:51 ttyt4
+crw-rw-rw-  1 root      wheel            4,  69 16 авг 14:51 ttyt5
+crw-rw-rw-  1 root      wheel            4,  70 16 авг 14:51 ttyt6
+crw-rw-rw-  1 root      wheel            4,  71 16 авг 14:51 ttyt7
+crw-rw-rw-  1 root      wheel            4,  72 16 авг 14:51 ttyt8
+crw-rw-rw-  1 root      wheel            4,  73 16 авг 14:51 ttyt9
+crw-rw-rw-  1 root      wheel            4,  74 16 авг 14:51 ttyta
+crw-rw-rw-  1 root      wheel            4,  75 16 авг 14:51 ttytb
+crw-rw-rw-  1 root      wheel            4,  76 16 авг 14:51 ttytc
+crw-rw-rw-  1 root      wheel            4,  77 16 авг 14:51 ttytd
+crw-rw-rw-  1 root      wheel            4,  78 16 авг 14:51 ttyte
+crw-rw-rw-  1 root      wheel            4,  79 16 авг 14:51 ttytf
+crw-rw-rw-  1 root      wheel            4,  80 16 авг 14:51 ttyu0
+crw-rw-rw-  1 root      wheel            4,  81 16 авг 14:51 ttyu1
+crw-rw-rw-  1 root      wheel            4,  82 16 авг 14:51 ttyu2
+crw-rw-rw-  1 root      wheel            4,  83 16 авг 14:51 ttyu3
+crw-rw-rw-  1 root      wheel            4,  84 16 авг 14:51 ttyu4
+crw-rw-rw-  1 root      wheel            4,  85 16 авг 14:51 ttyu5
+crw-rw-rw-  1 root      wheel            4,  86 16 авг 14:51 ttyu6
+crw-rw-rw-  1 root      wheel            4,  87 16 авг 14:51 ttyu7
+crw-rw-rw-  1 root      wheel            4,  88 16 авг 14:51 ttyu8
+crw-rw-rw-  1 root      wheel            4,  89 16 авг 14:51 ttyu9
+crw-rw-rw-  1 root      wheel            4,  90 16 авг 14:51 ttyua
+crw-rw-rw-  1 root      wheel            4,  91 16 авг 14:51 ttyub
+crw-rw-rw-  1 root      wheel            4,  92 16 авг 14:51 ttyuc
+crw-rw-rw-  1 root      wheel            4,  93 16 авг 14:51 ttyud
+crw-rw-rw-  1 root      wheel            4,  94 16 авг 14:51 ttyue
+crw-rw-rw-  1 root      wheel            4,  95 16 авг 14:51 ttyuf
+crw-rw-rw-  1 root      wheel            4,  96 16 авг 14:51 ttyv0
+crw-rw-rw-  1 root      wheel            4,  97 16 авг 14:51 ttyv1
+crw-rw-rw-  1 root      wheel            4,  98 16 авг 14:51 ttyv2
+crw-rw-rw-  1 root      wheel            4,  99 16 авг 14:51 ttyv3
+crw-rw-rw-  1 root      wheel            4, 100 16 авг 14:51 ttyv4
+crw-rw-rw-  1 root      wheel            4, 101 16 авг 14:51 ttyv5
+crw-rw-rw-  1 root      wheel            4, 102 16 авг 14:51 ttyv6
+crw-rw-rw-  1 root      wheel            4, 103 16 авг 14:51 ttyv7
+crw-rw-rw-  1 root      wheel            4, 104 16 авг 14:51 ttyv8
+crw-rw-rw-  1 root      wheel            4, 105 16 авг 14:51 ttyv9
+crw-rw-rw-  1 root      wheel            4, 106 16 авг 14:51 ttyva
+crw-rw-rw-  1 root      wheel            4, 107 16 авг 14:51 ttyvb
+crw-rw-rw-  1 root      wheel            4, 108 16 авг 14:51 ttyvc
+crw-rw-rw-  1 root      wheel            4, 109 16 авг 14:51 ttyvd
+crw-rw-rw-  1 root      wheel            4, 110 16 авг 14:51 ttyve
+crw-rw-rw-  1 root      wheel            4, 111 16 авг 14:51 ttyvf
+crw-rw-rw-  1 root      wheel            4, 112 16 авг 14:51 ttyw0
+crw-rw-rw-  1 root      wheel            4, 113 16 авг 14:51 ttyw1
+crw-rw-rw-  1 root      wheel            4, 114 16 авг 14:51 ttyw2
+crw-rw-rw-  1 root      wheel            4, 115 16 авг 14:51 ttyw3
+crw-rw-rw-  1 root      wheel            4, 116 16 авг 14:51 ttyw4
+crw-rw-rw-  1 root      wheel            4, 117 16 авг 14:51 ttyw5
+crw-rw-rw-  1 root      wheel            4, 118 16 авг 14:51 ttyw6
+crw-rw-rw-  1 root      wheel            4, 119 16 авг 14:51 ttyw7
+crw-rw-rw-  1 root      wheel            4, 120 16 авг 14:51 ttyw8
+crw-rw-rw-  1 root      wheel            4, 121 16 авг 14:51 ttyw9
+crw-rw-rw-  1 root      wheel            4, 122 16 авг 14:51 ttywa
+crw-rw-rw-  1 root      wheel            4, 123 16 авг 14:51 ttywb
+crw-rw-rw-  1 root      wheel            4, 124 16 авг 14:51 ttywc
+crw-rw-rw-  1 root      wheel            4, 125 16 авг 14:51 ttywd
+crw-rw-rw-  1 root      wheel            4, 126 16 авг 14:51 ttywe
+crw-rw-rw-  1 root      wheel            4, 127 16 авг 14:51 ttywf
+crw-rw-rw-  1 root      wheel           14,   1 16 авг 14:51 urandom
+crw-rw----  1 root      _windowserver   20,   0 16 авг 14:51 xcpm
+crw-rw-rw-  1 root      wheel            3,   3 16 авг 14:51 zero
+
+(b)=======================================================================
+53-250-19-195:dev vladimir$ file zero
+zero: character special (3/3)
+
+53-250-19-195:dev vladimir$ file urandom
+urandom: character special (14/1)
+
+53-250-19-195:dev vladimir$ file auditpipe
+auditpipe: character special (10/0)
+
+53-250-19-195:dev vladimir$ file tty
+tty: character special (2/0)
+
+53-250-19-195:dev vladimir$ file null
+null: character special (3/2)
+
+53-250-19-195:dev vladimir$ file disk0
+disk0: block special (1/0)
+
+53-250-19-195:dev vladimir$ file console
+console: character special (0/0)
+
+53-250-19-195:dev vladimir$ file stout
+stout: cannot open `stout' (No such file or directory)
+
+53-250-19-195:dev vladimir$ file stdout
+stdout: character special (16/2)
+
+53-250-19-195:dev vladimir$ file stdout
+stdout: character special (16/2)
+
+53-250-19-195:dev vladimir$ file klog
+klog: character special (6/0)
+
+(c)=======================================================================
+53-250-19-195:/ vladimir$ cd /sbin
+
+53-250-19-195:sbin vladimir$ file ifconfig
+ifconfig: Mach-O 64-bit executable x86_64
+
+53-250-19-195:sbin vladimir$ cd /
+53-250-19-195:/ vladimir$ cd /hosts
+-bash: cd: /hosts: No such file or directory
+
+53-250-19-195:/ vladimir$ ls
+Applications	Volumes		etc		sbin
+Library		bin		home		tmp
+System		cores		opt		usr
+Users		dev		private		var
+
+53-250-19-195:/ vladimir$ cd ect
+-bash: cd: ect: No such file or directory
+
+53-250-19-195:/ vladimir$ cd etc
+53-250-19-195:etc vladimir$ file hosts
+
+(d)=======================================================================
+53-250-19-195:etc vladimir$ cd /dev
+
+53-250-19-195:dev vladimir$ file sda1
+sda1: cannot open `sda1' (No such file or directory)
+
+53-250-19-195:dev vladimir$ ls
+afsc_type5			ptyw6
+auditpipe			ptyw7
+auditsessions			ptyw8
+autofs				ptyw9
+autofs_control			ptywa
+autofs_homedirmounter		ptywb
+autofs_notrigger		ptywc
+autofs_nowait			ptywd
+bpf0				ptywe
+bpf1				ptywf
+bpf2				random
+bpf3				rdisk0
+bpf4				rdisk0s1
+console				rdisk0s2
+cu.Bluetooth-Incoming-Port	rdisk1
+cu.WI-XB400-serialport		rdisk1s1
+disk0				rdisk1s2
+disk0s1				rdisk1s3
+disk0s2				rdisk1s4
+disk1				rdisk1s5
+disk1s1				sdt
+disk1s2				stderr
+disk1s3				stdin
+disk1s4				stdout
+disk1s5				systrace
+dtrace				tty
+dtracehelper			tty.Bluetooth-Incoming-Port
+fbt				tty.WI-XB400-serialport
+fd				ttyp0
+fsevents			ttyp1
+io8log				ttyp2
+io8logmt			ttyp3
+io8logtemp			ttyp4
+klog				ttyp5
+lockstat			ttyp6
+machtrace			ttyp7
+nsmb0				ttyp8
+null				ttyp9
+oslog				ttypa
+oslog_stream			ttypb
+pf				ttypc
+pfm				ttypd
+profile				ttype
+ptmx				ttypf
+ptyp0				ttyq0
+ptyp1				ttyq1
+ptyp2				ttyq2
+ptyp3				ttyq3
+ptyp4				ttyq4
+ptyp5				ttyq5
+ptyp6				ttyq6
+ptyp7				ttyq7
+ptyp8				ttyq8
+ptyp9				ttyq9
+ptypa				ttyqa
+ptypb				ttyqb
+ptypc				ttyqc
+ptypd				ttyqd
+ptype				ttyqe
+ptypf				ttyqf
+ptyq0				ttyr0
+ptyq1				ttyr1
+ptyq2				ttyr2
+ptyq3				ttyr3
+ptyq4				ttyr4
+ptyq5				ttyr5
+ptyq6				ttyr6
+ptyq7				ttyr7
+ptyq8				ttyr8
+ptyq9				ttyr9
+ptyqa				ttyra
+ptyqb				ttyrb
+ptyqc				ttyrc
+ptyqd				ttyrd
+ptyqe				ttyre
+ptyqf				ttyrf
+ptyr0				ttys0
+ptyr1				ttys000
+ptyr2				ttys001
+ptyr3				ttys002
+ptyr4				ttys1
+ptyr5				ttys2
+ptyr6				ttys3
+ptyr7				ttys4
+ptyr8				ttys5
+ptyr9				ttys6
+ptyra				ttys7
+ptyrb				ttys8
+ptyrc				ttys9
+ptyrd				ttysa
+ptyre				ttysb
+ptyrf				ttysc
+ptys0				ttysd
+ptys1				ttyse
+ptys2				ttysf
+ptys3				ttyt0
+ptys4				ttyt1
+ptys5				ttyt2
+ptys6				ttyt3
+ptys7				ttyt4
+ptys8				ttyt5
+ptys9				ttyt6
+ptysa				ttyt7
+ptysb				ttyt8
+ptysc				ttyt9
+ptysd				ttyta
+ptyse				ttytb
+ptysf				ttytc
+ptyt0				ttytd
+ptyt1				ttyte
+ptyt2				ttytf
+ptyt3				ttyu0
+ptyt4				ttyu1
+ptyt5				ttyu2
+ptyt6				ttyu3
+ptyt7				ttyu4
+ptyt8				ttyu5
+ptyt9				ttyu6
+ptyta				ttyu7
+ptytb				ttyu8
+ptytc				ttyu9
+ptytd				ttyua
+ptyte				ttyub
+ptytf				ttyuc
+ptyu0				ttyud
+ptyu1				ttyue
+ptyu2				ttyuf
+ptyu3				ttyv0
+ptyu4				ttyv1
+ptyu5				ttyv2
+ptyu6				ttyv3
+ptyu7				ttyv4
+ptyu8				ttyv5
+ptyu9				ttyv6
+ptyua				ttyv7
+ptyub				ttyv8
+ptyuc				ttyv9
+ptyud				ttyva
+ptyue				ttyvb
+ptyuf				ttyvc
+ptyv0				ttyvd
+ptyv1				ttyve
+ptyv2				ttyvf
+ptyv3				ttyw0
+ptyv4				ttyw1
+ptyv5				ttyw2
+ptyv6				ttyw3
+ptyv7				ttyw4
+ptyv8				ttyw5
+ptyv9				ttyw6
+ptyva				ttyw7
+ptyvb				ttyw8
+ptyvc				ttyw9
+ptyvd				ttywa
+ptyve				ttywb
+ptyvf				ttywc
+ptyw0				ttywd
+ptyw1				ttywe
+ptyw2				ttywf
+ptyw3				urandom
+ptyw4				xcpm
+ptyw5				zero
+
+53-250-19-195:dev vladimir$ file disk0
+disk0: block special (1/0)
+
+53-250-19-195:dev vladimir$ file -s disk0
+disk0: cannot open: Operation not permitted
+
+53-250-19-195:dev vladimir$ sudo file -s disk0
+Password:
+disk0: cannot open: Operation not permitted
+
+53-250-19-195:dev vladimir$ cat disk0
+cat: disk0: Operation not permitted
+
+53-250-19-195:dev vladimir$ ls -l disk0
+brw-r-----  1 root  operator    1,   0 16 авг 14:51 disk0
+
+Это какой-то странный файл ответственный за жесткий диск, это не папка и файл нельзя открыть, что-то странно
+
+(e)=======================================================================
+
+Аналогом информации из файла /proc/cpuinfo, на мак я вляется команда $ sysctl -a | grep machdep.cpu
+Поэтому вот результат этой команды
+
+53-250-19-195:dev vladimir$ sysctl -a | grep machdep.cpu
+machdep.cpu.max_basic: 13
+machdep.cpu.max_ext: 2147483656
+machdep.cpu.vendor: GenuineIntel
+machdep.cpu.brand_string: Intel(R) Core(TM) i5-4260U CPU @ 1.40GHz
+machdep.cpu.family: 6
+machdep.cpu.model: 69
+machdep.cpu.extmodel: 4
+machdep.cpu.extfamily: 0
+machdep.cpu.stepping: 1
+machdep.cpu.feature_bits: 9221959987971750911
+machdep.cpu.leaf7_feature_bits: 10155 0
+machdep.cpu.leaf7_feature_bits_edx: 2617247232
+machdep.cpu.extfeature_bits: 142473169152
+machdep.cpu.signature: 263761
+machdep.cpu.brand: 0
+machdep.cpu.features: FPU VME DE PSE TSC MSR PAE MCE CX8 APIC SEP MTRR PGE MCA CMOV PAT PSE36 CLFSH DS ACPI MMX FXSR SSE SSE2 SS HTT TM PBE SSE3 PCLMULQDQ DTES64 MON DSCPL VMX EST TM2 SSSE3 FMA CX16 TPR PDCM SSE4.1 SSE4.2 x2APIC MOVBE POPCNT AES PCID XSAVE OSXSAVE SEGLIM64 TSCTMR AVX1.0 RDRAND F16C
+machdep.cpu.leaf7_features: RDWRFSGS TSC_THREAD_OFFSET BMI1 AVX2 SMEP BMI2 ERMS INVPCID FPU_CSDS MDCLEAR IBRS STIBP L1DF SSBD
+machdep.cpu.extfeatures: SYSCALL XD 1GBPAGE EM64T LAHF LZCNT RDTSCP TSCI
+machdep.cpu.logical_per_package: 16
+machdep.cpu.cores_per_package: 8
+machdep.cpu.microcode_version: 38
+machdep.cpu.processor_flag: 6
+machdep.cpu.mwait.linesize_min: 64
+machdep.cpu.mwait.linesize_max: 64
+machdep.cpu.mwait.extensions: 3
+machdep.cpu.mwait.sub_Cstates: 286531872
+machdep.cpu.thermal.sensor: 1
+machdep.cpu.thermal.dynamic_acceleration: 1
+machdep.cpu.thermal.invariant_APIC_timer: 1
+machdep.cpu.thermal.thresholds: 2
+machdep.cpu.thermal.ACNT_MCNT: 1
+machdep.cpu.thermal.core_power_limits: 1
+machdep.cpu.thermal.fine_grain_clock_mod: 1
+machdep.cpu.thermal.package_thermal_intr: 1
+machdep.cpu.thermal.hardware_feedback: 0
+machdep.cpu.thermal.energy_policy: 1
+machdep.cpu.xsave.extended_state: 7 832 832 0
+machdep.cpu.xsave.extended_state1: 1 0 0 0
+machdep.cpu.arch_perf.version: 3
+machdep.cpu.arch_perf.number: 4
+machdep.cpu.arch_perf.width: 48
+machdep.cpu.arch_perf.events_number: 7
+machdep.cpu.arch_perf.events: 0
+machdep.cpu.arch_perf.fixed_number: 3
+machdep.cpu.arch_perf.fixed_width: 48
+machdep.cpu.cache.linesize: 64
+machdep.cpu.cache.L2_associativity: 8
+machdep.cpu.cache.size: 256
+machdep.cpu.tlb.inst.large: 8
+machdep.cpu.tlb.data.small: 64
+machdep.cpu.tlb.data.small_level1: 64
+machdep.cpu.tlb.shared: 1024
+machdep.cpu.address_bits.physical: 39
+machdep.cpu.address_bits.virtual: 48
+machdep.cpu.core_count: 2
+machdep.cpu.thread_count: 4
+machdep.cpu.tsc_ccc.numerator: 0
+machdep.cpu.tsc_ccc.denominator: 0
+
+Тут собственно вся информация об моем процессоре
+
+(f)=======================================================================
+
+/etc/init.d/ аналога этого файла я не нашел, так что
+
+53-250-19-195:etc vladimir$ file asl.conf
+asl.conf: ASCII text
+
+53-250-19-195:etc vladimir$ stat  asl.conf
+16777220 12887816691 -rw-r--r-- 1 root wheel 0 1051 "Aug 15 00:09:29 2020" "Dec 14 01:39:05 2019" "Aug 15 00:09:29 2020" "Dec 14 01:39:05 2019" 4096 8 0 asl.conf
+
+Это файл с какими-то логами каких-то ошибок. Их мало => было мало ошибок в системе 
+Автозапуск на мак работает как (очень плохо)
