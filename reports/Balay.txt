@@ -44,6 +44,18 @@
             2 files changed, 52 insertions(+), 1 deletion(-)
             create mode 100644 Balay.txt
             
+            $ git push https://github.com/Bupaheh/basic_programming_2020
+            Username for 'https://github.com': Bupaheh
+            Password for 'https://Bupaheh@github.com': 
+            Перечисление объектов: 6, готово.
+            Подсчет объектов: 100% (6/6), готово.
+            При сжатии изменений используется до 8 потоков
+            Сжатие объектов: 100% (3/3), готово.
+            Запись объектов: 100% (4/4), 1.40 KiB | 1.40 MiB/s, готово.
+            Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+            To https://github.com/Bupaheh/basic_programming_2020
+                ed6d67d..6e8f8e3  master -> master
+
             
 1.1
     2.
@@ -51,3 +63,4 @@
             file просто говорит, что это специальные файлы, когда file -s может определять их тип
         e)
             это ASCII text, with very long lines
+        f) обычный файл
