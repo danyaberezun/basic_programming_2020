@@ -1,0 +1,22 @@
+1 (a)
+belfler@DESKTOP-6MTEDK1:~$ id
+uid=1000(belfler) gid=1000(belfler) groups=1000(belfler),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),117(netdev)
+
+1 (b)
+belfler@DESKTOP-6MTEDK1:~$ date
+Thu Sep 10 14:48:50 MSK 2020
+
+1 (c)
+belfler@DESKTOP-6MTEDK1:~$ pwd
+/home/belfler
+
+1 (d)
+belfler@DESKTOP-6MTEDK1:~$ ls
+hi.py
+belfler@DESKTOP-6MTEDK1:~$ ls -l
+total 4
+-rw-r--r-- 1 belfler belfler 507 Sep  9 20:25 hi.py
+belfler@DESKTOP-6MTEDK1:~$ ls -a
+.              .bash_logout  .kube        .profile         .ssh                       hi.py
+..             .bashrc       .landscape   .psql_history    .sudo_as_admin_successful
+.bash_history  .gitconfig    .motd_shown  .python_history  .viminfo
