@@ -1,4 +1,10 @@
-1
+
+111
+  1
+  1
+  1
+11111
+
 (a)=======================================================================
 Vladimirs-MacBook-Air:Projects vladimir$ id
 uid=501(vladimir) gid=20(staff) groups=20(staff),401(com.apple.sharepoint.group.1),12(everyone),61(localaccounts),79(_appserverusr),80(admin),81(_appserveradm),98(_lpadmin),33(_appstore),100(_lpoperator),204(_developer),250(_analyticsusers),395(com.apple.access_ftp),398(com.apple.access_screensharing),399(com.apple.access_ssh),400(com.apple.access_remote_ae)
@@ -26,7 +32,12 @@ Vladimirs-MacBook-Air:Projects vladimir$ ls -a
 ..			basic_programming_2020
 .DS_Store		bruh
 
+22222
+    2
+22222
 2
+22222
+
 (a)=======================================================================
 53-250-19-195:~ vladimir$ cd /
 
@@ -869,3 +880,412 @@ asl.conf: ASCII text
 
 Это файл с какими-то логами каких-то ошибок. Их мало => было мало ошибок в системе 
 Автозапуск на мак работает как (очень плохо)
+
+
+33333
+    3
+33333
+    3
+33333
+
+
+(a)=======================================================================
+53-250-19-195:~ vladimir$ cd /
+
+53-250-19-195:/ vladimir$ mkdir /var/tmp/tes/mytest
+mkdir: /var/tmp/tes: No such file or directory
+
+53-250-19-195:/ vladimir$ mkdir /var/tmp/test/mytest
+mkdir: /var/tmp/test: No such file or directory
+
+53-250-19-195:/ vladimir$ mkdir /var/tmp/test
+
+53-250-19-195:/ vladimir$ mkdir /var/tmp/test/mytest
+
+53-250-19-195:/ vladimir$ cd /var/tmp/test/mytest
+
+(b)=======================================================================
+53-250-19-195:mytest vladimir$ touch haha
+
+53-250-19-195:mytest vladimir$ touch hehe
+
+53-250-19-195:mytest vladimir$ touch hoho
+
+53-250-19-195:mytest vladimir$ ls
+haha	hehe	hoho
+
+53-250-19-195:mytest vladimir$ file haha
+haha: empty
+
+53-250-19-195:mytest vladimir$ file hehe
+hehe: empty
+
+53-250-19-195:mytest vladimir$ file hoho
+hoho: empty
+
+
+(c)=======================================================================
+
+53-250-19-195:mytest vladimir$ cp -R /etc/hosts /var/tmp/test/mytest/
+
+53-250-19-195:mytest vladimir$ ls
+haha	hehe	hoho	hosts
+
+53-250-19-195:mytest vladimir$ ls -l
+total 8
+-rw-r--r--  1 vladimir  wheel    0 10 сен 13:09 haha
+-rw-r--r--  1 vladimir  wheel    0 10 сен 13:09 hehe
+-rw-r--r--  1 vladimir  wheel    0 10 сен 13:09 hoho
+-rw-r--r--  1 vladimir  wheel  213 10 сен 13:16 hosts
+
+(d)=======================================================================
+
+53-250-19-195:mytest vladimir$ cp haha hosts
+
+53-250-19-195:mytest vladimir$ ls
+haha	hehe	hoho	hosts
+
+ps забыл удалить haha
+pps забыл про move
+
+53-250-19-195:mytest vladimir$ mv haha hosts
+53-250-19-195:mytest vladimir$ ls
+hosts
+53-250-19-195:mytest vladimir$ ls -l
+total 0
+-rw-r--r--  1 vladimir  wheel  0 10 сен 13:09 hosts
+
+(e)=======================================================================
+
+53-250-19-195:mytest vladimir$ rm hehe
+53-250-19-195:mytest vladimir$ rm hoho
+53-250-19-195:mytest vladimir$ ls -l
+53-250-19-195:mytest vladimir$ ls -l
+total 0
+-rw-r--r--  1 vladimir  wheel  0 10 сен 13:09 haha
+-rw-r--r--  1 vladimir  wheel  0 10 сен 13:22 hosts
+
+(f)=======================================================================
+
+53-250-19-195:mytest vladimir$ cd
+53-250-19-195:~ vladimir$ cp /var/tmp/test/mytest/ tmp/
+cp: directory tmp does not exist
+53-250-19-195:~ vladimir$ mhdir tmp
+-bash: mhdir: command not found
+53-250-19-195:~ vladimir$ mkdir tmp
+53-250-19-195:~ vladimir$ cp /var/tmp/test/mytest/ tmp/
+cp: /var/tmp/test/mytest/ is a directory (not copied).
+53-250-19-195:~ vladimir$ cp /var/tmp/test/mytest tmp/
+cp: /var/tmp/test/mytest is a directory (not copied).
+53-250-19-195:~ vladimir$ cp ./var/tmp/test/mytest tmp/
+cp: ./var/tmp/test/mytest: No such file or directory
+53-250-19-195:~ vladimir$ mv ./var/tmp/test/mytest tmp/
+mv: rename ./var/tmp/test/mytest to tmp/mytest: No such file or directory
+53-250-19-195:~ vladimir$ ls
+Applications
+Books
+Desktop
+Documents
+Downloads
+Games
+IdeaProjects
+Library
+Movies
+Music
+New document 1.2020_04_06_15_42_11.0.svg
+Pictures
+Projects
+Public
+id_rsa
+id_rsa.pub
+killall
+texput.log
+tmp
+53-250-19-195:~ vladimir$ cd tmp
+53-250-19-195:tmp vladimir$ ls
+53-250-19-195:tmp vladimir$ mv ./var/tmp/test/mytest .
+mv: rename ./var/tmp/test/mytest to ./mytest: No such file or directory
+53-250-19-195:tmp vladimir$ mv /var/tmp/test/mytest .
+53-250-19-195:tmp vladimir$ ls
+mytest
+53-250-19-195:tmp vladimir$ cd mytest
+53-250-19-195:mytest vladimir$ ls
+haha	hosts
+
+(g)=======================================================================
+
+я переместил директорию вместо удаления, так что ее удалять не надо, так как ее нет
+
+(h)=======================================================================
+
+53-250-19-195:tmp vladimir$ rm /var/tmp/test
+rm: /var/tmp/test: is a directory
+53-250-19-195:tmp vladimir$ rmdir /var/tmp/test
+
+(i)=======================================================================
+
+53-250-19-195:mytest vladimir$ cd ..
+53-250-19-195:tmp vladimir$ 
+
+(j)=======================================================================
+
+53-250-19-195:tmp vladimir$ touch digits.txt
+53-250-19-195:tmp vladimir$ ls
+digits.txt	mytest
+53-250-19-195:tmp vladimir$ rm /var/tmp/test
+rm: /var/tmp/test: is a directory
+53-250-19-195:tmp vladimir$ rmdir /var/tmp/test
+53-250-19-195:tmp vladimir$ echo digits.txt
+digits.txt
+53-250-19-195:tmp vladimir$ cat digits.txt
+53-250-19-195:tmp vladimir$ vi digits.txt
+53-250-19-195:tmp vladimir$ cat digits.txt
+53-250-19-195:tmp vladimir$ vi digits.txt
+53-250-19-195:tmp vladimir$ cat digits.txt
+1234567890
+
+
+(k)=======================================================================
+
+53-250-19-195:tmp vladimir$ touch digits2.txt 1234567890\n1234567890
+53-250-19-195:tmp vladimir$ cat digits.txt
+1234567890
+53-250-19-195:tmp vladimir$ touch digits2.txt 1234567890\n 1234567890
+53-250-19-195:tmp vladimir$ cat digits.txt
+1234567890
+53-250-19-195:tmp vladimir$ touch digits2.txt 1234567890_1234567890
+53-250-19-195:tmp vladimir$ cat digits.txt
+1234567890
+53-250-19-195:tmp vladimir$ cat digits2.txt
+53-250-19-195:tmp vladimir$ vi digits2.txt
+53-250-19-195:tmp vladimir$ cat digits2.txt
+1234567890
+1234567890
+53-250-19-195:tmp vladimir$ 
+
+
+(l)=======================================================================
+
+53-250-19-195:tmp vladimir$ cat > 65strings
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+123
+
+(m)=======================================================================
+
+53-250-19-195:tmp vladimir$ wc
+ 
+^C
+53-250-19-195:tmp vladimir$ whatis ws
+wsgen(1)                 - JAX-WS 2.0
+wsimport(1)              - JAX-WS 2.0
+makewhatis: /Library/TeX/texbin/man: Not a directory
+53-250-19-195:tmp vladimir$ ws -l 65strings
+-bash: ws: command not found
+53-250-19-195:tmp vladimir$ wc -l 65strings
+      64 65strings
+53-250-19-195:tmp vladimir$ vi 65strings
+53-250-19-195:tmp vladimir$ wc -l 65strings
+      66 65strings
+53-250-19-195:tmp vladimir$ vi 65strings
+53-250-19-195:tmp vladimir$ wc -l 65strings
+      65 65strings
+
+(n)=======================================================================
+
+53-250-19-195:tmp vladimir$ head -n5 /etc/passwd
+##
+# User Database
+# 
+# Note that this file is consulted directly only when the system is running
+# in single-user mode.  At other times this information is provided by
+53-250-19-195:tmp vladimir$ tail -n5 /etc/passwd
+_fpsd:*:265:265:FPS Daemon:/var/db/fpsd:/usr/bin/false
+_timed:*:266:266:Time Sync Daemon:/var/db/timed:/usr/bin/false
+_nearbyd:*:268:268:Proximity and Ranging Daemon:/var/db/nearbyd:/usr/bin/false
+_reportmemoryexception:*:269:269:ReportMemoryException:/var/db/reportmemoryexception:/usr/bin/false
+_driverkit:*:270:270:DriverKit:/var/empty:/usr/bin/false
+53-250-19-195:tmp vladimir$ head -n-5 /etc/passwd
+head: illegal line count -- -5
+53-250-19-195:tmp vladimir$ cat >  headpsw 
+##
+# User Database
+# 
+# Note that this file is consulted directly only when the system is running
+# in single-user mode.  At other times this information is provided by
+53-250-19-195:tmp vladimir$ cat > tailpsw
+_fpsd:*:265:265:FPS Daemon:/var/db/fpsd:/usr/bin/false
+_timed:*:266:266:Time Sync Daemon:/var/db/timed:/usr/bin/false
+_nearbyd:*:268:268:Proximity and Ranging Daemon:/var/db/nearbyd:/usr/bin/false
+_reportmemoryexception:*:269:269:ReportMemoryException:/var/db/reportmemoryexception:/usr/bin/false
+_driverkit:*:270:270:DriverKit:/var/empty:/usr/bin/false
+
+Я понял, что можно сохранять сразу в файл
+
+53-250-19-195:tmp vladimir$ head -n5 /etc/passwd > headpwd_straigth
+53-250-19-195:tmp vladimir$ cat headpwd_straigth
+##
+# User Database
+# 
+# Note that this file is consulted directly only when the system is running
+# in single-user mode.  At other times this information is provided by
+53-250-19-195:tmp vladimir$ 
+
+
+(o)=======================================================================
+
+53-250-19-195:tmp vladimir$ ls -a /etc > etc_file_list.txt
+53-250-19-195:tmp vladimir$ cat etc_file_list.txt
+.
+..
+afpovertcp.cfg
+aliases
+aliases.db
+apache2
+asl
+asl.conf
+auto_home
+auto_master
+autofs.conf
+bashrc
+bashrc_Apple_Terminal
+com.apple.screensharing.agent.launchd
+csh.cshrc
+csh.login
+csh.logout
+cups
+defaults
+emond.d
+find.codes
+fstab.hd
+ftpusers
+gettytab
+group
+hosts
+hosts.equiv
+irbrc
+kern_loader.conf
+krb5.keytab
+localtime
+locate.rc
+mail.rc
+man.conf
+manpaths
+manpaths.d
+master.passwd
+nanorc
+networks
+newsyslog.conf
+newsyslog.d
+nfs.conf
+notify.conf
+ntp.conf
+ntp_opendirectory.conf
+openldap
+pam.d
+passwd
+paths
+paths.d
+periodic
+pf.anchors
+pf.conf
+pf.os
+php-fpm.conf.default
+php-fpm.d
+php.ini.default
+postfix
+ppp
+profile
+protocols
+racoon
+rc.common
+rc.netboot
+resolv.conf
+rmtab
+rpc
+rtadvd.conf
+security
+services
+shells
+snmp
+ssh
+ssl
+sudo_lecture
+sudoers
+sudoers.d
+syslog.conf
+ttys
+wfs
+xtab
+zprofile
+zshrc
+zshrc_Apple_Terminal
+
+(p)=======================================================================
+
+53-250-19-195:tmp vladimir$ wc etc_file_list.txt
+      84      84     818 etc_file_list.txt
+ Да тут 84 файла и каталога (включая скрытые и "." и "..")
+
