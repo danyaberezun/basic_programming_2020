@@ -1,0 +1,15 @@
+(a) id >> reports/Vyguzov.txt
+uid=1000(idkwntc) gid=1000(idkwntc) groups=1000(idkwntc),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),120(lpadmin),131(lxd),132(sambashare)
+(b) date >> reports/Vyguzov.txt
+Чт 10 сен 2020 12:01:30 MSK
+(c) pwd >> reports/Vyguzov.txt
+/home/idkwntc/Desktop
+(d1) ls >> reports/Vyguzov.txt
+reports
+(d2) ls -l >> reports/Vyguzov.txt
+total 4
+drwxrwxr-x 2 idkwntc idkwntc 4096 сен 10 12:00 reports
+(d3) ls -a >> reports/Vyguzov.txt
+.
+..
+reports
