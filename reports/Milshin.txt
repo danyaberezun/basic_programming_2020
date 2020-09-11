@@ -1,0 +1,19 @@
+1. (a)
+maximka@maximka-Aspire-ES1-531:~/Linuxbasics/basic_programming_2020/reports$ id
+uid=1000(maximka) gid=1000(maximka) groups=1000(maximka),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),112(lpadmin),128(sambashare)
+    (b)
+maximka@maximka-Aspire-ES1-531:~/Linuxbasics/basic_programming_2020/reports$ date
+Пт сен 11 20:43:17 MSK 2020
+    (c)
+maximka@maximka-Aspire-ES1-531:~/Linuxbasics/basic_programming_2020/repo$ pwd
+/home/maximka/Linuxbasics/basic_programming_2020/reports
+    (d)
+maximka@maximka-Aspire-ES1-531:~/Linuxbasics/basic_programming_2020/reports$ ls
+Milshin  RED.md
+maximka@maximka-Aspire-ES1-531:~/Linuxbasics/basic_programming_2020/reports$ ls -l
+total 4
+-rw-r--r-- 1 maximka maximka  0 сен 11 20:42 Milshin
+-rw-r--r-- 1 maximka maximka 18 сен 11 20:37 RED.md
+maximka@maximka-Aspire-ES1-531:~/Linuxbasics/basic_programming_2020/reports$ ls -a
+.  ..  Milshin  RED.md
+
