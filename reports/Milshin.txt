@@ -21,235 +21,6 @@ maximka@maximka-Aspire-ES1-531:~/Linuxbasics/basic_programming_2020/reports$ ls 
 2.  (a)
 maximka@maximka-Aspire-ES1-531:~$ ls -l /dev
 total 0
-crw-r--r--  1 root root     10,   235 сен 11 19:12 autofs
-drwxr-xr-x  2 root root           340 сен 11 19:12 block
-drwxr-xr-x  2 root root            80 сен 11 19:12 bsg
-crw-rw----  1 root disk     10,   234 сен 11 19:12 btrfs-control
-drwxr-xr-x  3 root root            60 сен 11 19:12 bus
-lrwxrwxrwx  1 root root             3 сен 11 19:12 cdrom -> sr0
-lrwxrwxrwx  1 root root             3 сен 11 19:12 cdrw -> sr0
-drwxr-xr-x  2 root root          4360 сен 11 19:12 char
-crw-------  1 root root      5,     1 сен 11 19:12 console
-lrwxrwxrwx  1 root root            11 сен 11 19:12 core -> /proc/kcore
-drwxr-xr-x  2 root root            60 сен 11 19:12 cpu
-crw-------  1 root root     10,    58 сен 11 19:12 cpu_dma_latency
-crw-------  1 root root     10,   203 сен 11 19:12 cuse
-drwxr-xr-x  7 root root           140 сен 11 19:12 disk
-drwxr-xr-x  3 root root           100 сен 11 19:12 dri
-crw-------  1 root root    240,     0 сен 11 19:12 drm_dp_aux0
-crw-------  1 root root    240,     1 сен 11 19:12 drm_dp_aux1
-crw-------  1 root root    240,     2 сен 11 19:12 drm_dp_aux2
-lrwxrwxrwx  1 root root             3 сен 11 19:12 dvd -> sr0
-lrwxrwxrwx  1 root root             3 сен 11 19:12 dvdrw -> sr0
-crw-------  1 root root     10,    61 сен 11 19:12 ecryptfs
-crw-rw----  1 root video    29,     0 сен 11 19:12 fb0
-lrwxrwxrwx  1 root root            13 сен 11 19:12 fd -> /proc/self/fd
-crw-rw-rw-  1 root root      1,     7 сен 11 19:12 full
-crw-rw-rw-  1 root root     10,   229 сен 11 19:12 fuse
-crw-------  1 root root    254,     0 сен 11 19:12 gpiochip0
-crw-------  1 root root    254,     1 сен 11 19:12 gpiochip1
-crw-------  1 root root    254,     2 сен 11 19:12 gpiochip2
-crw-------  1 root root    254,     3 сен 11 19:12 gpiochip3
-crw-------  1 root root    254,     4 сен 11 19:12 gpiochip4
-crw-------  1 root root    241,     0 сен 11 19:12 hidraw0
-crw-------  1 root root     10,   228 сен 11 19:12 hpet
-drwxr-xr-x  2 root root             0 сен 11 19:12 hugepages
-crw-------  1 root root     10,   183 сен 11 19:12 hwrng
-crw-------  1 root root     89,     0 сен 11 19:12 i2c-0
-crw-------  1 root root     89,     1 сен 11 19:12 i2c-1
-crw-------  1 root root     89,     2 сен 11 19:12 i2c-2
-crw-------  1 root root     89,     3 сен 11 19:12 i2c-3
-crw-------  1 root root     89,     4 сен 11 19:12 i2c-4
-crw-------  1 root root     89,     5 сен 11 19:12 i2c-5
-crw-------  1 root root     89,     6 сен 11 19:12 i2c-6
-crw-------  1 root root     89,     7 сен 11 19:12 i2c-7
-crw-------  1 root root     89,     8 сен 11 19:12 i2c-8
-crw-------  1 root root     89,     9 сен 11 19:12 i2c-9
-lrwxrwxrwx  1 root root            25 сен 11 19:12 initctl -> /run/systemd/initctl/fifo
-drwxr-xr-x  4 root root           320 сен 11 19:12 input
-crw-r--r--  1 root root      1,    11 сен 11 19:12 kmsg
-crw-------  1 root root     10,   232 сен 11 19:12 kvm
-drwxr-xr-x  2 root root            60 сен 11 19:12 lightnvm
-lrwxrwxrwx  1 root root            28 сен 11 19:12 log -> /run/systemd/journal/dev-log
-brw-rw----  1 root disk      7,     0 сен 11 19:12 loop0
-brw-rw----  1 root disk      7,     1 сен 11 19:12 loop1
-brw-rw----  1 root disk      7,     2 сен 11 19:12 loop2
-brw-rw----  1 root disk      7,     3 сен 11 19:12 loop3
-brw-rw----  1 root disk      7,     4 сен 11 19:12 loop4
-brw-rw----  1 root disk      7,     5 сен 11 19:12 loop5
-brw-rw----  1 root disk      7,     6 сен 11 19:12 loop6
-brw-rw----  1 root disk      7,     7 сен 11 19:12 loop7
-crw-rw----  1 root disk     10,   237 сен 11 19:12 loop-control
-drwxr-xr-x  2 root root            60 сен 11 19:12 mapper
-crw-------  1 root root     10,   227 сен 11 19:12 mcelog
-crw-rw----  1 root video   237,     0 сен 11 19:12 media0
-crw-------  1 root root    238,     0 сен 11 19:12 mei0
-crw-r-----  1 root kmem      1,     1 сен 11 19:12 mem
-crw-------  1 root root     10,    55 сен 11 19:12 memory_bandwidth
-drwxrwxrwt  2 root root            40 сен 11 19:12 mqueue
-drwxr-xr-x  2 root root            60 сен 11 19:12 net
-crw-------  1 root root     10,    57 сен 11 19:12 network_latency
-crw-------  1 root root     10,    56 сен 11 19:12 network_throughput
-crw-rw-rw-  1 root root      1,     3 сен 11 19:12 null
-crw-r-----  1 root kmem      1,     4 сен 11 19:12 port
-crw-------  1 root root    108,     0 сен 11 19:12 ppp
-crw-------  1 root root     10,     1 сен 11 19:12 psaux
-crw-rw-rw-  1 root tty       5,     2 сен 11 22:10 ptmx
-drwxr-xr-x  2 root root             0 сен 11 19:12 pts
-crw-rw-rw-  1 root root      1,     8 сен 11 19:12 random
-crw-rw-r--+ 1 root netdev   10,    62 сен 11 19:12 rfkill
-lrwxrwxrwx  1 root root             4 сен 11 19:12 rtc -> rtc0
-crw-------  1 root root    249,     0 сен 11 19:12 rtc0
-brw-rw----  1 root disk      8,     0 сен 11 19:12 sda
-brw-rw----  1 root disk      8,     1 сен 11 19:12 sda1
-brw-rw----  1 root disk      8,     2 сен 11 19:12 sda2
-brw-rw----  1 root disk      8,     3 сен 11 19:12 sda3
-brw-rw----  1 root disk      8,     5 сен 11 19:12 sda5
-brw-rw----  1 root disk      8,     6 сен 11 19:12 sda6
-crw-rw----  1 root disk     21,     0 сен 11 19:12 sg0
-crw-rw----+ 1 root cdrom    21,     1 сен 11 19:12 sg1
-drwxrwxrwt  2 root root            40 сен 11 22:10 shm
-crw-------  1 root root     10,   231 сен 11 19:12 snapshot
-drwxr-xr-x  3 root root           220 сен 11 19:12 snd
-brw-rw----+ 1 root cdrom    11,     0 сен 11 19:12 sr0
-lrwxrwxrwx  1 root root            15 сен 11 19:12 stderr -> /proc/self/fd/2
-lrwxrwxrwx  1 root root            15 сен 11 19:12 stdin -> /proc/self/fd/0
-lrwxrwxrwx  1 root root            15 сен 11 19:12 stdout -> /proc/self/fd/1
-crw-------  1 root root     10,   224 сен 11 19:12 tpm0
-crw-------  1 root root    253, 65536 сен 11 19:12 tpmrm0
-crw-rw-rw-  1 root tty       5,     0 сен 11 21:16 tty
-crw--w----  1 root tty       4,     0 сен 11 19:12 tty0
-crw--w----  1 root tty       4,     1 сен 11 19:12 tty1
-crw--w----  1 root tty       4,    10 сен 11 19:12 tty10
-crw--w----  1 root tty       4,    11 сен 11 19:12 tty11
-crw--w----  1 root tty       4,    12 сен 11 19:12 tty12
-crw--w----  1 root tty       4,    13 сен 11 19:12 tty13
-crw--w----  1 root tty       4,    14 сен 11 19:12 tty14
-crw--w----  1 root tty       4,    15 сен 11 19:12 tty15
-crw--w----  1 root tty       4,    16 сен 11 19:12 tty16
-crw--w----  1 root tty       4,    17 сен 11 19:12 tty17
-crw--w----  1 root tty       4,    18 сен 11 19:12 tty18
-crw--w----  1 root tty       4,    19 сен 11 19:12 tty19
-crw--w----  1 root tty       4,     2 сен 11 19:12 tty2
-crw--w----  1 root tty       4,    20 сен 11 19:12 tty20
-crw--w----  1 root tty       4,    21 сен 11 19:12 tty21
-crw--w----  1 root tty       4,    22 сен 11 19:12 tty22
-crw--w----  1 root tty       4,    23 сен 11 19:12 tty23
-crw--w----  1 root tty       4,    24 сен 11 19:12 tty24
-crw--w----  1 root tty       4,    25 сен 11 19:12 tty25
-crw--w----  1 root tty       4,    26 сен 11 19:12 tty26
-crw--w----  1 root tty       4,    27 сен 11 19:12 tty27
-crw--w----  1 root tty       4,    28 сен 11 19:12 tty28
-crw--w----  1 root tty       4,    29 сен 11 19:12 tty29
-crw--w----  1 root tty       4,     3 сен 11 19:12 tty3
-crw--w----  1 root tty       4,    30 сен 11 19:12 tty30
-crw--w----  1 root tty       4,    31 сен 11 19:12 tty31
-crw--w----  1 root tty       4,    32 сен 11 19:12 tty32
-crw--w----  1 root tty       4,    33 сен 11 19:12 tty33
-crw--w----  1 root tty       4,    34 сен 11 19:12 tty34
-crw--w----  1 root tty       4,    35 сен 11 19:12 tty35
-crw--w----  1 root tty       4,    36 сен 11 19:12 tty36
-crw--w----  1 root tty       4,    37 сен 11 19:12 tty37
-crw--w----  1 root tty       4,    38 сен 11 19:12 tty38
-crw--w----  1 root tty       4,    39 сен 11 19:12 tty39
-crw--w----  1 root tty       4,     4 сен 11 19:12 tty4
-crw--w----  1 root tty       4,    40 сен 11 19:12 tty40
-crw--w----  1 root tty       4,    41 сен 11 19:12 tty41
-crw--w----  1 root tty       4,    42 сен 11 19:12 tty42
-crw--w----  1 root tty       4,    43 сен 11 19:12 tty43
-crw--w----  1 root tty       4,    44 сен 11 19:12 tty44
-crw--w----  1 root tty       4,    45 сен 11 19:12 tty45
-crw--w----  1 root tty       4,    46 сен 11 19:12 tty46
-crw--w----  1 root tty       4,    47 сен 11 19:12 tty47
-crw--w----  1 root tty       4,    48 сен 11 19:12 tty48
-crw--w----  1 root tty       4,    49 сен 11 19:12 tty49
-crw--w----  1 root tty       4,     5 сен 11 19:12 tty5
-crw--w----  1 root tty       4,    50 сен 11 19:12 tty50
-crw--w----  1 root tty       4,    51 сен 11 19:12 tty51
-crw--w----  1 root tty       4,    52 сен 11 19:12 tty52
-crw--w----  1 root tty       4,    53 сен 11 19:12 tty53
-crw--w----  1 root tty       4,    54 сен 11 19:12 tty54
-crw--w----  1 root tty       4,    55 сен 11 19:12 tty55
-crw--w----  1 root tty       4,    56 сен 11 19:12 tty56
-crw--w----  1 root tty       4,    57 сен 11 19:12 tty57
-crw--w----  1 root tty       4,    58 сен 11 19:12 tty58
-crw--w----  1 root tty       4,    59 сен 11 19:12 tty59
-crw--w----  1 root tty       4,     6 сен 11 19:12 tty6
-crw--w----  1 root tty       4,    60 сен 11 19:12 tty60
-crw--w----  1 root tty       4,    61 сен 11 19:12 tty61
-crw--w----  1 root tty       4,    62 сен 11 19:12 tty62
-crw--w----  1 root tty       4,    63 сен 11 19:12 tty63
-crw--w----  1 root tty       4,     7 сен 11 19:12 tty7
-crw--w----  1 root tty       4,     8 сен 11 19:12 tty8
-crw--w----  1 root tty       4,     9 сен 11 19:12 tty9
-crw-------  1 root root      5,     3 сен 11 19:12 ttyprintk
-crw-rw----  1 root dialout   4,    64 сен 11 19:12 ttyS0
-crw-rw----  1 root dialout   4,    65 сен 11 19:12 ttyS1
-crw-rw----  1 root dialout   4,    74 сен 11 19:12 ttyS10
-crw-rw----  1 root dialout   4,    75 сен 11 19:12 ttyS11
-crw-rw----  1 root dialout   4,    76 сен 11 19:12 ttyS12
-crw-rw----  1 root dialout   4,    77 сен 11 19:12 ttyS13
-crw-rw----  1 root dialout   4,    78 сен 11 19:12 ttyS14
-crw-rw----  1 root dialout   4,    79 сен 11 19:12 ttyS15
-crw-rw----  1 root dialout   4,    80 сен 11 19:12 ttyS16
-crw-rw----  1 root dialout   4,    81 сен 11 19:12 ttyS17
-crw-rw----  1 root dialout   4,    82 сен 11 19:12 ttyS18
-crw-rw----  1 root dialout   4,    83 сен 11 19:12 ttyS19
-crw-rw----  1 root dialout   4,    66 сен 11 19:12 ttyS2
-crw-rw----  1 root dialout   4,    84 сен 11 19:12 ttyS20
-crw-rw----  1 root dialout   4,    85 сен 11 19:12 ttyS21
-crw-rw----  1 root dialout   4,    86 сен 11 19:12 ttyS22
-crw-rw----  1 root dialout   4,    87 сен 11 19:12 ttyS23
-crw-rw----  1 root dialout   4,    88 сен 11 19:12 ttyS24
-crw-rw----  1 root dialout   4,    89 сен 11 19:12 ttyS25
-crw-rw----  1 root dialout   4,    90 сен 11 19:12 ttyS26
-crw-rw----  1 root dialout   4,    91 сен 11 19:12 ttyS27
-crw-rw----  1 root dialout   4,    92 сен 11 19:12 ttyS28
-crw-rw----  1 root dialout   4,    93 сен 11 19:12 ttyS29
-crw-rw----  1 root dialout   4,    67 сен 11 19:12 ttyS3
-crw-rw----  1 root dialout   4,    94 сен 11 19:12 ttyS30
-crw-rw----  1 root dialout   4,    95 сен 11 19:12 ttyS31
-crw-rw----  1 root dialout   4,    68 сен 11 19:12 ttyS4
-crw-rw----  1 root dialout   4,    69 сен 11 19:12 ttyS5
-crw-rw----  1 root dialout   4,    70 сен 11 19:12 ttyS6
-crw-rw----  1 root dialout   4,    71 сен 11 19:12 ttyS7
-crw-rw----  1 root dialout   4,    72 сен 11 19:12 ttyS8
-crw-rw----  1 root dialout   4,    73 сен 11 19:12 ttyS9
-crw-------  1 root root     10,    59 сен 11 19:12 udmabuf
-crw-------  1 root root     10,   239 сен 11 19:12 uhid
-crw-------  1 root root     10,   223 сен 11 19:12 uinput
-crw-rw-rw-  1 root root      1,     9 сен 11 19:12 urandom
-crw-------  1 root root     10,   240 сен 11 19:12 userio
-drwxr-xr-x  4 root root            80 сен 11 19:12 v4l
-crw-rw----  1 root tty       7,     0 сен 11 19:12 vcs
-crw-rw----  1 root tty       7,     1 сен 11 19:12 vcs1
-crw-rw----  1 root tty       7,     2 сен 11 19:12 vcs2
-crw-rw----  1 root tty       7,     3 сен 11 19:12 vcs3
-crw-rw----  1 root tty       7,     4 сен 11 19:12 vcs4
-crw-rw----  1 root tty       7,     5 сен 11 19:12 vcs5
-crw-rw----  1 root tty       7,     6 сен 11 19:12 vcs6
-crw-rw----  1 root tty       7,     7 сен 11 19:12 vcs7
-crw-rw----  1 root tty       7,   128 сен 11 19:12 vcsa
-crw-rw----  1 root tty       7,   129 сен 11 19:12 vcsa1
-crw-rw----  1 root tty       7,   130 сен 11 19:12 vcsa2
-crw-rw----  1 root tty       7,   131 сен 11 19:12 vcsa3
-crw-rw----  1 root tty       7,   132 сен 11 19:12 vcsa4
-crw-rw----  1 root tty       7,   133 сен 11 19:12 vcsa5
-crw-rw----  1 root tty       7,   134 сен 11 19:12 vcsa6
-crw-rw----  1 root tty       7,   135 сен 11 19:12 vcsa7
-crw-rw----  1 root tty       7,    64 сен 11 19:12 vcsu
-crw-rw----  1 root tty       7,    65 сен 11 19:12 vcsu1
-crw-rw----  1 root tty       7,    66 сен 11 19:12 vcsu2
-crw-rw----  1 root tty       7,    67 сен 11 19:12 vcsu3
-crw-rw----  1 root tty       7,    68 сен 11 19:12 vcsu4
-crw-rw----  1 root tty       7,    69 сен 11 19:12 vcsu5
-crw-rw----  1 root tty       7,    70 сен 11 19:12 vcsu6
-crw-rw----  1 root tty       7,    71 сен 11 19:12 vcsu7
-drwxr-xr-x  2 root root            60 сен 11 19:12 vfio
-crw-------  1 root root     10,    63 сен 11 19:12 vga_arbiter
-crw-------  1 root root     10,   137 сен 11 19:12 vhci
-crw-------  1 root root     10,   238 сен 11 19:12 vhost-net
-crw-------  1 root root     10,   241 сен 11 19:12 vhost-vsock
 crw-rw----+ 1 root video    81,     0 сен 11 19:12 video0
 crw-rw----+ 1 root video    81,     1 сен 11 19:12 video1
 crw-rw-rw-  1 root root      1,     5 сен 11 19:12 zero
@@ -284,4 +55,86 @@ Access: 2020-09-11 20:33:35.640357684 +0300
 Modify: 2019-12-13 19:43:03.000000000 +0300
 Change: 2020-05-08 23:52:08.217840182 +0300
  Birth: -                                           // директория
+
+
+3.  (a)
+maximka@maximka-Aspire-ES1-531:~$ mkdir var
+maximka@maximka-Aspire-ES1-531:~$ cd var
+maximka@maximka-Aspire-ES1-531:~/var$ mkdir tmp
+maximka@maximka-Aspire-ES1-531:~/var$ cd tmp
+maximka@maximka-Aspire-ES1-531:~/var/tmp$ mkdir test
+maximka@maximka-Aspire-ES1-531:~/var/tmp$ cd test
+maximka@maximka-Aspire-ES1-531:~/var/tmp/test$ mkdir mytest
+maximka@maximka-Aspire-ES1-531:~/var/tmp/test$ cd mytest
+    (b)
+maximka@maximka-Aspire-ES1-531:~/var/tmp/test/mytest$ touch a b c
+maximka@maximka-Aspire-ES1-531:~/var/tmp/test/mytest$ stat a
+  File: a
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 806h/2054d	Inode: 8261205     Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/ maximka)   Gid: ( 1000/ maximka)
+Access: 2020-09-12 12:57:51.024092778 +0300
+Modify: 2020-09-12 12:57:51.024092778 +0300
+Change: 2020-09-12 12:57:51.024092778 +0300
+ Birth: -
+    (c)
+maximka@maximka-Aspire-ES1-531:~$ cp /etc/hosts  var/tmp/test/mytest/
+maximka@maximka-Aspire-ES1-531:~$ ls -l var/tmp/test/mytest/
+total 4
+-rw-r--r-- 1 maximka maximka   0 сен 12 12:57 a
+-rw-r--r-- 1 maximka maximka   0 сен 12 12:57 b
+-rw-r--r-- 1 maximka maximka   0 сен 12 12:57 c
+-rw-r--r-- 1 maximka maximka 237 сен 12 13:09 hosts
+maximka@maximka-Aspire-ES1-531:~$ cd var/tmp/test/mytest/
+    (d)
+maximka@maximka-Aspire-ES1-531:~/var/tmp/test/mytest$ mv a hosts
+maximka@maximka-Aspire-ES1-531:~/var/tmp/test/mytest$ ls -l 
+total 0
+-rw-r--r-- 1 maximka maximka 0 сен 12 12:57 b
+-rw-r--r-- 1 maximka maximka 0 сен 12 12:57 c
+-rw-r--r-- 1 maximka maximka 0 сен 12 12:57 hosts
+    (e)
+maximka@maximka-Aspire-ES1-531:~/var/tmp/test/mytest$ rm b c
+maximka@maximka-Aspire-ES1-531:~/var/tmp/test/mytest$ ls -l
+total 0
+-rw-r--r-- 1 maximka maximka 0 сен 12 12:57 hosts
+    (f)
+maximka@maximka-Aspire-ES1-531:~/var/tmp/test$ cp -r mytest ..
+    (g)
+maximka@maximka-Aspire-ES1-531:~/var/tmp/test/mytest$ rm hosts
+    (h)
+maximka@maximka-Aspire-ES1-531:~$ rm -r var/tmp/test
+    (i)
+maximka@maximka-Aspire-ES1-531:~$ cd tmp
+    (j)
+maximka@maximka-Aspire-ES1-531:~/tmp$ touch digits.txt
+maximka@maximka-Aspire-ES1-531:~/tmp$ cat digits.txt 
+0 1 2 3 4 5 6 7 8 9 
+    (k)
+maximka@maximka-Aspire-ES1-531:~/tmp$ touch digits2.txt
+maximka@maximka-Aspire-ES1-531:~/tmp$ cat digits2.txt 
+122332
+22332
+    (l)
+maximka@maximka-Aspire-ES1-531:~/tmp$ touch digits3.txt
+    (m)
+maximka@maximka-Aspire-ES1-531:~/tmp$ wc digits3.txt 
+ 65  65 240 digits3.txt
+    (n)
+maximka@maximka-Aspire-ES1-531:/etc$ head -n 5 passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+maximka@maximka-Aspire-ES1-531:/etc$ tail -n 5 passwd
+speech-dispatcher:x:118:29:Speech Dispatcher,,,:/var/run/speech-dispatcher:/bin/false
+pulse:x:119:125:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+hplip:x:120:7:HPLIP system user,,,:/var/run/hplip:/bin/false
+geoclue:x:121:127::/var/lib/geoclue:/usr/sbin/nologin
+maximka:x:1000:1000:maximka,,,:/home/maximka:/bin/bash
+    (o) & (p)
+maximka@maximka-Aspire-ES1-531:/etc$ ls -l
+// там большой список из 1220 файлов
+
 
