@@ -581,3 +581,86 @@ Change: 2020-07-24 11:31:40.652228700 +0300
  Birth: -
 
 We can see info about linux services.
+
+3 (a)
+~$ mkdir -p /var/tmp/test/mytest && cd /var/tmp/test/mytest
+
+3 (b)
+/var/tmp/test/mytest$ touch {1,2,3}
+/var/tmp/test/mytest$ file ./*
+./1: empty
+./2: empty
+./3: empty
+
+3 (c)
+/var/tmp/test/mytest$ cp /etc/hosts ./
+/var/tmp/test/mytest$ ls -lc
+total 4
+-rw-r--r-- 1 belfler belfler   0 Sep 13 22:59 1
+-rw-r--r-- 1 belfler belfler   0 Sep 13 22:59 2
+-rw-r--r-- 1 belfler belfler   0 Sep 13 22:59 3
+-rw-r--r-- 1 belfler belfler 427 Sep 13 23:02 hosts
+
+3 (d)
+/var/tmp/test/mytest$ cp 1 hosts
+/var/tmp/test/mytest$ ll
+total 8
+drwxr-xr-x 2 belfler belfler 4096 Sep 13 23:02 ./
+drwxr-xr-x 3 belfler belfler 4096 Sep 13 22:59 ../
+-rw-r--r-- 1 belfler belfler    0 Sep 13 22:59 1
+-rw-r--r-- 1 belfler belfler    0 Sep 13 22:59 2
+-rw-r--r-- 1 belfler belfler    0 Sep 13 22:59 3
+-rw-r--r-- 1 belfler belfler    0 Sep 13 23:05 hosts
+
+3 (e)
+/var/tmp/test/mytest$ rm {2,3}
+/var/tmp/test/mytest$ ll
+total 8
+drwxr-xr-x 2 belfler belfler 4096 Sep 13 23:07 ./
+drwxr-xr-x 3 belfler belfler 4096 Sep 13 22:59 ../
+-rw-r--r-- 1 belfler belfler    0 Sep 13 22:59 1
+-rw-r--r-- 1 belfler belfler    0 Sep 13 23:05 hosts
+
+3 (f)
+/var/tmp/test/mytest$ mkdir ~/tmp/
+/var/tmp/test/mytest$ cp ./* ~/tmp/
+
+3 (g)
+/var/tmp/test/mytest$ rm ./*
+
+3 (h)
+/var/tmp/test/mytest$ rm -r ../../test
+
+3 (i)
+/var/tmp/test/mytest$ cd ~/tmp/
+
+3 (j)
+~/tmp$ echo "0 1 2 3 4 5 6 7 8 9" > digits.txt
+~/tmp$ cat digits.txt
+0 1 2 3 4 5 6 7 8 9
+
+3 (k)
+~/tmp$ > 2lines.txt
+~/tmp$ for ((i = 1; i <= 2; i++)); do cat digits.txt >> 2lines.txt; done
+~/tmp$ cat 2lines.txt
+0 1 2 3 4 5 6 7 8 9
+0 1 2 3 4 5 6 7 8 9
+
+3 (l)
+~/tmp$ > 65lines.txt
+~/tmp$ for ((i = 1; i <= 65; i++)); do cat digits.txt >> 65lines.txt; done
+
+3 (m)
+~/tmp$ wc -l 65lines.txt
+65 65lines.txt
+
+3 (n)
+~/tmp$ head -5 /etc/passwd > head.txt
+~/tmp$ tail -5 /etc/passwd > tail.txt
+
+3 (o)
+~/tmp$ ls -la /etc > files.txt
+
+3 (p)
+~/tmp$ ls -la /etc | wc -l
+189
