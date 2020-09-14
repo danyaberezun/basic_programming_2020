@@ -1,0 +1,251 @@
+(b1) f1: empty
+(b2) f2: empty
+(b3) f3: empty
+(c) total 4
+-rw-rw-r-- 1 idkwntc idkwntc   0 сен 14 20:18 f1
+-rw-rw-r-- 1 idkwntc idkwntc   0 сен 14 20:18 f2
+-rw-rw-r-- 1 idkwntc idkwntc   0 сен 14 20:18 f3
+-rw-r--r-- 1 idkwntc idkwntc 230 сен 14 20:21 hosts
+(d) total 0
+-rw-rw-r-- 1 idkwntc idkwntc 0 сен 14 20:18 f2
+-rw-rw-r-- 1 idkwntc idkwntc 0 сен 14 20:18 f3
+-rw-rw-r-- 1 idkwntc idkwntc 0 сен 14 20:31 hosts
+(e) total 0
+-rw-rw-r-- 1 idkwntc idkwntc 0 сен 14 20:31 hosts
+(m)   65  650 1300 digits2.txt
+(n1) root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+(n2) pulse:x:123:128:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+gnome-initial-setup:x:124:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:125:130:Gnome Display Manager:/var/lib/gdm3:/bin/false
+idkwntc:x:1000:1000:Artem,,,:/home/idkwntc:/bin/bash
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+o) total 1096
+drwxr-xr-x  3 root root    4096 июл 31 19:31 acpi
+-rw-r--r--  1 root root    3028 июл 31 19:27 adduser.conf
+drwxr-xr-x  3 root root    4096 июл 31 19:28 alsa
+drwxr-xr-x  2 root root    4096 сен 10 13:50 alternatives
+-rw-r--r--  1 root root     401 июл 16  2019 anacrontab
+-rw-r--r--  1 root root     433 окт  2  2017 apg.conf
+drwxr-xr-x  5 root root    4096 июл 31 19:28 apm
+drwxr-xr-x  3 root root    4096 июл 31 19:30 apparmor
+drwxr-xr-x  7 root root    4096 сен 10 12:02 apparmor.d
+drwxr-xr-x  4 root root    4096 сен 10 12:02 apport
+-rw-r--r--  1 root root     769 янв 18  2020 appstream.conf
+drwxr-xr-x  7 root root    4096 сен 10 13:51 apt
+drwxr-xr-x  3 root root    4096 июл 31 19:31 avahi
+-rw-r--r--  1 root root    2319 фев 25  2020 bash.bashrc
+-rw-r--r--  1 root root      45 янв 26  2020 bash_completion
+drwxr-xr-x  2 root root    4096 сен 10 12:02 bash_completion.d
+-rw-r--r--  1 root root     367 апр 14 22:26 bindresvport.blacklist
+drwxr-xr-x  2 root root    4096 апр 22 12:04 binfmt.d
+drwxr-xr-x  2 root root    4096 июл 31 19:30 bluetooth
+-rw-r-----  1 root root      33 июл 31 19:31 brlapi.key
+drwxr-xr-x  7 root root    4096 июл 31 19:30 brltty
+-rw-r--r--  1 root root   26916 мар  3  2020 brltty.conf
+drwxr-xr-x  3 root root    4096 июл 31 19:27 ca-certificates
+-rw-r--r--  1 root root    5714 июл 31 19:27 ca-certificates.conf
+-rw-r--r--  1 root root    5713 июл 31 19:27 ca-certificates.conf.dpkg-old
+drwxr-xr-x  2 root root    4096 июл 31 19:30 calendar
+drwxr-s---  2 root dip     4096 сен 10 12:02 chatscripts
+drwxr-xr-x  2 root root    4096 сен 10 13:48 console-setup
+drwxr-xr-x  2 root root    4096 июл 31 19:31 cracklib
+drwxr-xr-x  2 root root    4096 сен 10 13:51 cron.d
+drwxr-xr-x  2 root root    4096 сен 10 12:02 cron.daily
+drwxr-xr-x  2 root root    4096 июл 31 19:27 cron.hourly
+drwxr-xr-x  2 root root    4096 июл 31 19:30 cron.monthly
+-rw-r--r--  1 root root    1042 фев 13  2020 crontab
+drwxr-xr-x  2 root root    4096 июл 31 19:31 cron.weekly
+drwxr-xr-x  5 root lp      4096 сен 14 20:52 cups
+drwxr-xr-x  2 root root    4096 июл 31 19:31 cupshelpers
+drwxr-xr-x  4 root root    4096 июл 31 19:27 dbus-1
+drwxr-xr-x  4 root root    4096 июл 31 19:29 dconf
+-rw-r--r--  1 root root    2969 авг  3  2019 debconf.conf
+-rw-r--r--  1 root root      13 дек  5  2019 debian_version
+drwxr-xr-x  3 root root    4096 сен 10 12:02 default
+-rw-r--r--  1 root root     604 сен 16  2018 deluser.conf
+drwxr-xr-x  2 root root    4096 июл 31 19:27 depmod.d
+drwxr-xr-x  4 root root    4096 июл 31 19:27 dhcp
+drwxr-xr-x  2 root root    4096 сен 10 13:51 dictionaries-common
+drwxr-xr-x  4 root root    4096 июл 31 19:27 dpkg
+-rw-r--r--  1 root root     685 фев 14  2020 e2scrub.conf
+drwxr-xr-x  3 root root    4096 июл 31 19:29 emacs
+-rw-r--r--  1 root root     106 сен 10 12:00 environment
+drwxr-xr-x  2 root root    4096 июл 31 19:31 environment.d
+-rw-r--r--  1 root root    1816 дек 27  2019 ethertypes
+drwxr-xr-x  3 root root    4096 сен 10 12:02 firefox
+drwxr-xr-x  4 root root    4096 июл 31 19:31 fonts
+-rw-r--r--  1 root root      20 фев 10  2020 fprintd.conf
+-rw-rw-r--  1 root root     665 сен 10 13:46 fstab
+-rw-r--r--  1 root root     280 июн 20  2014 fuse.conf
+drwxr-xr-x  3 root root    4096 июл 31 19:31 fwupd
+-rw-r--r--  1 root root    2584 фев  1  2020 gai.conf
+-rw-r--r--  1 root root    4372 мая 18 16:05 gamemode.ini
+drwxr-xr-x  2 root root    4096 июл 31 19:31 gdb
+drwxr-xr-x  8 root root    4096 июл 31 19:31 gdm3
+drwxr-xr-x  2 root root    4096 июл 31 19:31 geoclue
+drwxr-xr-x  4 root root    4096 июл 31 19:29 ghostscript
+drwxr-xr-x  3 root root    4096 июл 31 19:29 glvnd
+drwxr-xr-x  2 root root    4096 июл 31 19:30 gnome
+drwxr-xr-x  2 root root    4096 июл 31 19:31 groff
+-rw-r--r--  1 root root    1066 сен 10 12:01 group
+-rw-r--r--  1 root root    1060 сен 10 16:52 group-
+drwxr-xr-x  2 root root    4096 сен 10 12:01 grub.d
+-rw-r-----  1 root shadow   892 сен 10 12:01 gshadow
+-rw-r-----  1 root shadow   886 сен 10 16:52 gshadow-
+drwxr-xr-x  3 root root    4096 июл 31 19:28 gss
+drwxr-xr-x  2 root root    4096 июл 31 19:30 gtk-2.0
+drwxr-xr-x  2 root root    4096 июл 31 19:31 gtk-3.0
+-rw-r--r--  1 root root    5060 авг 21  2019 hdparm.conf
+-rw-r--r--  1 root root      92 дек  5  2019 host.conf
+-rw-r--r--  1 root root       4 июл 31 19:33 hostid
+-rw-r--r--  1 root root      16 сен 10 13:48 hostname
+-rw-r--r--  1 root root     230 сен 10 13:48 hosts
+-rw-r--r--  1 root root     411 июл 31 19:30 hosts.allow
+-rw-r--r--  1 root root     711 июл 31 19:30 hosts.deny
+drwxr-xr-x  2 root root    4096 июл 31 19:31 hp
+drwxr-xr-x  3 root root    4096 июл 31 19:30 ifplugd
+drwxr-xr-x  2 root root    4096 сен 10 12:02 init
+drwxr-xr-x  2 root root    4096 сен 10 12:02 init.d
+drwxr-xr-x  5 root root    4096 июл 31 19:31 initramfs-tools
+-rw-r--r--  1 root root    1748 фев 25  2020 inputrc
+drwxr-xr-x  2 root root    4096 июл 31 19:31 insserv.conf.d
+drwxr-xr-x  4 root root    4096 июл 31 19:27 iproute2
+-rw-r--r--  1 root root      26 июл 15 11:59 issue
+-rw-r--r--  1 root root      19 июл 15 11:59 issue.net
+drwxr-xr-x  6 root root    4096 июл 31 19:30 kernel
+-rw-r--r--  1 root root     110 сен 10 13:49 kernel-img.conf
+-rw-r--r--  1 root root    1308 дек  2  2017 kerneloops.conf
+drwxr-xr-x  2 root root    4096 июл 31 19:30 ldap
+-rw-r--r--  1 root root   64154 сен 10 12:03 ld.so.cache
+-rw-r--r--  1 root root      34 апр 14 22:26 ld.so.conf
+drwxr-xr-x  2 root root    4096 июл 31 19:27 ld.so.conf.d
+-rw-r--r--  1 root root     267 дек  5  2019 legal
+-rw-r--r--  1 root root      27 янв 18  2018 libao.conf
+-rw-r--r--  1 root root     191 фев 18  2020 libaudit.conf
+drwxr-xr-x  3 root root    4096 июл 31 19:29 libblockdev
+drwxr-xr-x  2 root root    4096 июл 31 19:30 libnl-3
+drwxr-xr-x  2 root root    4096 июн 26  2019 libpaper.d
+drwxr-xr-x  2 root root    4096 сен 10 12:02 libreoffice
+-rw-r--r--  1 root root    2996 апр 14 22:26 locale.alias
+-rw-r--r--  1 root root    9438 сен 10 13:48 locale.gen
+lrwxrwxrwx  1 root root      33 сен 10 13:48 localtime -> /usr/share/zoneinfo/Europe/Moscow
+drwxr-xr-x  4 root root    4096 июл 31 19:29 logcheck
+-rw-r--r--  1 root root   10550 фев  7  2020 login.defs
+-rw-r--r--  1 root root     533 янв 21  2019 logrotate.conf
+drwxr-xr-x  2 root root    4096 сен 10 12:02 logrotate.d
+-rw-r--r--  1 root root     104 июл 15 11:59 lsb-release
+-rw-r--r--  1 root root   14867 фев  1  2019 ltrace.conf
+-r--r--r--  1 root root      33 сен 10 16:52 machine-id
+-rw-r--r--  1 root root     111 янв 16  2020 magic
+-rw-r--r--  1 root root     111 янв 16  2020 magic.mime
+-rw-r--r--  1 root root   41950 сен 10 12:02 mailcap
+-rw-r--r--  1 root root     449 окт 19  2019 mailcap.order
+-rw-r--r--  1 root root    5215 фев 25  2020 manpath.config
+-rw-r--r--  1 root root   24546 окт 19  2019 mime.types
+-rw-r--r--  1 root root     808 фев 14  2020 mke2fs.conf
+drwxr-xr-x  2 root root    4096 июл 31 19:31 modprobe.d
+-rw-r--r--  1 root root     195 июл 31 19:27 modules
+drwxr-xr-x  2 root root    4096 июл 31 19:31 modules-load.d
+lrwxrwxrwx  1 root root      19 сен 10 13:49 mtab -> ../proc/self/mounts
+-rw-r--r--  1 root root     624 мар 22 16:50 mtools.conf
+drwxr-xr-x  3 root root    4096 июл 31 19:30 mysql
+-rw-r--r--  1 root root   10037 фев  7  2020 nanorc
+drwxr-xr-x  2 root root    4096 июл 31 19:35 netplan
+drwxr-xr-x  6 root root    4096 июл 31 19:30 network
+drwxr-xr-x  8 root root    4096 июл 31 19:27 networkd-dispatcher
+drwxr-xr-x  7 root root    4096 июл 31 19:31 NetworkManager
+-rw-r--r--  1 root root      91 дек  5  2019 networks
+drwxr-xr-x  2 root root    4096 июл 31 19:27 newt
+-rw-r--r--  1 root root     542 июл 31 19:31 nsswitch.conf
+drwxr-xr-x  4 root root    4096 июл 31 19:31 openvpn
+drwxr-xr-x  2 root root    4096 июл 31 19:27 opt
+lrwxrwxrwx  1 root root      21 авг 17 16:31 os-release -> ../usr/lib/os-release
+drwxr-xr-x  2 root root    4096 июл 31 19:31 PackageKit
+-rw-r--r--  1 root root     552 дек 17  2019 pam.conf
+drwxr-xr-x  2 root root    4096 сен 10 12:02 pam.d
+-rw-rw-r--  1 root root       3 сен 10 13:49 papersize
+-rw-r--r--  1 root root    2742 сен 10 16:52 passwd
+-rw-r--r--  1 root root    2675 сен 10 13:48 passwd-
+drwxr-xr-x  2 root root    4096 июл 31 19:30 pcmcia
+drwxr-xr-x  3 root root    4096 июл 31 19:28 perl
+drwxr-xr-x  4 root root    4096 июл 31 19:29 pki
+drwxr-xr-x  3 root root    4096 июл 31 19:29 pm
+-rw-r--r--  1 root root    7649 июл 31 19:31 pnm2ppa.conf
+drwxr-xr-x  4 root root    4096 июл 31 19:28 polkit-1
+-rw-rw-r--  1 root root     350 сен 10 13:49 popularity-contest.conf
+drwxr-xr-x  7 root dip     4096 сен 10 12:02 ppp
+-rw-r--r--  1 root root     581 дек  5  2019 profile
+drwxr-xr-x  2 root root    4096 сен 10 12:00 profile.d
+-rw-r--r--  1 root root    2932 апр  2  2013 protocols
+drwxr-xr-x  3 root root    4096 сен 10 12:02 pulse
+drwxr-xr-x  2 root root    4096 июл 31 19:27 python3
+drwxr-xr-x  2 root root    4096 июл 31 19:27 python3.8
+drwxr-xr-x  2 root root    4096 сен 10 13:51 rc0.d
+drwxr-xr-x  2 root root    4096 сен 10 13:51 rc1.d
+drwxr-xr-x  2 root root    4096 сен 10 13:51 rc2.d
+drwxr-xr-x  2 root root    4096 сен 10 13:51 rc3.d
+drwxr-xr-x  2 root root    4096 сен 10 13:51 rc4.d
+drwxr-xr-x  2 root root    4096 сен 10 13:51 rc5.d
+drwxr-xr-x  2 root root    4096 сен 10 13:51 rc6.d
+drwxr-xr-x  2 root root    4096 сен 10 13:51 rcS.d
+lrwxrwxrwx  1 root root      39 сен 10 13:48 resolv.conf -> ../run/systemd/resolve/stub-resolv.conf
+lrwxrwxrwx  1 root root      13 сен 10 13:46 rmt -> /usr/sbin/rmt
+-rw-r--r--  1 root root     887 апр  1  2013 rpc
+-rw-r--r--  1 root root    1382 фев 11  2020 rsyslog.conf
+drwxr-xr-x  2 root root    4096 июл 31 19:31 rsyslog.d
+-rw-r--r--  1 root root    5211 мар 11  2020 rygel.conf
+drwxr-xr-x  3 root root    4096 сен 10 12:02 sane.d
+drwxr-xr-x  4 root root    4096 сен 10 12:00 security
+drwxr-xr-x  2 root root    4096 июл 31 19:27 selinux
+-rw-r--r--  1 root root   10593 ноя  6  2019 sensors3.conf
+drwxr-xr-x  2 root root    4096 июл 31 19:30 sensors.d
+-rw-r--r--  1 root root   14464 фев 17  2020 services
+drwxr-xr-x  3 root root    4096 июл 31 19:31 sgml
+-rw-r-----  1 root shadow  1437 сен 10 16:52 shadow
+-rw-r-----  1 root shadow  1405 сен 10 13:48 shadow-
+-rw-r--r--  1 root root     116 июл 31 19:27 shells
+drwxr-xr-x  2 root root    4096 июл 31 19:27 skel
+drwxr-xr-x  2 root root    4096 сен 10 12:01 snmp
+drwxr-xr-x  4 root root    4096 июл 31 19:31 speech-dispatcher
+drwxr-xr-x  3 root root    4096 июл 31 19:31 ssh
+drwxr-xr-x  4 root root    4096 июл 31 19:27 ssl
+-rw-r--r--  1 root root      21 сен 10 13:48 subgid
+-rw-r--r--  1 root root       0 июл 31 19:27 subgid-
+-rw-r--r--  1 root root      21 сен 10 13:48 subuid
+-rw-r--r--  1 root root       0 июл 31 19:27 subuid-
+-r--r-----  1 root root     755 фев  3  2020 sudoers
+drwxr-xr-x  2 root root    4096 сен 10 12:02 sudoers.d
+-rw-r--r--  1 root root    2351 фев 14  2020 sysctl.conf
+drwxr-xr-x  2 root root    4096 июл 31 19:27 sysctl.d
+drwxr-xr-x  5 root root    4096 июл 31 19:28 systemd
+drwxr-xr-x  2 root root    4096 июл 31 19:27 terminfo
+drwxr-xr-x  2 root root    4096 июл 31 19:30 thermald
+drwxr-xr-x  2 root root    4096 июл 31 19:31 thunderbird
+-rw-r--r--  1 root root      14 сен 10 13:48 timezone
+drwxr-xr-x  2 root root    4096 апр 22 12:04 tmpfiles.d
+drwxr-xr-x  2 root root    4096 июл 31 19:27 ubuntu-advantage
+-rw-r--r--  1 root root    1260 дек 14  2018 ucf.conf
+drwxr-xr-x  4 root root    4096 июл 31 19:27 udev
+drwxr-xr-x  2 root root    4096 июл 31 19:31 udisks2
+drwxr-xr-x  3 root root    4096 июл 31 19:31 ufw
+drwxr-xr-x  3 root root    4096 сен 10 12:02 update-manager
+drwxr-xr-x  2 root root    4096 сен 10 12:02 update-motd.d
+drwxr-xr-x  2 root root    4096 апр  2 14:25 update-notifier
+drwxr-xr-x  2 root root    4096 июл 31 19:31 UPower
+-rw-r--r--  1 root root    1523 фев 10  2020 usb_modeswitch.conf
+drwxr-xr-x  2 root root    4096 фев 24  2020 usb_modeswitch.d
+drwxr-xr-x  2 root root    4096 июл 31 19:27 vim
+lrwxrwxrwx  1 root root      23 сен 10 13:46 vtrgb -> /etc/alternatives/vtrgb
+drwxr-xr-x  5 root root    4096 июл 31 19:29 vulkan
+-rw-r--r--  1 root root    4942 июл 24  2019 wgetrc
+drwxr-xr-x  2 root root    4096 июл 31 19:31 wpa_supplicant
+drwxr-xr-x 11 root root    4096 июл 31 19:31 X11
+-rw-r--r--  1 root root     642 сен 24  2019 xattr.conf
+drwxr-xr-x  6 root root    4096 июл 31 19:29 xdg
+drwxr-xr-x  2 root root    4096 июл 31 19:31 xml
+-rw-r--r--  1 root root     477 окт  7  2019 zsh_command_not_found
+(p) 224
