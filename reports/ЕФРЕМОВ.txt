@@ -1,4 +1,4 @@
-(a) $ id
+1. (a) $ id
 uid=1000(receed) gid=1000(receed) groups=1000(receed),10(wheel),975(wireshark),999(input) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
 (b) $ date
 Tue 15 Sep 2020 10:46:01 PM MSK
@@ -12,4 +12,359 @@ total 8
 -rw-rw-r--. 1 receed receed 305 Sep 15 22:53 ЕФРЕМОВ.txt
 $ ls -a
 .  ..  RED.md  ЕФРЕМОВ.txt
+2. (a) $ ls /dev -F
+autofs           fb0         loop0   loop4         mei0              pts/    shm/      tty13  tty26  tty39  tty51  tty7    ttyS19  ttyS31   v4l/      vcsa4        vhci
+block/           fd@         loop1   loop5         mem               random  snapshot  tty14  tty27  tty4   tty52  tty8    ttyS2   ttyS4    vboxusb/  vcsa5        vhost-net
+bsg/             full        loop10  loop6         mqueue/           raw/    snd/      tty15  tty28  tty40  tty53  tty9    ttyS20  ttyS5    vcs       vcsa6        vhost-vsock
+btrfs-control    fuse        loop11  loop7         net/              rfkill  stderr@   tty16  tty29  tty41  tty54  ttyS0   ttyS21  ttyS6    vcs1      vcsa63       video0
+bus/             gpiochip0   loop12  loop8         null              rtc@    stdin@    tty17  tty3   tty42  tty55  ttyS1   ttyS22  ttyS7    vcs2      vcsu         video1
+char/            hidraw0     loop13  loop9         nvidia0           rtc0    stdout@   tty18  tty30  tty43  tty56  ttyS10  ttyS23  ttyS8    vcs3      vcsu1        vmci
+console          hpet        loop14  loop-control  nvidiactl         sda     tpm0      tty19  tty31  tty44  tty57  ttyS11  ttyS24  ttyS9    vcs4      vcsu2        vmmon
+core@            hugepages/  loop15  lp0           nvidia-modeset    sda1    tpmrm0    tty2   tty32  tty45  tty58  ttyS12  ttyS25  udmabuf  vcs5      vcsu3        vmnet0
+cpu/             hwrng       loop16  lp1           nvidia-uvm        sda2    tty       tty20  tty33  tty46  tty59  ttyS13  ttyS26  uhid     vcs6      vcsu4        vmnet1
+cpu_dma_latency  initctl@    loop17  lp2           nvidia-uvm-tools  sda3    tty0      tty21  tty34  tty47  tty6   ttyS14  ttyS27  uinput   vcs63     vcsu5        vmnet8
+cuse             input/      loop18  lp3           nvram             sda4    tty1      tty22  tty35  tty48  tty60  ttyS15  ttyS28  urandom  vcsa      vcsu6        vsock
+disk/            kmsg        loop19  mapper/       port              sda5    tty10     tty23  tty36  tty49  tty61  ttyS16  ttyS29  usbmon0  vcsa1     vcsu63       watchdog
+dri/             kvm         loop2   mcelog        ppp               sda6    tty11     tty24  tty37  tty5   tty62  ttyS17  ttyS3   usbmon1  vcsa2     vfio/        watchdog0
+drm_dp_aux0      log@        loop3   media0        ptmx              sg0     tty12     tty25  tty38  tty50  tty63  ttyS18  ttyS30  usbmon2  vcsa3     vga_arbiter  zero
+(b) $ file /dev/*
+/dev/autofs:           character special (10/235)
+/dev/block:            directory
+/dev/bsg:              directory
+/dev/btrfs-control:    character special (10/234)
+/dev/bus:              directory
+/dev/char:             directory
+/dev/console:          character special (5/1)
+/dev/core:             symbolic link to /proc/kcore
+/dev/cpu:              directory
+/dev/cpu_dma_latency:  character special (10/61)
+/dev/cuse:             character special (10/203)
+/dev/disk:             directory
+/dev/dri:              directory
+/dev/drm_dp_aux0:      character special (242/0)
+/dev/fb0:              character special (29/0)
+/dev/fd:               symbolic link to /proc/self/fd
+/dev/full:             character special (1/7)
+/dev/fuse:             character special (10/229)
+/dev/gpiochip0:        character special (254/0)
+/dev/hidraw0:          character special (243/0)
+/dev/hpet:             character special (10/228)
+/dev/hugepages:        directory
+/dev/hwrng:            character special (10/183)
+/dev/initctl:          symbolic link to /run/initctl
+/dev/input:            directory
+/dev/kmsg:             character special (1/11)
+/dev/kvm:              character special (10/232)
+/dev/log:              symbolic link to /run/systemd/journal/dev-log
+/dev/loop0:            block special (7/0)
+/dev/loop1:            block special (7/1)
+/dev/loop10:           block special (7/10)
+/dev/loop11:           block special (7/11)
+/dev/loop12:           block special (7/12)
+/dev/loop13:           block special (7/13)
+/dev/loop14:           block special (7/14)
+/dev/loop15:           block special (7/15)
+/dev/loop16:           block special (7/16)
+/dev/loop17:           block special (7/17)
+/dev/loop18:           block special (7/18)
+/dev/loop19:           block special (7/19)
+/dev/loop2:            block special (7/2)
+/dev/loop3:            block special (7/3)
+/dev/loop4:            block special (7/4)
+/dev/loop5:            block special (7/5)
+/dev/loop6:            block special (7/6)
+/dev/loop7:            block special (7/7)
+/dev/loop8:            block special (7/8)
+/dev/loop9:            block special (7/9)
+/dev/loop-control:     character special (10/237)
+/dev/lp0:              character special (6/0)
+/dev/lp1:              character special (6/1)
+/dev/lp2:              character special (6/2)
+/dev/lp3:              character special (6/3)
+/dev/mapper:           directory
+/dev/mcelog:           character special (10/227)
+/dev/media0:           character special (238/0)
+/dev/mei0:             character special (240/0)
+/dev/mem:              character special (1/1)
+/dev/mqueue:           sticky, directory
+/dev/net:              directory
+/dev/null:             character special (1/3)
+/dev/nvidia0:          character special (195/0)
+/dev/nvidiactl:        character special (195/255)
+/dev/nvidia-modeset:   character special (195/254)
+/dev/nvidia-uvm:       character special (235/0)
+/dev/nvidia-uvm-tools: character special (235/1)
+/dev/nvram:            character special (10/144)
+/dev/port:             character special (1/4)
+/dev/ppp:              character special (108/0)
+/dev/ptmx:             character special (5/2)
+/dev/pts:              directory
+/dev/random:           character special (1/8)
+/dev/raw:              directory
+/dev/rfkill:           character special (10/242)
+/dev/rtc:              symbolic link to rtc0
+/dev/rtc0:             character special (251/0)
+/dev/sda:              block special (8/0)
+/dev/sda1:             block special (8/1)
+/dev/sda2:             block special (8/2)
+/dev/sda3:             block special (8/3)
+/dev/sda4:             block special (8/4)
+/dev/sda5:             block special (8/5)
+/dev/sda6:             block special (8/6)
+/dev/sg0:              character special (21/0)
+/dev/shm:              sticky, directory
+/dev/snapshot:         character special (10/231)
+/dev/snd:              directory
+/dev/stderr:           symbolic link to /proc/self/fd/2
+/dev/stdin:            symbolic link to /proc/self/fd/0
+/dev/stdout:           symbolic link to /proc/self/fd/1
+/dev/tpm0:             character special (10/224)
+/dev/tpmrm0:           character special (253/65536)
+/dev/tty:              character special (5/0)
+/dev/tty0:             character special (4/0)
+/dev/tty1:             character special (4/1)
+/dev/tty10:            character special (4/10)
+/dev/tty11:            character special (4/11)
+/dev/tty12:            character special (4/12)
+/dev/tty13:            character special (4/13)
+/dev/tty14:            character special (4/14)
+/dev/tty15:            character special (4/15)
+/dev/tty16:            character special (4/16)
+/dev/tty17:            character special (4/17)
+/dev/tty18:            character special (4/18)
+/dev/tty19:            character special (4/19)
+/dev/tty2:             character special (4/2)
+/dev/tty20:            character special (4/20)
+/dev/tty21:            character special (4/21)
+/dev/tty22:            character special (4/22)
+/dev/tty23:            character special (4/23)
+/dev/tty24:            character special (4/24)
+/dev/tty25:            character special (4/25)
+/dev/tty26:            character special (4/26)
+/dev/tty27:            character special (4/27)
+/dev/tty28:            character special (4/28)
+/dev/tty29:            character special (4/29)
+/dev/tty3:             character special (4/3)
+/dev/tty30:            character special (4/30)
+/dev/tty31:            character special (4/31)
+/dev/tty32:            character special (4/32)
+/dev/tty33:            character special (4/33)
+/dev/tty34:            character special (4/34)
+/dev/tty35:            character special (4/35)
+/dev/tty36:            character special (4/36)
+/dev/tty37:            character special (4/37)
+/dev/tty38:            character special (4/38)
+/dev/tty39:            character special (4/39)
+/dev/tty4:             character special (4/4)
+/dev/tty40:            character special (4/40)
+/dev/tty41:            character special (4/41)
+/dev/tty42:            character special (4/42)
+/dev/tty43:            character special (4/43)
+/dev/tty44:            character special (4/44)
+/dev/tty45:            character special (4/45)
+/dev/tty46:            character special (4/46)
+/dev/tty47:            character special (4/47)
+/dev/tty48:            character special (4/48)
+/dev/tty49:            character special (4/49)
+/dev/tty5:             character special (4/5)
+/dev/tty50:            character special (4/50)
+/dev/tty51:            character special (4/51)
+/dev/tty52:            character special (4/52)
+/dev/tty53:            character special (4/53)
+/dev/tty54:            character special (4/54)
+/dev/tty55:            character special (4/55)
+/dev/tty56:            character special (4/56)
+/dev/tty57:            character special (4/57)
+/dev/tty58:            character special (4/58)
+/dev/tty59:            character special (4/59)
+/dev/tty6:             character special (4/6)
+/dev/tty60:            character special (4/60)
+/dev/tty61:            character special (4/61)
+/dev/tty62:            character special (4/62)
+/dev/tty63:            character special (4/63)
+/dev/tty7:             character special (4/7)
+/dev/tty8:             character special (4/8)
+/dev/tty9:             character special (4/9)
+/dev/ttyS0:            character special (4/64)
+/dev/ttyS1:            character special (4/65)
+/dev/ttyS10:           character special (4/74)
+/dev/ttyS11:           character special (4/75)
+/dev/ttyS12:           character special (4/76)
+/dev/ttyS13:           character special (4/77)
+/dev/ttyS14:           character special (4/78)
+/dev/ttyS15:           character special (4/79)
+/dev/ttyS16:           character special (4/80)
+/dev/ttyS17:           character special (4/81)
+/dev/ttyS18:           character special (4/82)
+/dev/ttyS19:           character special (4/83)
+/dev/ttyS2:            character special (4/66)
+/dev/ttyS20:           character special (4/84)
+/dev/ttyS21:           character special (4/85)
+/dev/ttyS22:           character special (4/86)
+/dev/ttyS23:           character special (4/87)
+/dev/ttyS24:           character special (4/88)
+/dev/ttyS25:           character special (4/89)
+/dev/ttyS26:           character special (4/90)
+/dev/ttyS27:           character special (4/91)
+/dev/ttyS28:           character special (4/92)
+/dev/ttyS29:           character special (4/93)
+/dev/ttyS3:            character special (4/67)
+/dev/ttyS30:           character special (4/94)
+/dev/ttyS31:           character special (4/95)
+/dev/ttyS4:            character special (4/68)
+/dev/ttyS5:            character special (4/69)
+/dev/ttyS6:            character special (4/70)
+/dev/ttyS7:            character special (4/71)
+/dev/ttyS8:            character special (4/72)
+/dev/ttyS9:            character special (4/73)
+/dev/udmabuf:          character special (10/62)
+/dev/uhid:             character special (10/239)
+/dev/uinput:           character special (10/223)
+/dev/urandom:          character special (1/9)
+/dev/usbmon0:          character special (245/0)
+/dev/usbmon1:          character special (245/1)
+/dev/usbmon2:          character special (245/2)
+/dev/v4l:              directory
+/dev/vboxusb:          directory
+/dev/vcs:              character special (7/0)
+/dev/vcs1:             character special (7/1)
+/dev/vcs2:             character special (7/2)
+/dev/vcs3:             character special (7/3)
+/dev/vcs4:             character special (7/4)
+/dev/vcs5:             character special (7/5)
+/dev/vcs6:             character special (7/6)
+/dev/vcs63:            character special (7/63)
+/dev/vcsa:             character special (7/128)
+/dev/vcsa1:            character special (7/129)
+/dev/vcsa2:            character special (7/130)
+/dev/vcsa3:            character special (7/131)
+/dev/vcsa4:            character special (7/132)
+/dev/vcsa5:            character special (7/133)
+/dev/vcsa6:            character special (7/134)
+/dev/vcsa63:           character special (7/191)
+/dev/vcsu:             character special (7/64)
+/dev/vcsu1:            character special (7/65)
+/dev/vcsu2:            character special (7/66)
+/dev/vcsu3:            character special (7/67)
+/dev/vcsu4:            character special (7/68)
+/dev/vcsu5:            character special (7/69)
+/dev/vcsu6:            character special (7/70)
+/dev/vcsu63:           character special (7/127)
+/dev/vfio:             directory
+/dev/vga_arbiter:      character special (10/63)
+/dev/vhci:             character special (10/137)
+/dev/vhost-net:        character special (10/238)
+/dev/vhost-vsock:      character special (10/241)
+/dev/video0:           character special (81/0)
+/dev/video1:           character special (81/1)
+/dev/vmci:             character special (10/60)
+/dev/vmmon:            character special (10/165)
+/dev/vmnet0:           character special (119/0)
+/dev/vmnet1:           character special (119/1)
+/dev/vmnet8:           character special (119/8)
+/dev/vsock:            character special (10/59)
+/dev/watchdog:         character special (10/130)
+/dev/watchdog0:        character special (247/0)
+/dev/zero:             character special (1/5)
+(c) $ file /sbin/ifconfig
+/sbin/ifconfig: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=bb591c9566210b9cce6be6f1cc88156299bc8f4e, for GNU/Linux 3.2.0, stripped
+$ file /etc/hosts
+/etc/hosts: ASCII text
+(d) $ file /dev/sda1
+/dev/sda1: block special (8/1)
+$ file -s /dev/sda1
+/dev/sda1: no read permission
+У текущего пользователя нет прав на чтение файла /dev/sda1, поэтому file -s не может прочитать его. Этот файл является специальным.
+(e) $ file /proc/cpuinfo
+/proc/cpuinfo: empty
+С помощью cat можно увидеть содержимое файла, поэтому можно предположить, что он генерируется при чтении. 
+(f) $ stat /etc/init.d/*
+  File: /etc/init.d/functions
+  Size: 17935           Blocks: 40         IO Block: 4096   regular file
+Device: 806h/2054d      Inode: 7210680     Links: 1
+Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
+Context: system_u:object_r:bin_t:s0
+Access: 2020-09-13 00:12:43.463111821 +0300
+Modify: 2019-06-28 15:46:51.000000000 +0300
+Change: 2020-05-08 18:28:51.655683133 +0300
+ Birth: -
+  File: /etc/init.d/livesys
+  Size: 7409            Blocks: 16         IO Block: 4096   regular file
+Device: 806h/2054d      Inode: 7210860     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Context: system_u:object_r:initrc_exec_t:s0
+Access: 2020-09-13 00:12:45.513120929 +0300
+Modify: 2019-04-26 05:31:01.501737858 +0300
+Change: 2019-08-27 09:57:38.972038860 +0300
+ Birth: -
+  File: /etc/init.d/livesys-late
+  Size: 1054            Blocks: 8          IO Block: 4096   regular file
+Device: 806h/2054d      Inode: 7210861     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Context: system_u:object_r:initrc_exec_t:s0
+Access: 2020-09-13 00:12:43.309110366 +0300
+Modify: 2019-04-26 05:30:39.487634616 +0300
+Change: 2019-08-27 09:57:38.972038860 +0300
+ Birth: -
+  File: /etc/init.d/README
+  Size: 1161            Blocks: 8          IO Block: 4096   regular file
+Device: 806h/2054d      Inode: 7210858     Links: 1
+Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
+Context: system_u:object_r:initrc_exec_t:s0
+Access: 2020-07-27 11:49:55.000000000 +0300
+Modify: 2020-07-27 11:49:55.000000000 +0300
+Change: 2020-08-21 16:46:26.913140640 +0300
+ Birth: -
+  File: /etc/init.d/vmware
+  Size: 12843           Blocks: 32         IO Block: 4096   regular file
+Device: 806h/2054d      Inode: 7215028     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Context: unconfined_u:object_r:etc_t:s0
+Access: 2020-09-13 10:43:54.101388706 +0300
+Modify: 2020-09-13 10:43:54.097388380 +0300
+Change: 2020-09-13 10:43:54.097388380 +0300
+ Birth: -
+  File: /etc/init.d/vmware-USBArbitrator
+  Size: 2872            Blocks: 8          IO Block: 4096   regular file
+Device: 806h/2054d      Inode: 7214992     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Context: unconfined_u:object_r:etc_t:s0
+Access: 2020-09-13 10:43:43.608534449 +0300
+Modify: 2020-09-13 10:43:43.604534124 +0300
+Change: 2020-09-13 10:43:43.604534124 +0300
+ Birth: -
+
+В README написано, что эта система использует service-файлы systemd вместо скриптов в init.d. В init.d находятся скрипты (файлы с текстом), принадлежащие root.
+
+3. (a) $ mkdir -p /var/tmp/test/mytest && cd /var/tmp/test/mytest 
+(b) $ touch file1 file2 file3 && file file*
+file1: empty
+file2: empty
+file3: empty
+(c) $ cp /etc/hosts . && ls -lrt .
+total 4
+-rw-rw-r--. 1 receed receed   0 Sep 16 00:05 file2
+-rw-rw-r--. 1 receed receed   0 Sep 16 00:05 file1
+-rw-rw-r--. 1 receed receed   0 Sep 16 00:05 file3
+-rw-r--r--. 1 receed receed 158 Sep 16 00:07 hosts
+(d) $ mv file1 hosts && ls
+file2  file3  hosts
+(e) $ rm file2 file3 && ls
+hosts
+(f) $ cp -r . ~/tmp 
+(g) $ rm /var/tmp/test/mytest/* 
+(h) $ rm -rf /var/tmp/test 
+(i) $ cd ~/tmp
+(j) $ echo 0123456789 > digits.txt && cat digits.txt
+0123456789
+(k) $ cat digits.txt digits.txt > digits2.txt 
+(l) $ for (( i=0; i<65; i++ )); do cat digits.txt >> digits65.txt; done 
+(m) $ wc -l digits65.txt
+65 digits65.txt
+(n) $ head -n 5 /etc/passwd > first && tail -n 5 /etc/passwd > last 
+(o) $ ls -l /etc > files 
+(p) $ ls /etc | wc -l                                                                                                                                                2|0 ✔
+331
+
+
 
