@@ -1,0 +1,15 @@
+(a) $ id
+uid=1000(receed) gid=1000(receed) groups=1000(receed),10(wheel),975(wireshark),999(input) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+(b) $ date
+Tue 15 Sep 2020 10:46:01 PM MSK
+(c) $ pwd
+/home/receed/sp/basic_programming_2020/reports
+(d) $ ls
+RED.md  ЕФРЕМОВ.txt
+$ ls -l
+total 8
+-rw-rw-r--. 1 receed receed  18 Sep 15 22:48 RED.md
+-rw-rw-r--. 1 receed receed 305 Sep 15 22:53 ЕФРЕМОВ.txt
+$ ls -a
+.  ..  RED.md  ЕФРЕМОВ.txt
+
