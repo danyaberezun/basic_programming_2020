@@ -810,3 +810,44 @@ Change: 2020-09-14 20:32:41.134590950 +0000
  Birth: -
 
 
+test 3
+a) retired@retired:~/hw/reports$ mkdir /var/tmp/test
+retired@retired:~/hw/reports$ mkdir /var/tmp/test/mytest
+retired@retired:~/hw/reports$ cd /var/tmp/test/mytest
+b) retired@retired:/var/tmp/test/mytest$ touch a b c
+retired@retired:/var/tmp/test/mytest$ file *
+a: empty
+b: empty
+c: empty
+c) retired@retired:/var/tmp/test/mytest$ cp /etc/hosts /var/tmp/test/mytest
+retired@retired:/var/tmp/test/mytest$ ls -lt
+total 4
+-rw-r--r-- 1 retired retired 222 Sep 16 17:54 hosts
+-rw-rw-r-- 1 retired retired   0 Sep 16 17:52 a
+-rw-rw-r-- 1 retired retired   0 Sep 16 17:52 b
+-rw-rw-r-- 1 retired retired   0 Sep 16 17:52 c
+d) retired@retired:/var/tmp/test/mytest$ mv a hosts
+retired@retired:/var/tmp/test/mytest$ ls
+b  c  hosts
+e) retired@retired:/var/tmp/test/mytest$ rm b c
+retired@retired:/var/tmp/test/mytest$ ls
+hosts
+retired@retired:/var/tmp/test/mytest$ mkdir ~/tmp
+f) retired@retired:/var/tmp/test/mytest$ mv hosts ~/tmp
+gh) retired@retired:/var/tmp/test/mytest$ rm -rf /var/tmp/test
+i) retired@retired:/var/tmp/test/mytest$ cd ~/tmp
+j) retired@retired:~/tmp$ echo "0123456789" > digits.txt
+retired@retired:~/tmp$ cat digits.txt
+0123456789
+k) retired@retired:~/tmp$ cat digits.txt > digits2.txt; cat digits.txt >> digits2.txt
+retired@retired:~/tmp$ cat digits2.txt
+0123456789
+0123456789
+l) retired@retired:~/tmp$ for i in {1..65}; do cat digits.txt >> digits65.txt; done
+m) retired@retired:~/tmp$ wc digits65.txt
+ 65  65 715 digits65.txt
+n) retired@retired:~/tmp$ head -n 5 /etc/passwd > h.txt
+retired@retired:~/tmp$ tail -n 5 /etc/passwd > t.txt
+o) retired@retired:~/tmp$ ls -l /etc/ > file.txt
+p) retired@retired:~/tmp$ wc file.txt
+  228  2057 14166 file.txt
