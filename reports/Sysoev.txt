@@ -21,3 +21,792 @@ d3) retired@retired:~$ ls -a
 .bashrc        .local                       .step
 
 
+2 task
+a) ls -l /dev
+total 0
+crw-r--r-- 1 root root     10, 235 Sep 14 20:20 autofs
+drwxr-xr-x 2 root root         400 Sep 15 00:36 block
+drwxr-xr-x 2 root root          60 Sep 14 20:20 bsg
+crw-rw---- 1 root disk     10, 234 Sep 14 20:20 btrfs-control
+drwxr-xr-x 3 root root          60 Sep 14 20:20 bus
+drwxr-xr-x 2 root root        3900 Sep 14 23:05 char
+crw------- 1 root root      5,   1 Sep 14 20:21 console
+lrwxrwxrwx 1 root root          11 Sep 14 20:20 core -> /proc/kcore
+drwxr-xr-x 2 root root          60 Sep 14 23:05 cpu
+crw------- 1 root root     10,  59 Sep 14 20:20 cpu_dma_latency
+crw------- 1 root root     10, 203 Sep 14 20:20 cuse
+drwxr-xr-x 7 root root         140 Sep 14 20:20 disk
+brw-rw---- 1 root disk    253,   0 Sep 14 23:21 dm-0
+drwxr-xr-x 3 root root         100 Sep 14 20:20 dri
+crw------- 1 root root    242,   0 Sep 14 20:20 drm_dp_aux0
+crw------- 1 root root     10,  62 Sep 14 20:20 ecryptfs
+crw-rw---- 1 root video    29,   0 Sep 14 20:20 fb0
+lrwxrwxrwx 1 root root          13 Sep 14 20:20 fd -> /proc/self/fd
+crw-rw-rw- 1 root root      1,   7 Sep 14 20:20 full
+crw-rw-rw- 1 root root     10, 229 Sep 14 20:20 fuse
+crw------- 1 root root     10, 228 Sep 14 20:20 hpet
+drwxr-xr-x 2 root root           0 Sep 14 20:20 hugepages
+crw------- 1 root root     10, 183 Sep 14 20:20 hwrng
+crw------- 1 root root     89,   0 Sep 14 20:20 i2c-0
+crw------- 1 root root     89,   1 Sep 14 20:20 i2c-1
+crw------- 1 root root     89,  10 Sep 14 20:20 i2c-10
+crw------- 1 root root     89,  11 Sep 14 20:20 i2c-11
+crw------- 1 root root     89,   2 Sep 14 20:20 i2c-2
+crw------- 1 root root     89,   3 Sep 14 20:20 i2c-3
+crw------- 1 root root     89,   4 Sep 14 20:20 i2c-4
+crw------- 1 root root     89,   5 Sep 14 20:20 i2c-5
+crw------- 1 root root     89,   6 Sep 14 20:20 i2c-6
+crw------- 1 root root     89,   7 Sep 14 20:20 i2c-7
+crw------- 1 root root     89,   8 Sep 14 20:20 i2c-8
+crw------- 1 root root     89,   9 Sep 14 20:20 i2c-9
+lrwxrwxrwx 1 root root          12 Sep 14 20:20 initctl -> /run/initctl
+drwxr-xr-x 3 root root         260 Sep 14 21:28 input
+crw-r--r-- 1 root root      1,  11 Sep 14 20:20 kmsg
+crw-rw---- 1 root kvm      10, 232 Sep 14 20:20 kvm
+drwxr-xr-x 2 root root          60 Sep 14 20:20 lightnvm
+lrwxrwxrwx 1 root root          28 Sep 14 20:20 log -> /run/systemd/journal/dev-log
+brw-rw---- 1 root disk      7,   0 Sep 14 20:20 loop0
+brw-rw---- 1 root disk      7,   1 Sep 14 20:20 loop1
+brw-rw---- 1 root disk      7,  10 Sep 14 20:49 loop10
+brw-rw---- 1 root disk      7,  11 Sep 15 00:36 loop11
+brw-rw---- 1 root disk      7,  12 Sep 15 20:08 loop12
+brw-rw---- 1 root disk      7,   2 Sep 14 20:20 loop2
+brw-rw---- 1 root disk      7,   3 Sep 14 20:20 loop3
+brw-rw---- 1 root disk      7,   4 Sep 14 20:20 loop4
+brw-rw---- 1 root disk      7,   5 Sep 14 20:20 loop5
+brw-rw---- 1 root disk      7,   6 Sep 15 16:29 loop6
+brw-rw---- 1 root disk      7,   7 Sep 14 20:20 loop7
+brw-rw---- 1 root disk      7,   8 Sep 14 20:36 loop8
+brw-rw---- 1 root disk      7,   9 Sep 14 20:48 loop9
+crw-rw---- 1 root disk     10, 237 Sep 14 20:20 loop-control
+drwxr-xr-x 2 root root          80 Sep 14 20:20 mapper
+crw------- 1 root root     10, 227 Sep 14 20:20 mcelog
+crw-r----- 1 root kmem      1,   1 Sep 14 20:20 mem
+drwxrwxrwt 2 root root          40 Sep 14 20:20 mqueue
+drwxr-xr-x 2 root root          60 Sep 14 20:20 net
+crw-rw-rw- 1 root root      1,   3 Sep 14 20:20 null
+crw------- 1 root root     10, 144 Sep 14 20:20 nvram
+crw-r----- 1 root kmem      1,   4 Sep 14 20:20 port
+crw------- 1 root root    108,   0 Sep 14 20:20 ppp
+crw------- 1 root root     10,   1 Sep 14 20:20 psaux
+crw-rw-rw- 1 root tty       5,   2 Sep 16 17:33 ptmx
+drwxr-xr-x 2 root root           0 Sep 14 20:20 pts
+crw-rw-rw- 1 root root      1,   8 Sep 14 20:20 random
+crw-rw-r-- 1 root root     10, 242 Sep 14 20:20 rfkill
+lrwxrwxrwx 1 root root           4 Sep 14 20:20 rtc -> rtc0
+crw------- 1 root root    249,   0 Sep 14 20:20 rtc0
+brw-rw---- 1 root disk      8,   0 Sep 14 20:20 sda
+brw-rw---- 1 root disk      8,   1 Sep 14 20:20 sda1
+brw-rw---- 1 root disk      8,   2 Sep 14 20:20 sda2
+brw-rw---- 1 root disk      8,   3 Sep 14 23:20 sda3
+crw-rw---- 1 root disk     21,   0 Sep 14 20:20 sg0
+drwxrwxrwt 3 root root          60 Sep 14 20:20 shm
+crw------- 1 root root     10, 231 Sep 14 20:20 snapshot
+drwxr-xr-x 3 root root         220 Sep 14 20:20 snd
+lrwxrwxrwx 1 root root          15 Sep 14 20:20 stderr -> /proc/self/fd/2
+lrwxrwxrwx 1 root root          15 Sep 14 20:20 stdin -> /proc/self/fd/0
+lrwxrwxrwx 1 root root          15 Sep 14 20:20 stdout -> /proc/self/fd/1
+crw-rw-rw- 1 root tty       5,   0 Sep 16 17:31 tty
+crw--w---- 1 root tty       4,   0 Sep 14 20:20 tty0
+crw--w---- 1 root tty       4,   1 Sep 14 20:21 tty1
+crw--w---- 1 root tty       4,  10 Sep 14 20:20 tty10
+crw--w---- 1 root tty       4,  11 Sep 14 20:20 tty11
+crw--w---- 1 root tty       4,  12 Sep 14 20:20 tty12
+crw--w---- 1 root tty       4,  13 Sep 14 20:20 tty13
+crw--w---- 1 root tty       4,  14 Sep 14 20:20 tty14
+crw--w---- 1 root tty       4,  15 Sep 14 20:20 tty15
+crw--w---- 1 root tty       4,  16 Sep 14 20:20 tty16
+crw--w---- 1 root tty       4,  17 Sep 14 20:20 tty17
+crw--w---- 1 root tty       4,  18 Sep 14 20:20 tty18
+crw--w---- 1 root tty       4,  19 Sep 14 20:20 tty19
+crw--w---- 1 root tty       4,   2 Sep 14 20:20 tty2
+crw--w---- 1 root tty       4,  20 Sep 14 20:20 tty20
+crw--w---- 1 root tty       4,  21 Sep 14 20:20 tty21
+crw--w---- 1 root tty       4,  22 Sep 14 20:20 tty22
+crw--w---- 1 root tty       4,  23 Sep 14 20:20 tty23
+crw--w---- 1 root tty       4,  24 Sep 14 20:20 tty24
+crw--w---- 1 root tty       4,  25 Sep 14 20:20 tty25
+crw--w---- 1 root tty       4,  26 Sep 14 20:20 tty26
+crw--w---- 1 root tty       4,  27 Sep 14 20:20 tty27
+crw--w---- 1 root tty       4,  28 Sep 14 20:20 tty28
+crw--w---- 1 root tty       4,  29 Sep 14 20:20 tty29
+crw--w---- 1 root tty       4,   3 Sep 14 20:20 tty3
+crw--w---- 1 root tty       4,  30 Sep 14 20:20 tty30
+crw--w---- 1 root tty       4,  31 Sep 14 20:20 tty31
+crw--w---- 1 root tty       4,  32 Sep 14 20:20 tty32
+crw--w---- 1 root tty       4,  33 Sep 14 20:20 tty33
+crw--w---- 1 root tty       4,  34 Sep 14 20:20 tty34
+crw--w---- 1 root tty       4,  35 Sep 14 20:20 tty35
+crw--w---- 1 root tty       4,  36 Sep 14 20:20 tty36
+crw--w---- 1 root tty       4,  37 Sep 14 20:20 tty37
+crw--w---- 1 root tty       4,  38 Sep 14 20:20 tty38
+crw--w---- 1 root tty       4,  39 Sep 14 20:20 tty39
+crw--w---- 1 root tty       4,   4 Sep 14 20:20 tty4
+crw--w---- 1 root tty       4,  40 Sep 14 20:20 tty40
+crw--w---- 1 root tty       4,  41 Sep 14 20:20 tty41
+crw--w---- 1 root tty       4,  42 Sep 14 20:20 tty42
+crw--w---- 1 root tty       4,  43 Sep 14 20:20 tty43
+crw--w---- 1 root tty       4,  44 Sep 14 20:20 tty44
+crw--w---- 1 root tty       4,  45 Sep 14 20:20 tty45
+crw--w---- 1 root tty       4,  46 Sep 14 20:20 tty46
+crw--w---- 1 root tty       4,  47 Sep 14 20:20 tty47
+crw--w---- 1 root tty       4,  48 Sep 14 20:20 tty48
+crw--w---- 1 root tty       4,  49 Sep 14 20:20 tty49
+crw--w---- 1 root tty       4,   5 Sep 14 20:20 tty5
+crw--w---- 1 root tty       4,  50 Sep 14 20:20 tty50
+crw--w---- 1 root tty       4,  51 Sep 14 20:20 tty51
+crw--w---- 1 root tty       4,  52 Sep 14 20:20 tty52
+crw--w---- 1 root tty       4,  53 Sep 14 20:20 tty53
+crw--w---- 1 root tty       4,  54 Sep 14 20:20 tty54
+crw--w---- 1 root tty       4,  55 Sep 14 20:20 tty55
+crw--w---- 1 root tty       4,  56 Sep 14 20:20 tty56
+crw--w---- 1 root tty       4,  57 Sep 14 20:20 tty57
+crw--w---- 1 root tty       4,  58 Sep 14 20:20 tty58
+crw--w---- 1 root tty       4,  59 Sep 14 20:20 tty59
+crw--w---- 1 root tty       4,   6 Sep 14 20:20 tty6
+crw--w---- 1 root tty       4,  60 Sep 14 20:20 tty60
+crw--w---- 1 root tty       4,  61 Sep 14 20:20 tty61
+crw--w---- 1 root tty       4,  62 Sep 14 20:20 tty62
+crw--w---- 1 root tty       4,  63 Sep 14 20:20 tty63
+crw--w---- 1 root tty       4,   7 Sep 14 20:20 tty7
+crw--w---- 1 root tty       4,   8 Sep 14 20:20 tty8
+crw--w---- 1 root tty       4,   9 Sep 14 20:20 tty9
+crw------- 1 root root      5,   3 Sep 14 20:20 ttyprintk
+crw-rw---- 1 root dialout   4,  64 Sep 14 20:20 ttyS0
+crw-rw---- 1 root dialout   4,  65 Sep 14 20:20 ttyS1
+crw-rw---- 1 root dialout   4,  74 Sep 14 20:20 ttyS10
+crw-rw---- 1 root dialout   4,  75 Sep 14 20:20 ttyS11
+crw-rw---- 1 root dialout   4,  76 Sep 14 20:20 ttyS12
+crw-rw---- 1 root dialout   4,  77 Sep 14 20:20 ttyS13
+crw-rw---- 1 root dialout   4,  78 Sep 14 20:20 ttyS14
+crw-rw---- 1 root dialout   4,  79 Sep 14 20:20 ttyS15
+crw-rw---- 1 root dialout   4,  80 Sep 14 20:20 ttyS16
+crw-rw---- 1 root dialout   4,  81 Sep 14 20:20 ttyS17
+crw-rw---- 1 root dialout   4,  82 Sep 14 20:20 ttyS18
+crw-rw---- 1 root dialout   4,  83 Sep 14 20:20 ttyS19
+crw-rw---- 1 root dialout   4,  66 Sep 14 20:20 ttyS2
+crw-rw---- 1 root dialout   4,  84 Sep 14 20:20 ttyS20
+crw-rw---- 1 root dialout   4,  85 Sep 14 20:20 ttyS21
+crw-rw---- 1 root dialout   4,  86 Sep 14 20:20 ttyS22
+crw-rw---- 1 root dialout   4,  87 Sep 14 20:20 ttyS23
+crw-rw---- 1 root dialout   4,  88 Sep 14 20:20 ttyS24
+crw-rw---- 1 root dialout   4,  89 Sep 14 20:20 ttyS25
+crw-rw---- 1 root dialout   4,  90 Sep 14 20:20 ttyS26
+crw-rw---- 1 root dialout   4,  91 Sep 14 20:20 ttyS27
+crw-rw---- 1 root dialout   4,  92 Sep 14 20:20 ttyS28
+crw-rw---- 1 root dialout   4,  93 Sep 14 20:20 ttyS29
+crw-rw---- 1 root dialout   4,  67 Sep 14 20:20 ttyS3
+crw-rw---- 1 root dialout   4,  94 Sep 14 20:20 ttyS30
+crw-rw---- 1 root dialout   4,  95 Sep 14 20:20 ttyS31
+crw-rw---- 1 root dialout   4,  68 Sep 14 20:20 ttyS4
+crw-rw---- 1 root dialout   4,  69 Sep 14 20:20 ttyS5
+crw-rw---- 1 root dialout   4,  70 Sep 14 20:20 ttyS6
+crw-rw---- 1 root dialout   4,  71 Sep 14 20:20 ttyS7
+crw-rw---- 1 root dialout   4,  72 Sep 14 20:20 ttyS8
+crw-rw---- 1 root dialout   4,  73 Sep 14 20:20 ttyS9
+drwxr-xr-x 2 root root          60 Sep 14 20:20 ubuntu-vg
+crw-rw---- 1 root kvm      10,  60 Sep 14 20:20 udmabuf
+crw------- 1 root root     10, 239 Sep 14 20:20 uhid
+crw------- 1 root root     10, 223 Sep 14 20:20 uinput
+crw-rw-rw- 1 root root      1,   9 Sep 14 20:20 urandom
+crw------- 1 root root     10, 240 Sep 14 20:20 userio
+crw-rw---- 1 root tty       7,   0 Sep 14 20:20 vcs
+crw-rw---- 1 root tty       7,   1 Sep 14 20:20 vcs1
+crw-rw---- 1 root tty       7,   2 Sep 14 20:20 vcs2
+crw-rw---- 1 root tty       7,   3 Sep 14 20:20 vcs3
+crw-rw---- 1 root tty       7,   4 Sep 14 20:20 vcs4
+crw-rw---- 1 root tty       7,   5 Sep 14 20:20 vcs5
+crw-rw---- 1 root tty       7,   6 Sep 14 20:20 vcs6
+crw-rw---- 1 root tty       7, 128 Sep 14 20:20 vcsa
+crw-rw---- 1 root tty       7, 129 Sep 14 20:20 vcsa1
+crw-rw---- 1 root tty       7, 130 Sep 14 20:20 vcsa2
+crw-rw---- 1 root tty       7, 131 Sep 14 20:20 vcsa3
+crw-rw---- 1 root tty       7, 132 Sep 14 20:20 vcsa4
+crw-rw---- 1 root tty       7, 133 Sep 14 20:20 vcsa5
+crw-rw---- 1 root tty       7, 134 Sep 14 20:20 vcsa6
+crw-rw---- 1 root tty       7,  64 Sep 14 20:20 vcsu
+crw-rw---- 1 root tty       7,  65 Sep 14 20:20 vcsu1
+crw-rw---- 1 root tty       7,  66 Sep 14 20:20 vcsu2
+crw-rw---- 1 root tty       7,  67 Sep 14 20:20 vcsu3
+crw-rw---- 1 root tty       7,  68 Sep 14 20:20 vcsu4
+crw-rw---- 1 root tty       7,  69 Sep 14 20:20 vcsu5
+crw-rw---- 1 root tty       7,  70 Sep 14 20:20 vcsu6
+drwxr-xr-x 2 root root          60 Sep 14 20:20 vfio
+crw------- 1 root root     10,  63 Sep 14 20:20 vga_arbiter
+crw------- 1 root root     10, 137 Sep 14 20:20 vhci
+crw------- 1 root root     10, 238 Sep 14 20:20 vhost-net
+crw------- 1 root root     10, 241 Sep 14 20:20 vhost-vsock
+crw-rw-rw- 1 root root      1,   5 Sep 14 20:20 zero
+crw------- 1 root root     10, 249 Sep 14 20:20 zfs
+b) retired@retired:~/hw$ file /dev/*
+/dev/autofs:          character special (10/235)
+/dev/block:           directory
+/dev/bsg:             directory
+/dev/btrfs-control:   character special (10/234)
+/dev/bus:             directory
+/dev/char:            directory
+/dev/console:         character special (5/1)
+/dev/core:            symbolic link to /proc/kcore
+/dev/cpu:             directory
+/dev/cpu_dma_latency: character special (10/59)
+/dev/cuse:            character special (10/203)
+/dev/disk:            directory
+/dev/dm-0:            block special (253/0)
+/dev/dri:             directory
+/dev/drm_dp_aux0:     character special (242/0)
+/dev/ecryptfs:        character special (10/62)
+/dev/fb0:             character special (29/0)
+/dev/fd:              symbolic link to /proc/self/fd
+/dev/full:            character special (1/7)
+/dev/fuse:            character special (10/229)
+/dev/hpet:            character special (10/228)
+/dev/hugepages:       directory
+/dev/hwrng:           character special (10/183)
+/dev/i2c-0:           character special (89/0)
+/dev/i2c-1:           character special (89/1)
+/dev/i2c-10:          character special (89/10)
+/dev/i2c-11:          character special (89/11)
+/dev/i2c-2:           character special (89/2)
+/dev/i2c-3:           character special (89/3)
+/dev/i2c-4:           character special (89/4)
+/dev/i2c-5:           character special (89/5)
+/dev/i2c-6:           character special (89/6)
+/dev/i2c-7:           character special (89/7)
+/dev/i2c-8:           character special (89/8)
+/dev/i2c-9:           character special (89/9)
+/dev/initctl:         symbolic link to /run/initctl
+/dev/input:           directory
+/dev/kmsg:            character special (1/11)
+/dev/kvm:             character special (10/232)
+/dev/lightnvm:        directory
+/dev/log:             symbolic link to /run/systemd/journal/dev-log
+/dev/loop0:           block special (7/0)
+/dev/loop1:           block special (7/1)
+/dev/loop10:          block special (7/10)
+/dev/loop11:          block special (7/11)
+/dev/loop12:          block special (7/12)
+/dev/loop2:           block special (7/2)
+/dev/loop3:           block special (7/3)
+/dev/loop4:           block special (7/4)
+/dev/loop5:           block special (7/5)
+/dev/loop6:           block special (7/6)
+/dev/loop7:           block special (7/7)
+/dev/loop8:           block special (7/8)
+/dev/loop9:           block special (7/9)
+/dev/loop-control:    character special (10/237)
+/dev/mapper:          directory
+/dev/mcelog:          character special (10/227)
+/dev/mem:             character special (1/1)
+/dev/mqueue:          sticky, directory
+/dev/net:             directory
+/dev/null:            character special (1/3)
+/dev/nvram:           character special (10/144)
+/dev/port:            character special (1/4)
+/dev/ppp:             character special (108/0)
+/dev/psaux:           character special (10/1)
+/dev/ptmx:            character special (5/2)
+/dev/pts:             directory
+/dev/random:          character special (1/8)
+/dev/rfkill:          character special (10/242)
+/dev/rtc:             symbolic link to rtc0
+/dev/rtc0:            character special (249/0)
+/dev/sda:             block special (8/0)
+/dev/sda1:            block special (8/1)
+/dev/sda2:            block special (8/2)
+/dev/sda3:            block special (8/3)
+/dev/sg0:             character special (21/0)
+/dev/shm:             sticky, directory
+/dev/snapshot:        character special (10/231)
+/dev/snd:             directory
+/dev/stderr:          symbolic link to /proc/self/fd/2
+/dev/stdin:           symbolic link to /proc/self/fd/0
+/dev/stdout:          symbolic link to /proc/self/fd/1
+/dev/tty:             character special (5/0)
+/dev/tty0:            character special (4/0)
+/dev/tty1:            character special (4/1)
+/dev/tty10:           character special (4/10)
+/dev/tty11:           character special (4/11)
+/dev/tty12:           character special (4/12)
+/dev/tty13:           character special (4/13)
+/dev/tty14:           character special (4/14)
+/dev/tty15:           character special (4/15)
+/dev/tty16:           character special (4/16)
+/dev/tty17:           character special (4/17)
+/dev/tty18:           character special (4/18)
+/dev/tty19:           character special (4/19)
+/dev/tty2:            character special (4/2)
+/dev/tty20:           character special (4/20)
+/dev/tty21:           character special (4/21)
+/dev/tty22:           character special (4/22)
+/dev/tty23:           character special (4/23)
+/dev/tty24:           character special (4/24)
+/dev/tty25:           character special (4/25)
+/dev/tty26:           character special (4/26)
+/dev/tty27:           character special (4/27)
+/dev/tty28:           character special (4/28)
+/dev/tty29:           character special (4/29)
+/dev/tty3:            character special (4/3)
+/dev/tty30:           character special (4/30)
+/dev/tty31:           character special (4/31)
+/dev/tty32:           character special (4/32)
+/dev/tty33:           character special (4/33)
+/dev/tty34:           character special (4/34)
+/dev/tty35:           character special (4/35)
+/dev/tty36:           character special (4/36)
+/dev/tty37:           character special (4/37)
+/dev/tty38:           character special (4/38)
+/dev/tty39:           character special (4/39)
+/dev/tty4:            character special (4/4)
+/dev/tty40:           character special (4/40)
+/dev/tty41:           character special (4/41)
+/dev/tty42:           character special (4/42)
+/dev/tty43:           character special (4/43)
+/dev/tty44:           character special (4/44)
+/dev/tty45:           character special (4/45)
+/dev/tty46:           character special (4/46)
+/dev/tty47:           character special (4/47)
+/dev/tty48:           character special (4/48)
+/dev/tty49:           character special (4/49)
+/dev/tty5:            character special (4/5)
+/dev/tty50:           character special (4/50)
+/dev/tty51:           character special (4/51)
+/dev/tty52:           character special (4/52)
+/dev/tty53:           character special (4/53)
+/dev/tty54:           character special (4/54)
+/dev/tty55:           character special (4/55)
+/dev/tty56:           character special (4/56)
+/dev/tty57:           character special (4/57)
+/dev/tty58:           character special (4/58)
+/dev/tty59:           character special (4/59)
+/dev/tty6:            character special (4/6)
+/dev/tty60:           character special (4/60)
+/dev/tty61:           character special (4/61)
+/dev/tty62:           character special (4/62)
+/dev/tty63:           character special (4/63)
+/dev/tty7:            character special (4/7)
+/dev/tty8:            character special (4/8)
+/dev/tty9:            character special (4/9)
+/dev/ttyprintk:       character special (5/3)
+/dev/ttyS0:           character special (4/64)
+/dev/ttyS1:           character special (4/65)
+/dev/ttyS10:          character special (4/74)
+/dev/ttyS11:          character special (4/75)
+/dev/ttyS12:          character special (4/76)
+/dev/ttyS13:          character special (4/77)
+/dev/ttyS14:          character special (4/78)
+/dev/ttyS15:          character special (4/79)
+/dev/ttyS16:          character special (4/80)
+/dev/ttyS17:          character special (4/81)
+/dev/ttyS18:          character special (4/82)
+/dev/ttyS19:          character special (4/83)
+/dev/ttyS2:           character special (4/66)
+/dev/ttyS20:          character special (4/84)
+/dev/ttyS21:          character special (4/85)
+/dev/ttyS22:          character special (4/86)
+/dev/ttyS23:          character special (4/87)
+/dev/ttyS24:          character special (4/88)
+/dev/ttyS25:          character special (4/89)
+/dev/ttyS26:          character special (4/90)
+/dev/ttyS27:          character special (4/91)
+/dev/ttyS28:          character special (4/92)
+/dev/ttyS29:          character special (4/93)
+/dev/ttyS3:           character special (4/67)
+/dev/ttyS30:          character special (4/94)
+/dev/ttyS31:          character special (4/95)
+/dev/ttyS4:           character special (4/68)
+/dev/ttyS5:           character special (4/69)
+/dev/ttyS6:           character special (4/70)
+/dev/ttyS7:           character special (4/71)
+/dev/ttyS8:           character special (4/72)
+/dev/ttyS9:           character special (4/73)
+/dev/ubuntu-vg:       directory
+/dev/udmabuf:         character special (10/60)
+/dev/uhid:            character special (10/239)
+/dev/uinput:          character special (10/223)
+/dev/urandom:         character special (1/9)
+/dev/userio:          character special (10/240)
+/dev/vcs:             character special (7/0)
+/dev/vcs1:            character special (7/1)
+/dev/vcs2:            character special (7/2)
+/dev/vcs3:            character special (7/3)
+/dev/vcs4:            character special (7/4)
+/dev/vcs5:            character special (7/5)
+/dev/vcs6:            character special (7/6)
+/dev/vcsa:            character special (7/128)
+/dev/vcsa1:           character special (7/129)
+/dev/vcsa2:           character special (7/130)
+/dev/vcsa3:           character special (7/131)
+/dev/vcsa4:           character special (7/132)
+/dev/vcsa5:           character special (7/133)
+/dev/vcsa6:           character special (7/134)
+/dev/vcsu:            character special (7/64)
+/dev/vcsu1:           character special (7/65)
+/dev/vcsu2:           character special (7/66)
+/dev/vcsu3:           character special (7/67)
+/dev/vcsu4:           character special (7/68)
+/dev/vcsu5:           character special (7/69)
+/dev/vcsu6:           character special (7/70)
+/dev/vfio:            directory
+/dev/vga_arbiter:     character special (10/63)
+/dev/vhci:            character special (10/137)
+/dev/vhost-net:       character special (10/238)
+/dev/vhost-vsock:     character special (10/241)
+/dev/zero:            character special (1/5)
+/dev/zfs:             character special (10/249)
+c1) retired@retired:~/hw$ file /sbin/ifconfig 64bit executable
+/sbin/ifconfig: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=9c1dd40fd6f372bd6df8c6ce4be6305b09c75fc3, stripped
+c2) retired@retired:~/hw$ file /etc/hosts
+/etc/hosts: ASCII text   // text file w/ hosts
+d1) retired@retired:~/hw$ file /dev/sda1
+/dev/sda1: block special (8/1) it is a block device. It reads and writes in blocks. Character devices, on the other hand can write and read byte by byte
+d2) retired@retired:~/hw$ file -s /dev/sda1
+/dev/sda1: no read permission
+e) retired@retired:~/hw$ file /proc/cpuinfo
+/proc/cpuinfo: empty  short plain text file with information about cpu
+f) retired@retired:~/hw$ stat /etc/init.d/*
+  File: /etc/init.d/apparmor
+  Size: 3740            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933315     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.854218186 +0000
+Modify: 2020-04-01 08:05:30.000000000 +0000
+Change: 2020-09-14 13:44:29.854218186 +0000
+ Birth: -
+  File: /etc/init.d/apport
+  Size: 2964            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933316     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-15 16:29:36.229704202 +0000
+Modify: 2019-12-06 22:22:30.000000000 +0000
+Change: 2020-09-14 13:44:29.854218186 +0000
+ Birth: -
+  File: /etc/init.d/atd
+  Size: 1071            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933317     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.854218186 +0000
+Modify: 2018-07-24 12:41:23.000000000 +0000
+Change: 2020-09-14 13:44:29.854218186 +0000
+ Birth: -
+  File: /etc/init.d/avahi-daemon
+  Size: 2401            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3936591     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 20:34:12.686101039 +0000
+Modify: 2018-08-21 06:56:18.000000000 +0000
+Change: 2020-09-14 20:34:09.854116191 +0000
+ Birth: -
+  File: /etc/init.d/bluetooth
+  Size: 2968            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3936594     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 20:32:53.326525715 +0000
+Modify: 2020-02-26 09:57:50.000000000 +0000
+Change: 2020-09-14 20:32:51.810533827 +0000
+ Birth: -
+  File: /etc/init.d/collectd
+  Size: 4403            Blocks: 16         IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3936600     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 20:32:32.730635925 +0000
+Modify: 2018-01-14 11:47:15.000000000 +0000
+Change: 2020-09-14 20:32:31.770641062 +0000
+ Birth: -
+  File: /etc/init.d/console-setup.sh
+  Size: 1232            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933318     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.854218186 +0000
+Modify: 2020-03-27 10:10:06.000000000 +0000
+Change: 2020-09-14 13:44:29.854218186 +0000
+ Birth: -
+  File: /etc/init.d/coturn
+  Size: 4243            Blocks: 16         IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3936255     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-15 13:11:57.329553227 +0000
+Modify: 2019-03-02 23:07:47.000000000 +0000
+Change: 2020-09-15 13:11:55.561561454 +0000
+ Birth: -
+  File: /etc/init.d/cron
+  Size: 3059            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933319     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.854218186 +0000
+Modify: 2020-02-11 03:43:40.000000000 +0000
+Change: 2020-09-14 13:44:29.854218186 +0000
+ Birth: -
+  File: /etc/init.d/cryptdisks
+  Size: 937             Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933320     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 14:39:56.765528598 +0000
+Modify: 2020-02-04 13:11:12.000000000 +0000
+Change: 2020-09-14 13:44:29.854218186 +0000
+ Birth: -
+  File: /etc/init.d/cryptdisks-early
+  Size: 896             Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933321     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 14:39:56.825527975 +0000
+Modify: 2020-02-04 13:11:12.000000000 +0000
+Change: 2020-09-14 13:44:29.854218186 +0000
+ Birth: -
+  File: /etc/init.d/dbus
+  Size: 3152            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933322     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.854218186 +0000
+Modify: 2019-09-30 07:47:02.000000000 +0000
+Change: 2020-09-14 13:44:29.854218186 +0000
+ Birth: -
+  File: /etc/init.d/exim4
+  Size: 7159            Blocks: 16         IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3937096     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-15 00:18:14.257077043 +0000
+Modify: 2020-03-27 23:00:03.000000000 +0000
+Change: 2020-09-15 00:18:13.689080611 +0000
+ Birth: -
+  File: /etc/init.d/gdm3
+  Size: 3033            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3936657     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 20:35:54.957553756 +0000
+Modify: 2019-10-07 16:23:07.000000000 +0000
+Change: 2020-09-14 20:35:53.461561761 +0000
+ Birth: -
+  File: /etc/init.d/grub-common
+  Size: 985             Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933561     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-15 16:29:36.153704552 +0000
+Modify: 2020-08-17 14:04:31.000000000 +0000
+Change: 2020-09-14 13:45:23.415837457 +0000
+ Birth: -
+  File: /etc/init.d/hwclock.sh
+  Size: 3809            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933323     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.854218186 +0000
+Modify: 2019-07-28 21:44:43.000000000 +0000
+Change: 2020-09-14 13:44:29.854218186 +0000
+ Birth: -
+  File: /etc/init.d/irqbalance
+  Size: 2638            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933324     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.854218186 +0000
+Modify: 2019-12-13 15:43:35.000000000 +0000
+Change: 2020-09-14 13:44:29.854218186 +0000
+ Birth: -
+  File: /etc/init.d/iscsid
+  Size: 1503            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933325     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.854218186 +0000
+Modify: 2020-05-11 01:07:37.000000000 +0000
+Change: 2020-09-14 13:44:29.854218186 +0000
+ Birth: -
+  File: /etc/init.d/janus
+  Size: 714             Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3936253     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-15 17:06:28.667647622 +0000
+Modify: 2018-05-07 08:09:07.000000000 +0000
+Change: 2020-09-15 17:06:26.495657554 +0000
+ Birth: -
+  File: /etc/init.d/keyboard-setup.sh
+  Size: 1479            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933326     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.854218186 +0000
+Modify: 2019-11-27 14:34:42.000000000 +0000
+Change: 2020-09-14 13:44:29.854218186 +0000
+ Birth: -
+  File: /etc/init.d/kmod
+  Size: 2044            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933327     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.858218399 +0000
+Modify: 2020-02-19 09:12:20.000000000 +0000
+Change: 2020-09-14 13:44:29.858218399 +0000
+ Birth: -
+  File: /etc/init.d/lm-sensors
+  Size: 883             Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3937087     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 22:45:38.591138940 +0000
+Modify: 2019-11-06 20:56:11.000000000 +0000
+Change: 2020-09-14 22:45:38.371139621 +0000
+ Birth: -
+  File: /etc/init.d/lvm2
+  Size: 695             Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933328     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.858218399 +0000
+Modify: 2020-01-28 03:44:19.000000000 +0000
+Change: 2020-09-14 13:44:29.858218399 +0000
+ Birth: -
+  File: /etc/init.d/lvm2-lvmpolld
+  Size: 586             Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933329     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.858218399 +0000
+Modify: 2020-01-28 03:44:19.000000000 +0000
+Change: 2020-09-14 13:44:29.858218399 +0000
+ Birth: -
+  File: /etc/init.d/multipath-tools
+  Size: 2827            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933330     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.858218399 +0000
+Modify: 2020-01-09 16:12:05.000000000 +0000
+Change: 2020-09-14 13:44:29.858218399 +0000
+ Birth: -
+  File: /etc/init.d/network-manager
+  Size: 1942            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3936337     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 14:52:56.746706308 +0000
+Modify: 2020-05-20 16:23:10.000000000 +0000
+Change: 2020-09-14 14:52:56.746706308 +0000
+ Birth: -
+  File: /etc/init.d/open-iscsi
+  Size: 2503            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933331     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.858218399 +0000
+Modify: 2020-05-11 01:07:37.000000000 +0000
+Change: 2020-09-14 13:44:29.858218399 +0000
+ Birth: -
+  File: /etc/init.d/open-vm-tools
+  Size: 1846            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933332     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 14:39:50.893598120 +0000
+Modify: 2020-03-09 16:10:31.000000000 +0000
+Change: 2020-09-14 13:44:29.858218399 +0000
+ Birth: -
+  File: /etc/init.d/plymouth
+  Size: 1366            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933333     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.858218399 +0000
+Modify: 2020-03-23 12:06:52.000000000 +0000
+Change: 2020-09-14 13:44:29.858218399 +0000
+ Birth: -
+  File: /etc/init.d/plymouth-log
+  Size: 752             Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933334     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.858218399 +0000
+Modify: 2020-03-23 12:06:52.000000000 +0000
+Change: 2020-09-14 13:44:29.858218399 +0000
+ Birth: -
+  File: /etc/init.d/pppd-dns
+  Size: 612             Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3936346     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 14:52:40.686716470 +0000
+Modify: 2019-02-08 16:37:29.000000000 +0000
+Change: 2020-09-14 14:52:39.950716978 +0000
+ Birth: -
+  File: /etc/init.d/procps
+  Size: 924             Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933335     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.858218399 +0000
+Modify: 2020-02-13 22:44:31.000000000 +0000
+Change: 2020-09-14 13:44:29.858218399 +0000
+ Birth: -
+  File: /etc/init.d/pulseaudio-enable-autospawn
+  Size: 469             Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3936480     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 20:34:23.202044762 +0000
+Modify: 2020-08-13 10:53:08.000000000 +0000
+Change: 2020-09-14 20:34:21.130055848 +0000
+ Birth: -
+  File: /etc/init.d/rsync
+  Size: 4417            Blocks: 16         IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933336     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.858218399 +0000
+Modify: 2019-10-15 00:04:36.000000000 +0000
+Change: 2020-09-14 13:44:29.858218399 +0000
+ Birth: -
+  File: /etc/init.d/rsyslog
+  Size: 2864            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933337     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 14:39:44.937637089 +0000
+Modify: 2019-03-07 12:49:31.000000000 +0000
+Change: 2020-09-14 13:44:29.858218399 +0000
+ Birth: -
+  File: /etc/init.d/saned
+  Size: 2224            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3936693     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 20:34:34.565983947 +0000
+Modify: 2020-02-11 11:27:25.000000000 +0000
+Change: 2020-09-14 20:34:33.253990970 +0000
+ Birth: -
+  File: /etc/init.d/screen-cleanup
+  Size: 1222            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933338     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.858218399 +0000
+Modify: 2017-04-02 23:11:05.000000000 +0000
+Change: 2020-09-14 13:44:29.858218399 +0000
+ Birth: -
+  File: /etc/init.d/ssh
+  Size: 3939            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3936238     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 14:02:48.075374274 +0000
+Modify: 2020-05-29 07:33:31.000000000 +0000
+Change: 2020-09-14 14:02:45.903384835 +0000
+ Birth: -
+  File: /etc/init.d/udev
+  Size: 6872            Blocks: 16         IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933339     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.858218399 +0000
+Modify: 2020-04-22 09:04:26.000000000 +0000
+Change: 2020-09-14 13:44:29.858218399 +0000
+ Birth: -
+  File: /etc/init.d/ufw
+  Size: 2083            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933340     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.858218399 +0000
+Modify: 2020-01-21 22:16:06.000000000 +0000
+Change: 2020-09-14 13:44:29.858218399 +0000
+ Birth: -
+  File: /etc/init.d/unattended-upgrades
+  Size: 1391            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933341     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 14:40:01.077488651 +0000
+Modify: 2020-04-13 22:37:21.000000000 +0000
+Change: 2020-09-14 13:44:29.858218399 +0000
+ Birth: -
+  File: /etc/init.d/uuidd
+  Size: 1306            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3933342     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 13:44:29.858218399 +0000
+Modify: 2020-04-02 15:29:40.000000000 +0000
+Change: 2020-09-14 13:44:29.858218399 +0000
+ Birth: -
+  File: /etc/init.d/x11-common
+  Size: 2757            Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 3936463     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2020-09-14 20:32:41.442589303 +0000
+Modify: 2017-01-20 07:52:26.000000000 +0000
+Change: 2020-09-14 20:32:41.134590950 +0000
+ Birth: -
+
+
