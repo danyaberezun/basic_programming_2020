@@ -485,3 +485,77 @@ extraterrestrial_@extrakek:/etc/init.d$ file kmod
 kmod: POSIX shell script, ASCII text executable
 
 file говорит, что POSIX Shell script, stat -- что обычный файл. Видимо, с помощью file можно получить более точную информацию про тип файла, но зато stat выдает еще какую-то дополнительную информацию
+
+3.
+(a)
+extraterrestrial_@extrakek:/var/tmp$ mkdir test
+extraterrestrial_@extrakek:/var/tmp$ cd test
+extraterrestrial_@extrakek:/var/tmp/test$ mkdir mytest
+extraterrestrial_@extrakek:/var/tmp/test$ cd mytest
+
+(b)
+extraterrestrial_@extrakek:/var/tmp/test/mytest$ touch kek.txt
+extraterrestrial_@extrakek:/var/tmp/test/mytest$ touch lol.txt
+extraterrestrial_@extrakek:/var/tmp/test/mytest$ touch rofl.txt
+extraterrestrial_@extrakek:/var/tmp/test/mytest$ file *
+kek.txt:  empty
+lol.txt:  empty
+rofl.txt: empty
+
+(c)
+extraterrestrial_@extrakek:/var/tmp/test/mytest$ ls -lt
+итого 4
+-rw-r--r-- 1 extraterrestrial_ extraterrestrial_ 223 сен 16 19:02 hosts
+-rw-r--r-- 1 extraterrestrial_ extraterrestrial_   0 сен 16 19:01 rofl.txt
+-rw-r--r-- 1 extraterrestrial_ extraterrestrial_   0 сен 16 19:01 lol.txt
+-rw-r--r-- 1 extraterrestrial_ extraterrestrial_   0 сен 16 19:01 kek.txt
+
+(d)
+extraterrestrial_@extrakek:/var/tmp/test/mytest$ mv kek.txt hosts
+extraterrestrial_@extrakek:/var/tmp/test/mytest$ ls
+hosts  lol.txt  rofl.txt
+
+(e)
+extraterrestrial_@extrakek:/var/tmp/test/mytest$ rm *.txt
+extraterrestrial_@extrakek:/var/tmp/test/mytest$ ls
+hosts
+
+(f)
+extraterrestrial_@extrakek:/var/tmp/test/mytest$ cp -r . ~/tmp
+
+(g)
+extraterrestrial_@extrakek:/var/tmp/test/mytest$ rm *
+
+(h)
+extraterrestrial_@extrakek:/var/tmp/test/mytest$ cd ../..
+extraterrestrial_@extrakek:/var/tmp$ rm -r test
+
+(j)
+extraterrestrial_@extrakek:~/tmp$ echo "0123456789">digits.txt
+extraterrestrial_@extrakek:~/tmp$ cat digits.txt
+0123456789
+
+(k)
+extraterrestrial_@extrakek:~/tmp$ cat digits.txt digits.txt >a.txt
+
+(l)
+extraterrestrial_@extrakek:~/tmp$ cat a.txt a.txt a.txt a.txt>b.txt
+extraterrestrial_@extrakek:~/tmp$ cat b.txt b.txt b.txt b.txt>c.txt
+extraterrestrial_@extrakek:~/tmp$ cat c.txt c.txt>>digits.txt
+
+(m)
+extraterrestrial_@extrakek:~/tmp$ wc digits.txt
+ 65  65 715 digits.txt
+
+(n)
+extraterrestrial_@extrakek:~/tmp$ head -n 5 /etc/passwd >first_five.txt
+extraterrestrial_@extrakek:~/tmp$ tail -n 5 /etc/passwd >last_five.txt
+
+(o)
+extraterrestrial_@extrakek:~/tmp$ ls -l /etc >files.txt
+
+(p)
+extraterrestrial_@extrakek:~/tmp$ wc files.txt
+  248  2235 14647 files.txt
+
+(248 файлов)
