@@ -1,0 +1,23 @@
+1 task
+a) retired@retired:~$ id
+uid=1000(retired) gid=1000(retired) groups=1000(retired),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lxd)
+b) retired@retired:~$ date
+Wed 16 Sep 2020 05:22:07 PM UTC
+c) retired@retired:~$ pwd
+/home/retired
+d1) retired@retired:~$ ls
+caddy_2.1.1_linux_amd64.deb  collectd.conf  nats-server-v2.1.8-linux-amd64  snap
+d2) retired@retired:~$ ls -l
+total 12804
+-rw-rw-r-- 1 retired retired 13063642 Jun 30 19:19 caddy_2.1.1_linux_amd64.deb
+-rw-r--r-- 1 root    root       36107 May 30  2018 collectd.conf
+drwxrwxr-x 2 retired retired     4096 Sep 15 20:11 nats-server-v2.1.8-linux-amd64
+drwxr-xr-x 6 retired retired     4096 Sep 15 16:30 snap
+d3) retired@retired:~$ ls -a
+.              .cache                       nats-server-v2.1.8-linux-amd64  .sudo_as_admin_successful
+..             caddy_2.1.1_linux_amd64.deb  .profile                        .wget-hsts
+.bash_history  collectd.conf                .rnd
+.bash_logout   .config                      snap
+.bashrc        .local                       .step
+
+
