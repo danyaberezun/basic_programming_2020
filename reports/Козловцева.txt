@@ -1,0 +1,20 @@
+1a) id
+uid=1000(maria) gid=1000(maria) группы=1000(maria),4(adm),20(dialout),27(sudo)
+
+1b) date
+Чт сен 17 07:27:04 MSK 2020
+
+1c) pwd
+/home/maria/Рабочий стол/homework/entrance_2/course_1/Основы проги (Котлин)_1.1/linux_1
+
+1d)
+ls
+basic_programming_2020
+
+ls -l
+итого 4
+drwxr-xr-x 4 maria maria 4096 сен 17 07:21 basic_programming_2020
+
+ls -a
+.  ..  basic_programming_2020
+
