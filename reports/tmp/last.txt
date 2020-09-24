@@ -1,5 +1,0 @@
-pulse:x:119:125:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
-hplip:x:120:7:HPLIP system user,,,:/var/run/hplip:/bin/false
-geoclue:x:121:127::/var/lib/geoclue:/usr/sbin/nologin
-sergey:x:1000:1000:Sergey,,,:/home/sergey:/bin/bash
-nvidia-persistenced:x:122:129:NVIDIA Persistence Daemon,,,:/nonexistent:/usr/sbin/nologin
