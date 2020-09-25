@@ -1,5 +1,12 @@
-fun main() {
-    val n: Int? = readLine()?.toInt()
+import java.lang.Exception
+import java.lang.NumberFormatException
+
+fun main(args: Array<String>) {
+    val n: Int? = try {
+        args[0].toInt()
+    } catch (e: Exception) {
+        null
+    }
     val fibSeq = createSequence(n)
     print(fibSeq?.joinToString(", "))
 }
