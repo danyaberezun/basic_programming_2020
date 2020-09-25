@@ -1,7 +1,7 @@
 fun main() {
     val n: Int? = readLine()?.toInt()
     val fibSeq = createSequence(n)
-    print(fibSeq)
+    print(fibSeq?.joinToString(", "))
 }
 
 fun createSequence(n: Int?): List<Int>? {
