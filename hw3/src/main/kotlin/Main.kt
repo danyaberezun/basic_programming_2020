@@ -27,6 +27,12 @@ fun lengths(strings: List<String>) = strings.map { it.length }
 
 fun sumsq(n: Int) = (1..n).map { it * it }.sum()
 
+fun<A, B, C> List<B>.mapAccumL(f: (A, B) -> Pair<A, C>, a: A): Pair<A, List<C>> =
+    this.fold(a to listOf()) { (a, current), b ->
+        val (newA, newC) = f(a, b)
+        newA to current + newC
+    }
+
 fun main() {
     println(quicksort(listOf(1, 9, 2, 7, 4, 2, 3)))
     println(reverse(listOf(1, 9, 4)))
@@ -35,4 +41,5 @@ fun main() {
     println(filterRight(listOf(2, 5, 4, 1, 80, 2)) { it % 2 == 0 })
     println(lengths(listOf("123", "", "aa")))
     println(sumsq(3))
+    println(listOf(2, 4, 8).mapAccumL({x, y -> x + y to x * y}, 5))
 }
