@@ -21,10 +21,13 @@ fun <T> filterRight(list: List<T>, f: (T) -> Boolean): List<T> = list.foldRight(
     else
         current
 }
+fun lengths(strings: List<String>) = strings.map {it.length}
+
 fun main() {
     println(quicksort(listOf(1, 9, 2, 7, 4, 2, 3)))
     println(reverse(listOf(1, 9, 4)))
     println(reverse(listOf<Int>()))
     println(filter(listOf(2, 5, 4, 1, 80, 2)) { it % 2 == 0 })
     println(filterRight(listOf(2, 5, 4, 1, 80, 2)) { it % 2 == 0 })
+    println(lengths(listOf("123", "", "aa")))
 }
