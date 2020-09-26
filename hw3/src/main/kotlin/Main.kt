@@ -15,13 +15,17 @@ fun <T> filter(list: List<T>, f: (T) -> Boolean): List<T> = list.fold(listOf()) 
     else
         current
 }
+
 fun <T> filterRight(list: List<T>, f: (T) -> Boolean): List<T> = list.foldRight(listOf()) { element, current ->
     if (f(element))
         listOf(element) + current
     else
         current
 }
-fun lengths(strings: List<String>) = strings.map {it.length}
+
+fun lengths(strings: List<String>) = strings.map { it.length }
+
+fun sumsq(n: Int) = (1..n).map { it * it }.sum()
 
 fun main() {
     println(quicksort(listOf(1, 9, 2, 7, 4, 2, 3)))
@@ -30,4 +34,5 @@ fun main() {
     println(filter(listOf(2, 5, 4, 1, 80, 2)) { it % 2 == 0 })
     println(filterRight(listOf(2, 5, 4, 1, 80, 2)) { it % 2 == 0 })
     println(lengths(listOf("123", "", "aa")))
+    println(sumsq(3))
 }
