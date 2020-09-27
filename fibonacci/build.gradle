@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.4.10'
+    id "application"
+}
+group = "me.serge"
+version = "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    implementation("org.junit.jupiter:junit-jupiter:5.4.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.4.2")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.4.2")
+    implementation("com.xenomachina:kotlin-argparser:2.0.7")
+    implementation("me.tongfei:progressbar:0.9.0")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+}
+
+application {
+    mainClassName = "FibonacciKt"
+}
+
+test {
+    useJUnitPlatform()
+}
+
+sourceSets {
+    main.java.srcDirs = ['src/']
+}
