@@ -18,3 +18,811 @@ drwxr-xr-x 4 maria maria 4096 сен 17 07:21 basic_programming_2020
 ls -a
 .  ..  basic_programming_2020
 
+2a) ls -l /dev
+итого 0
+crw-r--r--  1 root  root     10,   235 сен 25 20:18 autofs
+drwxr-xr-x  2 root  root           660 сен 25 20:18 block
+crw-------  1 root  root     10,   234 сен 25 20:18 btrfs-control
+drwxr-xr-x  3 root  root            60 сен 25 20:18 bus
+drwxr-xr-x  2 root  root          4580 сен 25 20:18 char
+crw-------  1 root  root      5,     1 сен 25 20:18 console
+lrwxrwxrwx  1 root  root            11 сен 25 20:18 core -> /proc/kcore
+drwxr-xr-x  2 root  root            60 сен 25 20:18 cpu
+crw-------  1 root  root     10,    59 сен 25 20:18 cpu_dma_latency
+crw-------  1 root  root     10,   203 сен 25 20:18 cuse
+drwxr-xr-x  8 root  root           160 сен 25 20:18 disk
+drwxr-xr-x  3 root  root           140 сен 25 20:18 dri
+crw-------  1 root  root    237,     0 сен 25 20:18 drm_dp_aux0
+crw-------  1 root  root    237,     1 сен 25 20:18 drm_dp_aux1
+crw-------  1 root  root     10,    62 сен 25 20:18 ecryptfs
+crw-rw----  1 root  video    29,     0 сен 25 20:18 fb0
+lrwxrwxrwx  1 root  root            13 сен 25 20:18 fd -> /proc/self/fd
+crw-rw-rw-  1 root  root      1,     7 сен 25 20:18 full
+crw-rw-rw-  1 root  root     10,   229 сен 25 20:18 fuse
+crw-------  1 root  root    254,     0 сен 25 20:18 gpiochip0
+crw-------  1 root  root    241,     0 сен 25 20:18 hidraw0
+crw-------  1 root  root    241,     1 сен 25 20:18 hidraw1
+crw-------  1 root  root    241,     2 сен 25 20:18 hidraw2
+crw-------  1 root  root    241,     3 сен 25 20:18 hidraw3
+crw-------  1 root  root     10,   228 сен 25 20:18 hpet
+drwxr-xr-x  2 root  root             0 сен 25 20:18 hugepages
+crw-------  1 root  root     10,   183 сен 25 20:18 hwrng
+crw-------  1 root  root     89,     0 сен 25 20:18 i2c-0
+crw-------  1 root  root     89,     1 сен 25 20:18 i2c-1
+crw-------  1 root  root     89,    10 сен 25 20:18 i2c-10
+crw-------  1 root  root     89,    11 сен 25 20:18 i2c-11
+crw-------  1 root  root     89,    12 сен 25 20:18 i2c-12
+crw-------  1 root  root     89,     2 сен 25 20:18 i2c-2
+crw-------  1 root  root     89,     3 сен 25 20:18 i2c-3
+crw-------  1 root  root     89,     4 сен 25 20:18 i2c-4
+crw-------  1 root  root     89,     5 сен 25 20:18 i2c-5
+crw-------  1 root  root     89,     6 сен 25 20:18 i2c-6
+crw-------  1 root  root     89,     7 сен 25 20:18 i2c-7
+crw-------  1 root  root     89,     8 сен 25 20:18 i2c-8
+crw-------  1 root  root     89,     9 сен 25 20:18 i2c-9
+lrwxrwxrwx  1 root  root            25 сен 25 20:18 initctl -> /run/systemd/initctl/fifo
+drwxr-xr-x  4 root  root           560 сен 25 20:18 input
+crw-r--r--  1 root  root      1,    11 сен 25 20:18 kmsg
+crw-------  1 root  root     10,   232 сен 25 20:18 kvm
+drwxr-xr-x  2 root  root            60 сен 25 20:18 lightnvm
+lrwxrwxrwx  1 root  root            28 сен 25 20:18 log -> /run/systemd/journal/dev-log
+brw-rw----  1 root  disk      7,     0 сен 25 20:18 loop0
+brw-rw----  1 root  disk      7,     1 сен 25 20:18 loop1
+brw-rw----  1 root  disk      7,    10 сен 25 20:18 loop10
+brw-rw----  1 root  disk      7,    11 сен 25 20:18 loop11
+brw-rw----  1 root  disk      7,    12 сен 25 20:18 loop12
+brw-rw----  1 root  disk      7,    13 сен 25 20:18 loop13
+brw-rw----  1 root  disk      7,    14 сен 25 20:18 loop14
+brw-rw----  1 root  disk      7,    15 сен 25 20:18 loop15
+brw-rw----  1 root  disk      7,    16 сен 25 20:18 loop16
+brw-rw----  1 root  disk      7,    17 сен 25 20:18 loop17
+brw-rw----  1 root  disk      7,    18 сен 25 20:18 loop18
+brw-rw----  1 root  disk      7,    19 сен 25 20:18 loop19
+brw-rw----  1 root  disk      7,     2 сен 25 20:18 loop2
+brw-rw----  1 root  disk      7,    20 сен 25 20:18 loop20
+brw-rw----  1 root  disk      7,    21 сен 25 20:18 loop21
+brw-rw----  1 root  disk      7,    22 сен 25 20:18 loop22
+brw-rw----  1 root  disk      7,    23 сен 25 20:18 loop23
+brw-rw----  1 root  disk      7,    24 сен 25 20:18 loop24
+brw-rw----  1 root  disk      7,     3 сен 25 20:18 loop3
+brw-rw----  1 root  disk      7,     4 сен 25 20:18 loop4
+brw-rw----  1 root  disk      7,     5 сен 25 20:18 loop5
+brw-rw----  1 root  disk      7,     6 сен 25 20:18 loop6
+brw-rw----  1 root  disk      7,     7 сен 25 20:18 loop7
+brw-rw----  1 root  disk      7,     8 сен 25 20:18 loop8
+brw-rw----  1 root  disk      7,     9 сен 25 20:18 loop9
+crw-rw----  1 root  disk     10,   237 сен 25 20:18 loop-control
+drwxr-xr-x  2 root  root            60 сен 25 20:18 mapper
+crw-------  1 root  root     10,   227 сен 25 20:18 mcelog
+crw-rw----  1 root  video   239,     0 сен 25 20:18 media0
+crw-------  1 root  root    238,     0 сен 25 20:18 mei0
+crw-r-----  1 root  kmem      1,     1 сен 25 20:18 mem
+drwxrwxrwt  2 root  root            40 сен 25 20:18 mqueue
+drwxr-xr-x  2 root  root            60 сен 25 20:18 net
+crw-rw-rw-  1 root  root      1,     3 сен 25 20:18 null
+crw-------  1 root  root    240,     0 сен 25 20:18 nvme0
+brw-rw----  1 root  disk    259,     0 сен 25 20:18 nvme0n1
+brw-rw----  1 root  disk    259,     1 сен 25 20:18 nvme0n1p1
+brw-rw----  1 root  disk    259,     2 сен 25 20:18 nvme0n1p2
+brw-rw----  1 root  disk    259,     3 сен 25 20:18 nvme0n1p3
+brw-rw----  1 root  disk    259,     4 сен 25 20:18 nvme0n1p4
+brw-rw----  1 root  disk    259,     5 сен 25 20:18 nvme0n1p5
+crw-------  1 root  root     10,   144 сен 25 20:18 nvram
+crw-r-----  1 root  kmem      1,     4 сен 25 20:18 port
+crw-------  1 root  root    108,     0 сен 25 20:18 ppp
+crw-------  1 root  root     10,     1 сен 25 20:18 psaux
+crw-rw-rw-  1 root  tty       5,     2 сен 28 17:30 ptmx
+drwxr-xr-x  2 root  root             0 сен 25 20:18 pts
+crw-rw-rw-  1 root  root      1,     8 сен 25 20:18 random
+crw-rw-r--+ 1 root  netdev   10,   242 сен 25 20:18 rfkill
+lrwxrwxrwx  1 root  root             4 сен 25 20:18 rtc -> rtc0
+crw-------  1 root  root    249,     0 сен 25 20:18 rtc0
+drwxrwxrwt  2 root  root            40 сен 28 17:30 shm
+crw-------  1 root  root     10,   231 сен 25 20:18 snapshot
+drwxr-xr-x  3 root  root           300 сен 25 20:18 snd
+lrwxrwxrwx  1 root  root            15 сен 25 20:18 stderr -> /proc/self/fd/2
+lrwxrwxrwx  1 root  root            15 сен 25 20:18 stdin -> /proc/self/fd/0
+lrwxrwxrwx  1 root  root            15 сен 25 20:18 stdout -> /proc/self/fd/1
+crw-------  1 root  root     10,   224 сен 25 20:18 tpm0
+crw-------  1 root  root    253, 65536 сен 25 20:18 tpmrm0
+crw-rw-rw-  1 root  tty       5,     0 сен 25 20:18 tty
+crw--w----  1 root  tty       4,     0 сен 25 20:18 tty0
+crw--w----  1 gdm   tty       4,     1 сен 25 20:18 tty1
+crw--w----  1 root  tty       4,    10 сен 25 20:18 tty10
+crw--w----  1 root  tty       4,    11 сен 25 20:18 tty11
+crw--w----  1 root  tty       4,    12 сен 25 20:18 tty12
+crw--w----  1 root  tty       4,    13 сен 25 20:18 tty13
+crw--w----  1 root  tty       4,    14 сен 25 20:18 tty14
+crw--w----  1 root  tty       4,    15 сен 25 20:18 tty15
+crw--w----  1 root  tty       4,    16 сен 25 20:18 tty16
+crw--w----  1 root  tty       4,    17 сен 25 20:18 tty17
+crw--w----  1 root  tty       4,    18 сен 25 20:18 tty18
+crw--w----  1 root  tty       4,    19 сен 25 20:18 tty19
+crw--w----  1 maria tty       4,     2 сен 25 20:18 tty2
+crw--w----  1 root  tty       4,    20 сен 25 20:18 tty20
+crw--w----  1 root  tty       4,    21 сен 25 20:18 tty21
+crw--w----  1 root  tty       4,    22 сен 25 20:18 tty22
+crw--w----  1 root  tty       4,    23 сен 25 20:18 tty23
+crw--w----  1 root  tty       4,    24 сен 25 20:18 tty24
+crw--w----  1 root  tty       4,    25 сен 25 20:18 tty25
+crw--w----  1 root  tty       4,    26 сен 25 20:18 tty26
+crw--w----  1 root  tty       4,    27 сен 25 20:18 tty27
+crw--w----  1 root  tty       4,    28 сен 25 20:18 tty28
+crw--w----  1 root  tty       4,    29 сен 25 20:18 tty29
+crw--w----  1 root  tty       4,     3 сен 25 20:18 tty3
+crw--w----  1 root  tty       4,    30 сен 25 20:18 tty30
+crw--w----  1 root  tty       4,    31 сен 25 20:18 tty31
+crw--w----  1 root  tty       4,    32 сен 25 20:18 tty32
+crw--w----  1 root  tty       4,    33 сен 25 20:18 tty33
+crw--w----  1 root  tty       4,    34 сен 25 20:18 tty34
+crw--w----  1 root  tty       4,    35 сен 25 20:18 tty35
+crw--w----  1 root  tty       4,    36 сен 25 20:18 tty36
+crw--w----  1 root  tty       4,    37 сен 25 20:18 tty37
+crw--w----  1 root  tty       4,    38 сен 25 20:18 tty38
+crw--w----  1 root  tty       4,    39 сен 25 20:18 tty39
+crw--w----  1 root  tty       4,     4 сен 25 20:18 tty4
+crw--w----  1 root  tty       4,    40 сен 25 20:18 tty40
+crw--w----  1 root  tty       4,    41 сен 25 20:18 tty41
+crw--w----  1 root  tty       4,    42 сен 25 20:18 tty42
+crw--w----  1 root  tty       4,    43 сен 25 20:18 tty43
+crw--w----  1 root  tty       4,    44 сен 25 20:18 tty44
+crw--w----  1 root  tty       4,    45 сен 25 20:18 tty45
+crw--w----  1 root  tty       4,    46 сен 25 20:18 tty46
+crw--w----  1 root  tty       4,    47 сен 25 20:18 tty47
+crw--w----  1 root  tty       4,    48 сен 25 20:18 tty48
+crw--w----  1 root  tty       4,    49 сен 25 20:18 tty49
+crw--w----  1 root  tty       4,     5 сен 25 20:18 tty5
+crw--w----  1 root  tty       4,    50 сен 25 20:18 tty50
+crw--w----  1 root  tty       4,    51 сен 25 20:18 tty51
+crw--w----  1 root  tty       4,    52 сен 25 20:18 tty52
+crw--w----  1 root  tty       4,    53 сен 25 20:18 tty53
+crw--w----  1 root  tty       4,    54 сен 25 20:18 tty54
+crw--w----  1 root  tty       4,    55 сен 25 20:18 tty55
+crw--w----  1 root  tty       4,    56 сен 25 20:18 tty56
+crw--w----  1 root  tty       4,    57 сен 25 20:18 tty57
+crw--w----  1 root  tty       4,    58 сен 25 20:18 tty58
+crw--w----  1 root  tty       4,    59 сен 25 20:18 tty59
+crw--w----  1 root  tty       4,     6 сен 25 20:18 tty6
+crw--w----  1 root  tty       4,    60 сен 25 20:18 tty60
+crw--w----  1 root  tty       4,    61 сен 25 20:18 tty61
+crw--w----  1 root  tty       4,    62 сен 25 20:18 tty62
+crw--w----  1 root  tty       4,    63 сен 25 20:18 tty63
+crw--w----  1 root  tty       4,     7 сен 25 20:18 tty7
+crw--w----  1 root  tty       4,     8 сен 25 20:18 tty8
+crw--w----  1 root  tty       4,     9 сен 25 20:18 tty9
+crw-------  1 root  root      5,     3 сен 25 20:18 ttyprintk
+crw-rw----  1 root  dialout   4,    64 сен 25 20:18 ttyS0
+crw-rw----  1 root  dialout   4,    65 сен 25 20:18 ttyS1
+crw-rw----  1 root  dialout   4,    74 сен 25 20:18 ttyS10
+crw-rw----  1 root  dialout   4,    75 сен 25 20:18 ttyS11
+crw-rw----  1 root  dialout   4,    76 сен 25 20:18 ttyS12
+crw-rw----  1 root  dialout   4,    77 сен 25 20:18 ttyS13
+crw-rw----  1 root  dialout   4,    78 сен 25 20:18 ttyS14
+crw-rw----  1 root  dialout   4,    79 сен 25 20:18 ttyS15
+crw-rw----  1 root  dialout   4,    80 сен 25 20:18 ttyS16
+crw-rw----  1 root  dialout   4,    81 сен 25 20:18 ttyS17
+crw-rw----  1 root  dialout   4,    82 сен 25 20:18 ttyS18
+crw-rw----  1 root  dialout   4,    83 сен 25 20:18 ttyS19
+crw-rw----  1 root  dialout   4,    66 сен 25 20:18 ttyS2
+crw-rw----  1 root  dialout   4,    84 сен 25 20:18 ttyS20
+crw-rw----  1 root  dialout   4,    85 сен 25 20:18 ttyS21
+crw-rw----  1 root  dialout   4,    86 сен 25 20:18 ttyS22
+crw-rw----  1 root  dialout   4,    87 сен 25 20:18 ttyS23
+crw-rw----  1 root  dialout   4,    88 сен 25 20:18 ttyS24
+crw-rw----  1 root  dialout   4,    89 сен 25 20:18 ttyS25
+crw-rw----  1 root  dialout   4,    90 сен 25 20:18 ttyS26
+crw-rw----  1 root  dialout   4,    91 сен 25 20:18 ttyS27
+crw-rw----  1 root  dialout   4,    92 сен 25 20:18 ttyS28
+crw-rw----  1 root  dialout   4,    93 сен 25 20:18 ttyS29
+crw-rw----  1 root  dialout   4,    67 сен 25 20:18 ttyS3
+crw-rw----  1 root  dialout   4,    94 сен 25 20:18 ttyS30
+crw-rw----  1 root  dialout   4,    95 сен 25 20:18 ttyS31
+crw-rw----  1 root  dialout   4,    68 сен 25 20:18 ttyS4
+crw-rw----  1 root  dialout   4,    69 сен 25 20:18 ttyS5
+crw-rw----  1 root  dialout   4,    70 сен 25 20:18 ttyS6
+crw-rw----  1 root  dialout   4,    71 сен 25 20:18 ttyS7
+crw-rw----  1 root  dialout   4,    72 сен 25 20:18 ttyS8
+crw-rw----  1 root  dialout   4,    73 сен 25 20:18 ttyS9
+crw-------  1 root  root     10,    60 сен 25 20:18 udmabuf
+crw-------  1 root  root     10,   239 сен 25 20:18 uhid
+crw-rw----+ 1 root  root     10,   223 сен 25 20:18 uinput
+crw-rw-rw-  1 root  root      1,     9 сен 25 20:18 urandom
+drwxr-xr-x  2 root  root            60 сен 25 20:18 usb
+crw-------  1 root  root     10,   240 сен 25 20:18 userio
+drwxr-xr-x  4 root  root            80 сен 25 20:18 v4l
+crw-rw----  1 root  tty       7,     0 сен 25 20:18 vcs
+crw-rw----  1 root  tty       7,     1 сен 25 20:18 vcs1
+crw-rw----  1 root  tty       7,     2 сен 25 20:18 vcs2
+crw-rw----  1 root  tty       7,     3 сен 25 20:18 vcs3
+crw-rw----  1 root  tty       7,     4 сен 25 20:18 vcs4
+crw-rw----  1 root  tty       7,     5 сен 25 20:18 vcs5
+crw-rw----  1 root  tty       7,     6 сен 25 20:18 vcs6
+crw-rw----  1 root  tty       7,   128 сен 25 20:18 vcsa
+crw-rw----  1 root  tty       7,   129 сен 25 20:18 vcsa1
+crw-rw----  1 root  tty       7,   130 сен 25 20:18 vcsa2
+crw-rw----  1 root  tty       7,   131 сен 25 20:18 vcsa3
+crw-rw----  1 root  tty       7,   132 сен 25 20:18 vcsa4
+crw-rw----  1 root  tty       7,   133 сен 25 20:18 vcsa5
+crw-rw----  1 root  tty       7,   134 сен 25 20:18 vcsa6
+crw-rw----  1 root  tty       7,    64 сен 25 20:18 vcsu
+crw-rw----  1 root  tty       7,    65 сен 25 20:18 vcsu1
+crw-rw----  1 root  tty       7,    66 сен 25 20:18 vcsu2
+crw-rw----  1 root  tty       7,    67 сен 25 20:18 vcsu3
+crw-rw----  1 root  tty       7,    68 сен 25 20:18 vcsu4
+crw-rw----  1 root  tty       7,    69 сен 25 20:18 vcsu5
+crw-rw----  1 root  tty       7,    70 сен 25 20:18 vcsu6
+drwxr-xr-x  2 root  root            60 сен 25 20:18 vfio
+crw-------  1 root  root     10,    63 сен 25 20:18 vga_arbiter
+crw-------  1 root  root     10,   137 сен 25 20:18 vhci
+crw-------  1 root  root     10,   238 сен 25 20:18 vhost-net
+crw-------  1 root  root     10,   241 сен 25 20:18 vhost-vsock
+crw-rw----+ 1 root  video    81,     0 сен 25 20:18 video0
+crw-rw----+ 1 root  video    81,     1 сен 25 20:18 video1
+crw-rw-rw-  1 root  root      1,     5 сен 25 20:18 zero
+crw-------  1 root  root     10,   249 сен 25 20:18 zfs
+
+2b) file /dev/*
+/dev/autofs:          character special (10/235)
+/dev/block:           directory
+/dev/btrfs-control:   character special (10/234)
+/dev/bus:             directory
+/dev/char:            directory
+/dev/console:         character special (5/1)
+/dev/core:            symbolic link to /proc/kcore
+/dev/cpu:             directory
+/dev/cpu_dma_latency: character special (10/59)
+/dev/cuse:            character special (10/203)
+/dev/disk:            directory
+/dev/dri:             directory
+/dev/drm_dp_aux0:     character special (237/0)
+/dev/drm_dp_aux1:     character special (237/1)
+/dev/ecryptfs:        character special (10/62)
+/dev/fb0:             character special (29/0)
+/dev/fd:              symbolic link to /proc/self/fd
+/dev/full:            character special (1/7)
+/dev/fuse:            character special (10/229)
+/dev/gpiochip0:       character special (254/0)
+/dev/hidraw0:         character special (241/0)
+/dev/hidraw1:         character special (241/1)
+/dev/hidraw2:         character special (241/2)
+/dev/hidraw3:         character special (241/3)
+/dev/hpet:            character special (10/228)
+/dev/hugepages:       directory
+/dev/hwrng:           character special (10/183)
+/dev/i2c-0:           character special (89/0)
+/dev/i2c-1:           character special (89/1)
+/dev/i2c-10:          character special (89/10)
+/dev/i2c-11:          character special (89/11)
+/dev/i2c-12:          character special (89/12)
+/dev/i2c-2:           character special (89/2)
+/dev/i2c-3:           character special (89/3)
+/dev/i2c-4:           character special (89/4)
+/dev/i2c-5:           character special (89/5)
+/dev/i2c-6:           character special (89/6)
+/dev/i2c-7:           character special (89/7)
+/dev/i2c-8:           character special (89/8)
+/dev/i2c-9:           character special (89/9)
+/dev/initctl:         symbolic link to /run/systemd/initctl/fifo
+/dev/input:           directory
+/dev/kmsg:            character special (1/11)
+/dev/kvm:             character special (10/232)
+/dev/lightnvm:        directory
+/dev/log:             symbolic link to /run/systemd/journal/dev-log
+/dev/loop0:           block special (7/0)
+/dev/loop1:           block special (7/1)
+/dev/loop10:          block special (7/10)
+/dev/loop11:          block special (7/11)
+/dev/loop12:          block special (7/12)
+/dev/loop13:          block special (7/13)
+/dev/loop14:          block special (7/14)
+/dev/loop15:          block special (7/15)
+/dev/loop16:          block special (7/16)
+/dev/loop17:          block special (7/17)
+/dev/loop18:          block special (7/18)
+/dev/loop19:          block special (7/19)
+/dev/loop2:           block special (7/2)
+/dev/loop20:          block special (7/20)
+/dev/loop21:          block special (7/21)
+/dev/loop22:          block special (7/22)
+/dev/loop23:          block special (7/23)
+/dev/loop24:          block special (7/24)
+/dev/loop3:           block special (7/3)
+/dev/loop4:           block special (7/4)
+/dev/loop5:           block special (7/5)
+/dev/loop6:           block special (7/6)
+/dev/loop7:           block special (7/7)
+/dev/loop8:           block special (7/8)
+/dev/loop9:           block special (7/9)
+/dev/loop-control:    character special (10/237)
+/dev/mapper:          directory
+/dev/mcelog:          character special (10/227)
+/dev/media0:          character special (239/0)
+/dev/mei0:            character special (238/0)
+/dev/mem:             character special (1/1)
+/dev/mqueue:          sticky, directory
+/dev/net:             directory
+/dev/null:            character special (1/3)
+/dev/nvme0:           character special (240/0)
+/dev/nvme0n1:         block special (259/0)
+/dev/nvme0n1p1:       block special (259/1)
+/dev/nvme0n1p2:       block special (259/2)
+/dev/nvme0n1p3:       block special (259/3)
+/dev/nvme0n1p4:       block special (259/4)
+/dev/nvme0n1p5:       block special (259/5)
+/dev/nvram:           character special (10/144)
+/dev/port:            character special (1/4)
+/dev/ppp:             character special (108/0)
+/dev/psaux:           character special (10/1)
+/dev/ptmx:            character special (5/2)
+/dev/pts:             directory
+/dev/random:          character special (1/8)
+/dev/rfkill:          character special (10/242)
+/dev/rtc:             symbolic link to rtc0
+/dev/rtc0:            character special (249/0)
+/dev/shm:             sticky, directory
+/dev/snapshot:        character special (10/231)
+/dev/snd:             directory
+/dev/stderr:          symbolic link to /proc/self/fd/2
+/dev/stdin:           symbolic link to /proc/self/fd/0
+/dev/stdout:          symbolic link to /proc/self/fd/1
+/dev/tpm0:            character special (10/224)
+/dev/tpmrm0:          character special (253/65536)
+/dev/tty:             character special (5/0)
+/dev/tty0:            character special (4/0)
+/dev/tty1:            character special (4/1)
+/dev/tty10:           character special (4/10)
+/dev/tty11:           character special (4/11)
+/dev/tty12:           character special (4/12)
+/dev/tty13:           character special (4/13)
+/dev/tty14:           character special (4/14)
+/dev/tty15:           character special (4/15)
+/dev/tty16:           character special (4/16)
+/dev/tty17:           character special (4/17)
+/dev/tty18:           character special (4/18)
+/dev/tty19:           character special (4/19)
+/dev/tty2:            character special (4/2)
+/dev/tty20:           character special (4/20)
+/dev/tty21:           character special (4/21)
+/dev/tty22:           character special (4/22)
+/dev/tty23:           character special (4/23)
+/dev/tty24:           character special (4/24)
+/dev/tty25:           character special (4/25)
+/dev/tty26:           character special (4/26)
+/dev/tty27:           character special (4/27)
+/dev/tty28:           character special (4/28)
+/dev/tty29:           character special (4/29)
+/dev/tty3:            character special (4/3)
+/dev/tty30:           character special (4/30)
+/dev/tty31:           character special (4/31)
+/dev/tty32:           character special (4/32)
+/dev/tty33:           character special (4/33)
+/dev/tty34:           character special (4/34)
+/dev/tty35:           character special (4/35)
+/dev/tty36:           character special (4/36)
+/dev/tty37:           character special (4/37)
+/dev/tty38:           character special (4/38)
+/dev/tty39:           character special (4/39)
+/dev/tty4:            character special (4/4)
+/dev/tty40:           character special (4/40)
+/dev/tty41:           character special (4/41)
+/dev/tty42:           character special (4/42)
+/dev/tty43:           character special (4/43)
+/dev/tty44:           character special (4/44)
+/dev/tty45:           character special (4/45)
+/dev/tty46:           character special (4/46)
+/dev/tty47:           character special (4/47)
+/dev/tty48:           character special (4/48)
+/dev/tty49:           character special (4/49)
+/dev/tty5:            character special (4/5)
+/dev/tty50:           character special (4/50)
+/dev/tty51:           character special (4/51)
+/dev/tty52:           character special (4/52)
+/dev/tty53:           character special (4/53)
+/dev/tty54:           character special (4/54)
+/dev/tty55:           character special (4/55)
+/dev/tty56:           character special (4/56)
+/dev/tty57:           character special (4/57)
+/dev/tty58:           character special (4/58)
+/dev/tty59:           character special (4/59)
+/dev/tty6:            character special (4/6)
+/dev/tty60:           character special (4/60)
+/dev/tty61:           character special (4/61)
+/dev/tty62:           character special (4/62)
+/dev/tty63:           character special (4/63)
+/dev/tty7:            character special (4/7)
+/dev/tty8:            character special (4/8)
+/dev/tty9:            character special (4/9)
+/dev/ttyprintk:       character special (5/3)
+/dev/ttyS0:           character special (4/64)
+/dev/ttyS1:           character special (4/65)
+/dev/ttyS10:          character special (4/74)
+/dev/ttyS11:          character special (4/75)
+/dev/ttyS12:          character special (4/76)
+/dev/ttyS13:          character special (4/77)
+/dev/ttyS14:          character special (4/78)
+/dev/ttyS15:          character special (4/79)
+/dev/ttyS16:          character special (4/80)
+/dev/ttyS17:          character special (4/81)
+/dev/ttyS18:          character special (4/82)
+/dev/ttyS19:          character special (4/83)
+/dev/ttyS2:           character special (4/66)
+/dev/ttyS20:          character special (4/84)
+/dev/ttyS21:          character special (4/85)
+/dev/ttyS22:          character special (4/86)
+/dev/ttyS23:          character special (4/87)
+/dev/ttyS24:          character special (4/88)
+/dev/ttyS25:          character special (4/89)
+/dev/ttyS26:          character special (4/90)
+/dev/ttyS27:          character special (4/91)
+/dev/ttyS28:          character special (4/92)
+/dev/ttyS29:          character special (4/93)
+/dev/ttyS3:           character special (4/67)
+/dev/ttyS30:          character special (4/94)
+/dev/ttyS31:          character special (4/95)
+/dev/ttyS4:           character special (4/68)
+/dev/ttyS5:           character special (4/69)
+/dev/ttyS6:           character special (4/70)
+/dev/ttyS7:           character special (4/71)
+/dev/ttyS8:           character special (4/72)
+/dev/ttyS9:           character special (4/73)
+/dev/udmabuf:         character special (10/60)
+/dev/uhid:            character special (10/239)
+/dev/uinput:          character special (10/223)
+/dev/urandom:         character special (1/9)
+/dev/usb:             directory
+/dev/userio:          character special (10/240)
+/dev/v4l:             directory
+/dev/vcs:             character special (7/0)
+/dev/vcs1:            character special (7/1)
+/dev/vcs2:            character special (7/2)
+/dev/vcs3:            character special (7/3)
+/dev/vcs4:            character special (7/4)
+/dev/vcs5:            character special (7/5)
+/dev/vcs6:            character special (7/6)
+/dev/vcsa:            character special (7/128)
+/dev/vcsa1:           character special (7/129)
+/dev/vcsa2:           character special (7/130)
+/dev/vcsa3:           character special (7/131)
+/dev/vcsa4:           character special (7/132)
+/dev/vcsa5:           character special (7/133)
+/dev/vcsa6:           character special (7/134)
+/dev/vcsu:            character special (7/64)
+/dev/vcsu1:           character special (7/65)
+/dev/vcsu2:           character special (7/66)
+/dev/vcsu3:           character special (7/67)
+/dev/vcsu4:           character special (7/68)
+/dev/vcsu5:           character special (7/69)
+/dev/vcsu6:           character special (7/70)
+/dev/vfio:            directory
+/dev/vga_arbiter:     character special (10/63)
+/dev/vhci:            character special (10/137)
+/dev/vhost-net:       character special (10/238)
+/dev/vhost-vsock:     character special (10/241)
+/dev/video0:          character special (81/0)
+/dev/video1:          character special (81/1)
+/dev/zero:            character special (1/5)
+/dev/zfs:             character special (10/249)
+
+2c) file /sbin/ifconfig
+/sbin/ifconfig: cannot open `/sbin/ifconfig' (No such file or directory)
+
+ file /sbin/ldconfig
+/sbin/ldconfig: POSIX shell script, ASCII text executable
+
+ file /etc/hosts
+/etc/hosts: ASCII text
+
+2d) file /dev/sda1
+/dev/sda1: cannot open `/dev/sda1' (No such file or directory)
+
+2e) file /proc/cpuinfo
+/proc/cpuinfo: empty
+
+file -s /proc/cpuinfo
+/proc/cpuinfo: ASCII text, with very long lines
+
+По идее этот файл содержит информацию о процессоре.
+
+2f) stat /etc/init.d/*
+  Файл: /etc/init.d/acpid
+  Размер: 2269      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458034     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2017-04-22 16:14:06.000000000 +0300
+Модифицирован: 2017-04-22 16:14:06.000000000 +0300
+Изменён: 2019-07-20 03:23:41.171993414 +0300
+ Создан: -
+  Файл: /etc/init.d/alsa-utils
+  Размер: 5336      	Блоков: 16         Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458035     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2017-01-23 06:15:44.000000000 +0300
+Модифицирован: 2017-01-23 06:15:44.000000000 +0300
+Изменён: 2019-07-20 03:23:41.171993414 +0300
+ Создан: -
+  Файл: /etc/init.d/anacron
+  Размер: 2014      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458036     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2017-05-29 19:36:12.000000000 +0300
+Модифицирован: 2017-05-29 19:36:12.000000000 +0300
+Изменён: 2019-07-20 03:23:41.171993414 +0300
+ Создан: -
+  Файл: /etc/init.d/apparmor
+  Размер: 4335      	Блоков: 16         Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458037     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2020-09-25 20:18:50.612602144 +0300
+Модифицирован: 2018-03-22 23:20:28.000000000 +0300
+Изменён: 2019-07-20 03:23:41.171993414 +0300
+ Создан: -
+  Файл: /etc/init.d/apport
+  Размер: 2805      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458290     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2020-09-25 20:17:13.747006709 +0300
+Модифицирован: 2020-02-27 06:18:45.000000000 +0300
+Изменён: 2020-03-18 06:38:58.418328997 +0300
+ Создан: -
+  Файл: /etc/init.d/avahi-daemon
+  Размер: 2401      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458039     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2018-08-22 12:36:14.000000000 +0300
+Модифицирован: 2018-08-22 12:36:14.000000000 +0300
+Изменён: 2019-07-20 03:23:41.171993414 +0300
+ Создан: -
+  Файл: /etc/init.d/bluetooth
+  Размер: 2968      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458040     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2020-03-31 12:20:04.016731968 +0300
+Модифицирован: 2018-02-05 08:06:49.000000000 +0300
+Изменён: 2019-07-20 03:23:41.171993414 +0300
+ Создан: -
+  Файл: /etc/init.d/console-setup.sh
+  Размер: 1232      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458041     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2019-09-02 16:36:10.668359093 +0300
+Модифицирован: 2018-04-19 09:53:32.000000000 +0300
+Изменён: 2019-07-20 03:23:41.171993414 +0300
+ Создан: -
+  Файл: /etc/init.d/cron
+  Размер: 3049      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458042     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2017-11-16 08:29:19.000000000 +0300
+Модифицирован: 2017-11-16 08:29:19.000000000 +0300
+Изменён: 2019-07-20 03:23:41.171993414 +0300
+ Создан: -
+  Файл: /etc/init.d/cups
+  Размер: 2804      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458045     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2020-04-28 06:13:21.015827529 +0300
+Модифицирован: 2018-03-27 20:28:14.000000000 +0300
+Изменён: 2019-07-20 03:23:41.171993414 +0300
+ Создан: -
+  Файл: /etc/init.d/cups-browsed
+  Размер: 1961      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458046     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2019-09-01 19:21:33.205304071 +0300
+Модифицирован: 2018-02-26 10:52:59.000000000 +0300
+Изменён: 2019-07-20 03:23:41.171993414 +0300
+ Создан: -
+  Файл: /etc/init.d/dbus
+  Размер: 2813      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458047     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2020-06-17 06:15:51.050782188 +0300
+Модифицирован: 2017-11-16 01:22:22.000000000 +0300
+Изменён: 2019-07-20 03:23:41.171993414 +0300
+ Создан: -
+  Файл: /etc/init.d/dns-clean
+  Размер: 1172      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458048     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2016-06-06 02:16:21.000000000 +0300
+Модифицирован: 2016-06-06 02:16:21.000000000 +0300
+Изменён: 2019-07-20 03:23:41.171993414 +0300
+ Создан: -
+  Файл: /etc/init.d/gdm3
+  Размер: 3033      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458049     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2019-09-01 19:21:37.681260863 +0300
+Модифицирован: 2018-10-09 11:42:42.000000000 +0300
+Изменён: 2019-07-20 03:23:41.171993414 +0300
+ Создан: -
+  Файл: /etc/init.d/grub-common
+  Размер: 985       	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458050     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2020-09-25 20:17:13.747006709 +0300
+Модифицирован: 2019-02-04 22:10:14.000000000 +0300
+Изменён: 2019-07-20 03:23:41.171993414 +0300
+ Создан: -
+  Файл: /etc/init.d/hwclock.sh
+  Размер: 3809      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458051     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2020-09-19 20:04:33.912348243 +0300
+Модифицирован: 2018-02-15 01:20:24.000000000 +0300
+Изменён: 2019-07-20 03:23:41.171993414 +0300
+ Создан: -
+  Файл: /etc/init.d/irqbalance
+  Размер: 2444      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458052     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2017-10-25 17:27:49.000000000 +0300
+Модифицирован: 2017-10-25 17:27:49.000000000 +0300
+Изменён: 2019-07-20 03:23:41.171993414 +0300
+ Создан: -
+  Файл: /etc/init.d/kerneloops
+  Размер: 3131      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458053     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2017-05-19 16:21:14.000000000 +0300
+Модифицирован: 2017-05-19 16:21:14.000000000 +0300
+Изменён: 2019-07-20 03:23:41.175993414 +0300
+ Создан: -
+  Файл: /etc/init.d/keyboard-setup.sh
+  Размер: 1479      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458054     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2019-09-02 16:36:10.676359264 +0300
+Модифицирован: 2018-02-16 01:16:55.000000000 +0300
+Изменён: 2019-07-20 03:23:41.175993414 +0300
+ Создан: -
+  Файл: /etc/init.d/kmod
+  Размер: 2044      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458055     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2020-06-08 14:26:45.672650891 +0300
+Модифицирован: 2017-08-15 21:35:54.000000000 +0300
+Изменён: 2019-07-20 03:23:41.175993414 +0300
+ Создан: -
+  Файл: /etc/init.d/networking
+  Размер: 4597      	Блоков: 16         Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458060     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2016-11-25 14:16:17.000000000 +0300
+Модифицирован: 2016-11-25 14:16:17.000000000 +0300
+Изменён: 2019-07-20 03:23:41.175993414 +0300
+ Создан: -
+  Файл: /etc/init.d/network-manager
+  Размер: 1942      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458059     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2020-05-18 17:58:36.819589104 +0300
+Модифицирован: 2018-03-26 16:21:12.000000000 +0300
+Изменён: 2019-07-20 03:23:41.175993414 +0300
+ Создан: -
+  Файл: /etc/init.d/plymouth
+  Размер: 1366      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458061     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2019-09-02 16:36:18.084490356 +0300
+Модифицирован: 2018-01-17 16:37:16.000000000 +0300
+Изменён: 2019-07-20 03:23:41.175993414 +0300
+ Создан: -
+  Файл: /etc/init.d/plymouth-log
+  Размер: 752       	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458062     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2019-09-02 16:36:18.092490469 +0300
+Модифицирован: 2018-01-17 16:37:16.000000000 +0300
+Изменён: 2019-07-20 03:23:41.175993414 +0300
+ Создан: -
+  Файл: /etc/init.d/pppd-dns
+  Размер: 612       	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458063     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2020-08-05 14:06:03.908430035 +0300
+Модифицирован: 2018-02-26 17:16:20.000000000 +0300
+Изменён: 2019-07-20 03:23:41.175993414 +0300
+ Создан: -
+  Файл: /etc/init.d/procps
+  Размер: 1191      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458064     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2019-09-02 16:34:48.624190202 +0300
+Модифицирован: 2018-01-18 01:35:48.000000000 +0300
+Изменён: 2019-07-20 03:23:41.175993414 +0300
+ Создан: -
+  Файл: /etc/init.d/rsync
+  Размер: 4355      	Блоков: 16         Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458065     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2020-02-27 00:32:10.876271666 +0300
+Модифицирован: 2017-12-13 09:34:49.000000000 +0300
+Изменён: 2019-07-20 03:23:41.175993414 +0300
+ Создан: -
+  Файл: /etc/init.d/rsyslog
+  Размер: 2864      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458066     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2018-01-14 19:19:35.000000000 +0300
+Модифицирован: 2018-01-14 19:19:35.000000000 +0300
+Изменён: 2019-07-20 03:23:41.175993414 +0300
+ Создан: -
+  Файл: /etc/init.d/saned
+  Размер: 2333      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458067     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2020-08-28 10:02:28.196171987 +0300
+Модифицирован: 2017-08-10 09:46:07.000000000 +0300
+Изменён: 2019-07-20 03:23:41.175993414 +0300
+ Создан: -
+  Файл: /etc/init.d/speech-dispatcher
+  Размер: 2117      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458068     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2020-09-25 20:17:13.747006709 +0300
+Модифицирован: 2017-12-15 11:56:04.000000000 +0300
+Изменён: 2019-07-20 03:23:41.175993414 +0300
+ Создан: -
+  Файл: /etc/init.d/spice-vdagent
+  Размер: 2484      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458069     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2017-01-20 01:26:47.000000000 +0300
+Модифицирован: 2017-01-20 01:26:47.000000000 +0300
+Изменён: 2019-07-20 03:23:41.175993414 +0300
+ Создан: -
+  Файл: /etc/init.d/udev
+  Размер: 5974      	Блоков: 16         Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458070     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2020-06-08 14:26:46.792658193 +0300
+Модифицирован: 2018-04-20 19:55:56.000000000 +0300
+Изменён: 2019-07-20 03:23:41.175993414 +0300
+ Создан: -
+  Файл: /etc/init.d/ufw
+  Размер: 2083      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458071     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2019-09-02 16:35:56.063921930 +0300
+Модифицирован: 2017-08-15 19:47:54.000000000 +0300
+Изменён: 2019-07-20 03:23:41.175993414 +0300
+ Создан: -
+  Файл: /etc/init.d/unattended-upgrades
+  Размер: 1391      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458072     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2020-05-18 17:58:32.323622385 +0300
+Модифицирован: 2018-12-13 16:42:44.000000000 +0300
+Изменён: 2019-07-20 03:23:41.175993414 +0300
+ Создан: -
+  Файл: /etc/init.d/uuidd
+  Размер: 1306      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458073     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2020-09-19 20:04:33.928348357 +0300
+Модифицирован: 2018-10-15 23:29:48.000000000 +0300
+Изменён: 2019-07-20 03:23:41.175993414 +0300
+ Создан: -
+  Файл: /etc/init.d/whoopsie
+  Размер: 485       	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458074     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2020-08-05 14:06:03.832429452 +0300
+Модифицирован: 2015-04-02 23:05:09.000000000 +0300
+Изменён: 2019-07-20 03:23:41.175993414 +0300
+ Создан: -
+  Файл: /etc/init.d/x11-common
+  Размер: 2757      	Блоков: 8          Блок В/В: 4096   обычный файл
+Устройство: 10305h/66309d	Inode: 4458075     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Доступ: 2017-01-20 10:52:26.000000000 +0300
+Модифицирован: 2017-01-20 10:52:26.000000000 +0300
+Изменён: 2019-07-20 03:23:41.175993414 +0300
+ Создан: -
+
+Информация об устройствах Линукс.
+
+
+
+
