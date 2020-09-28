@@ -10,6 +10,7 @@ repositories {
 application {
     mainClassName = "me.FibonacciKt"
 }
+
 dependencies {
     implementation(kotlin("stdlib"))
     implementation("org.junit.jupiter:junit-jupiter:5.4.2")
