@@ -823,6 +823,68 @@ file -s /proc/cpuinfo
 
 Информация об устройствах Линукс.
 
+3a) mkdir -p /var/tmp/test/mytest && cd /var/tmp/test/mytest
+
+3b) touch 1 2 3
+ file ./* 
+./1: empty
+./2: empty
+./3: empty
+
+3c) cp /etc/hosts ./
+ ls -lc
+итого 4
+-rw-r--r-- 1 maria maria   0 сен 28 18:27 1
+-rw-r--r-- 1 maria maria   0 сен 28 18:27 2
+-rw-r--r-- 1 maria maria   0 сен 28 18:27 3
+-rw-r--r-- 1 maria maria 227 сен 28 18:40 hosts
+
+3d) mv 1 hosts
+ ls -lc
+итого 0
+-rw-r--r-- 1 maria maria 0 сен 28 18:27 2
+-rw-r--r-- 1 maria maria 0 сен 28 18:27 3
+-rw-r--r-- 1 maria maria 0 сен 28 18:40 hosts
+
+3e) ls -lc
+итого 0
+-rw-r--r-- 1 maria maria 0 сен 28 18:40 hosts
+
+3f) mkdir ~/tmp/
+ cp ./* ~/tmp/
+
+3g) rm ./*
+
+3h) rm -r ../../test
+
+3i) cd ~/tmp/
+
+3j) echo "0 1 2 3 4 5 6 7 8 9" > digits.txt
+ cat digits.txt 
+0 1 2 3 4 5 6 7 8 9
+
+3k) touch two_lines.txt
+ for ((i = 1; i <= 2; i++)); do cat digits.txt >> two_lines.txt; done
+ cat two_lines.txt 
+0 1 2 3 4 5 6 7 8 9
+0 1 2 3 4 5 6 7 8 9
+
+3l) > 65_lines.txt
+ for ((i = 1; i <= 65; i++)); do cat digits.txt >> 65_lines.txt; done
+Выводить не хочется как-то)
+
+3m)  wc -l 65_lines.txt
+65 65_lines.txt
+
+3n) head -5 /etc/passwd > head.txt
+ tail -5 /etc/passwd > tail.txt
+
+3o) ls -la /etc > files.txt
+
+3p) ls -la /etc | wc -l
+232
+
+
 
 
 
