@@ -1,0 +1,43 @@
+(c) kira@kira-N56VV:/var/tmp/test/mytest$ ls -t
+hosts  third.doc  second.pdf  first.txt
+
+(d) 
+kira@kira-N56VV:/var/tmp/test/mytest$ sudo mv -f /var/tmp/test/mytest/first.txt /var/tmp/test/mytest/hosts
+[sudo] password for kira: 
+kira@kira-N56VV:/var/tmp/test/mytest$ ls
+hosts  second.pdf  third.doc
+
+(e)
+kira@kira-N56VV:/var/tmp/test/mytest$ sudo rm second.pdf
+kira@kira-N56VV:/var/tmp/test/mytest$ sudo rm third.doc
+kira@kira-N56VV:/var/tmp/test/mytest$ ls
+hosts
+
+(f) cp -rp /var/tmp/test/mytest/* /tmp/
+
+(g) sudo rm -rf /var/tmp/test/mytest/*
+
+(h) sudo rm -rf /var/tmp/test
+
+(i) cd /tmp
+
+(j) touch digits.txt
+gedit digits.txt
+
+(k) cat digits.txt digits.txt > digits2.txt
+
+(l) perl -ne 'for$i(1..65){print}' digits.txt > digits65.txt
+(ну либо 65 раз писать digits.txt после cat:(()
+(либо по умному заводить еще какие то файлики и через них делать, но с гуглом получилось короче)
+
+(m) wc digits65.txt
+
+их и правда 65
+
+(n) head -5 /etc/passwd > headlines.txt
+
+    tail -5 /etc/passwd > taillines.txt
+
+(o) ls -a /etc/* > list_of_all_files_in_etc.txt
+
+(p) sudo find /etc/* -type f | wc -l

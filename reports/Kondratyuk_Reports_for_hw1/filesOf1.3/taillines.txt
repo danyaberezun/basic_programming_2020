@@ -1,0 +1,5 @@
+gnome-initial-setup:x:124:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:125:130:Gnome Display Manager:/var/lib/gdm3:/bin/false
+kira:x:1000:1000:kira,,,:/home/kira:/bin/bash
+nvidia-persistenced:x:126:133:NVIDIA Persistence Daemon,,,:/nonexistent:/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin

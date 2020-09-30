@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FibonacciKtTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-09-27T16:23:33" hostname="DESKTOP-TUE115E" time="0.016">
+  <properties/>
+  <testcase name="fib0()" classname="FibonacciKtTest" time="0.007"/>
+  <testcase name="fib20()" classname="FibonacciKtTest" time="0.001"/>
+  <testcase name="fib30()" classname="FibonacciKtTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
