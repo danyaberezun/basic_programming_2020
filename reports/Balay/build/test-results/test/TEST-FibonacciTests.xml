@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="FibonacciTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-09-27T23:45:27" hostname="p-nblkwax9x" time="0.016">
-  <properties/>
-  <testcase name="fibonacci test()" classname="FibonacciTests" time="0.011"/>
-  <testcase name="fibonacci test with incorrect argument()" classname="FibonacciTests" time="0.001"/>
-  <testcase name="fibonacci test with argument == 2()" classname="FibonacciTests" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

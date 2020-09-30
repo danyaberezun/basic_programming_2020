@@ -6,24 +6,11 @@ plugins {
 group 'org.example'
 version '1.0-SNAPSHOT'
 
-mainClassName = "xd.MainKt"
-
 repositories {
     mavenCentral()
 }
 
-sourceSets {
-    main {
-        kotlin {
-            srcDirs = ['src']
-        }
-    }
-    test {
-        kotlin {
-            srcDirs = ['test']
-        }
-    }
-}
+mainClassName = "hw3.MainKt"
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
