@@ -1,5 +1,12 @@
 fun main() {
-    print(quickSort(listOf(3, 1, 7, 23, 11, 9, 4)))
+    println(quickSort(listOf(3, 1, 7, 23, 12, 9, 4)))
+    println(reverse(listOf(3, 1, 7, 23, 12, 9, 4)))
+    println(filter(listOf(3, 1, 7, 23, 12, 9, 4)) { x -> x % 2 == 0 })
+    println(lengths(listOf(listOf(3, 1, 7, 23, 12, 9, 4), listOf(1, 2), emptyList())))
+    println(sumsq(5))
+    println(listOf(3, 1, 7, 23, 11, 9, 4).mapAccumL("abc") {
+        init, el -> Pair(init + el.toString(), el + init.length)
+    })
 }
 
 fun quickSort(array: List<Int>): List<Int> {
