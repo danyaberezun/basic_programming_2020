@@ -14,3 +14,10 @@ fun lengths(array: List<List<Int>>): List<Int> {
 fun sumsq(n: Int): Int {
     return (1..n).map { x -> x * x }.sum()
 }
+
+fun <T, R>List<T>.mapAccumL(initial: R, operation: (R, T) -> (Pair<R, T>)): Pair<R, List<T>> {
+    return this.fold(Pair(initial, emptyList()), {
+        accumulator, list -> Pair(operation(accumulator.first, list).first,
+                                  accumulator.second.plus(operation(accumulator.first, list).second))
+    } )
+}
