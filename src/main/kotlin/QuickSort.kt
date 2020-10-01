@@ -10,3 +10,7 @@ fun filter(array: List<Int>, predicate: (Int) -> (Boolean)): List<Int> {
 fun lengths(array: List<List<Int>>): List<Int> {
     return array.fold(emptyList(), { newArray, element -> newArray.plus(element.size) })
 }
+
+fun sumsq(n: Int): Int {
+    return (1..n).map { x -> x * x }.sum()
+}
