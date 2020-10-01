@@ -32,8 +32,8 @@ fun lengths(strings: List<String>): List<Int> {
     return strings.map { it.length }
 }
 
-fun sumsq(n: Int): List<Int> {
-    return (1..n).map { it * it }
+fun sumsq(n: Int): Int {
+    return (1..n).map { it * it }.sum()
 }
 
 fun <T, R, V> List<R>.mapAccumL(f: (T, R) -> Pair<T, V>, initial: T): Pair<T, List<V>> {

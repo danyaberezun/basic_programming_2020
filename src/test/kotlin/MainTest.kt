@@ -49,8 +49,8 @@ internal class MainTest {
     @Test
     fun sumsqTest() {
         val n = 5
-        val expected = listOf(1, 4, 9, 16, 25)
-        val actual: List<Int> = sumsq(n)
+        val expected = 55
+        val actual: Int = sumsq(n)
         assertEquals(expected, actual)
     }
 
