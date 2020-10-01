@@ -5,7 +5,7 @@ fun quicksort(list: List<Int>): List<Int> {
         return list
     }
     val pivot: Int = list.last()
-    val left: List<Int> = list.filter { it <= pivot }
+    val left: List<Int> = list.filter { it < pivot }
     val center: List<Int> = list.filter { it == pivot }
     val right: List<Int> = list.filter { it > pivot }
     val result: List<Int> = quicksort(left) + center + quicksort(right)
