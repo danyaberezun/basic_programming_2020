@@ -1,7 +1,11 @@
+fun main() {
+    print(quickSort(listOf(3, 1, 7, 23, 11, 9, 4)))
+}
+
 fun quickSort(array: List<Int>): List<Int> {
+    if (array.isEmpty()) return emptyList()
     val pivot = array.random()
-    return if (array.isEmpty()) emptyList()
-           else quickSort(array.filter { it < pivot }) + pivot + quickSort(array.filter { it > pivot })
+    return quickSort(array.filter { it < pivot }) + pivot + quickSort(array.filter { it > pivot })
 }
 
 fun reverse(array: List<Int>): List<Int> {
