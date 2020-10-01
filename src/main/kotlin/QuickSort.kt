@@ -1,3 +1,9 @@
+fun quickSort(array: List<Int>): List<Int> {
+    val pivot = array.random()
+    return if (array.isEmpty()) emptyList()
+           else quickSort(array.filter { it < pivot }) + pivot + quickSort(array.filter { it > pivot })
+}
+
 fun reverse(array: List<Int>): List<Int> {
     return array.foldRight(emptyList(), { element, newArray -> newArray + element })
 }
