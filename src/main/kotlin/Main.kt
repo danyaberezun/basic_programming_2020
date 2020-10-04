@@ -16,6 +16,10 @@ fun filterRight(list: List<Int>, f: (Int) -> Boolean): List<Int>{
     return list.foldRight(listOf<Int>()){ item, total -> (if(f(item)) listOf(item) else listOf<Int>()) + total}
 }
 
+fun lengths(list: List<String>): List<Int>{
+    return list.fold(listOf<Int>()){total, item -> total + listOf(item.length)}
+}
+
 
 fun main(){
 

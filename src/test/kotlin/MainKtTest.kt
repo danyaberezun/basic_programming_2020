@@ -24,4 +24,10 @@ internal class MainKtTest {
         assertEquals(list.filter(isEven), filterRight(list, isEven))
     }
 
+    @org.junit.jupiter.api.Test
+    fun lengths(){
+        val list = listOf("1233", "34532323", "1", "", "42")
+        assertEquals(listOf(4, 8, 1, 0, 2), lengths(list))
+    }
+
 }
