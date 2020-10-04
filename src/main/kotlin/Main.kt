@@ -1,8 +1,12 @@
 package src
 
-fun quickSort(list: List<Int>): List<Int>{
-    return list
-}
+fun quickSort(list: List<Int>): List<Int> =
+    if(list.size <= 1) list
+    else {
+        val m = list[list.size/2]
+        quickSort(list.filter{ it < m }) + list.filter{it == m} + quickSort(list.filter{it > m})
+    }
+
 
 fun reverse(list: List<Int>): List<Int>{
     return list.foldRight(listOf<Int>()){ item, total -> total + listOf(item)}

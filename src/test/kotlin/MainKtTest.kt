@@ -5,6 +5,11 @@ import src.*
 internal class MainKtTest {
 
     @org.junit.jupiter.api.Test
+    fun quickSort(){
+        assertEquals((1..10).toList(), quickSort(listOf(10, 1, 2, 3, 6, 7, 5, 4, 9, 8)))
+    }
+
+    @org.junit.jupiter.api.Test
     fun reverse(){
         val list = (1..10).toList()
         assertEquals(list.reversed(), reverse(list))
