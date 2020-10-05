@@ -27,19 +27,19 @@ fun filter_withFold(list: List<Int>, function: (Int) -> Boolean): List<Int> {
 }
 
 fun filter_withFoldRight(list: List<Int>, function: (Int) -> Boolean): List<Int> {
-    return list.foldRight(
+    return reverse(list.foldRight(
         listOf(),
         { element, filteredList -> if (function(element)) filteredList + element else filteredList }
-    )
+    ))
 }
 
 fun lengths(listOfStrings: List<String>): List<Int> {
     return listOfStrings.map { it.length }
 }
 
-fun sumsq(n: Int): List<Int> {
-    val array = (1..n)
-    return array.map { it * it }
+fun sumsq(n: Int): Int {
+    val array = 1..n
+    return array.map { it * it }.sum()
 }
 
 fun <A, B, C> List<B>.mapAccumL(init_elem: A, function: (A, B) -> Pair<A, C>): Pair<A, List<C>> {
