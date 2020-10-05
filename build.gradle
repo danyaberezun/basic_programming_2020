@@ -1,0 +1,35 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.3.72'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    compile 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+apply plugin: 'application'
+apply plugin: 'kotlin'
+
+mainClassName = 'smth'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'smth'
+    }
+}
+
+task runTask(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = 'smth.MainKt'
+}
