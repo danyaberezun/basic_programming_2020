@@ -68,5 +68,3 @@ fun <T, R> List<T>.mapAccumL(initialValue: R, mapFun: (accumulator: R, value: T)
 
     return Pair(acc, mappedList)
 }
-
-// фукнция возвращает два значения: одно исползьуется для замены в map, другое возвращается как аккумулятор
