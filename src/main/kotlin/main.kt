@@ -34,6 +34,41 @@ fun sumsq(n: Int): Int {
     return numbers.filter{ it <= n }.map { it * it }.fold(0) {it, e -> e + it}
 }
 
+fun xOperation(x: Int, y:Int, operation: Char):Int {
+    when (operation) {
+        '+' -> return x + y
+        '*' -> return x * y
+        '=' -> return y
+        else -> return x
+    }
+}
+
+//mapAccumL, operations - ('+', '*', '.', '='), '.' - nothing, (x, y, '.', '=') - (x, x)
+fun mapAccumL(x: Int, y: List<Int>, firstOperation: Char, secondOperation: Char): Pair<Int, List<Int>> {
+    var newX = x
+    var newY = y
+    var curX = 0
+    when (secondOperation) {
+        '+' -> newY = y.map {
+            it -> curX = newX
+            newX = xOperation(newX, it, firstOperation)
+            it + curX
+        }
+        '*' -> newY = y.map {
+            it -> curX = newX
+            newX = xOperation(newX, it, firstOperation)
+            it * curX
+        }
+        '=' -> newY = y.map {
+            it -> curX = newX
+            newX = xOperation(newX, it, firstOperation)
+            curX
+        }
+        else -> newX = y.fold(newX){l, r -> xOperation(l, r, firstOperation)}
+    }
+    return Pair(newX, newY)
+}
+
 fun main() {
     val toSort: List<Int> = listOf(10, 5, 6, 2, 4, 9, 1, 7, 3, 8)
     println(quicksort(toSort))
@@ -48,4 +83,8 @@ fun main() {
     println(lengths(strings))
 
     println(sumsq(3))
+
+    val x = 5
+    val y = listOf(2, 4, 8)
+    println(mapAccumL(x, y, '.', '='))
 }
