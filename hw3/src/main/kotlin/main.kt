@@ -1,6 +1,8 @@
 fun main() {
     println(quicksort(mutableListOf(3, 2, 1, 5, 10, 6, 9, 8)))
     println(reverse(listOf(3, 2, 1, 5)))
+    println(filter(listOf(1, 2, 3, 4)) { it>2 })
+    println(filterWithFoldR(listOf(1, 2, 3, 4, 5)) {it >= 2})
 }
 
 fun quicksort(arr: List<Int>): List<Int> {
@@ -16,4 +18,25 @@ fun quicksort(arr: List<Int>): List<Int> {
 
 fun <T>reverse(arr: List<T>): List<T> {
     return arr.foldRight(listOf<T>()) { current, acc ->  acc + current }
+}
+
+fun <T>filter(arr: List<T>, filterFun: (element: T) -> Boolean): List<T> {
+    return arr.fold(listOf<T>()) lit@{ acc, current ->
+
+        return@lit if (filterFun(current)) {
+            acc + listOf(current)
+        } else {
+            acc
+        }
+    }
+}
+
+fun <T> filterWithFoldR(arr: List<T>, filterFun: (element: T) -> Boolean) : List<T> {
+    return arr.foldRight(listOf<T>()) lit@{ current, acc ->
+        return@lit if (filterFun(current)) {
+            listOf(current) + acc
+        } else {
+            acc
+        }
+    }
 }
