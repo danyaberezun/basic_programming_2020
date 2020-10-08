@@ -1,5 +1,6 @@
 fun main() {
     println(quicksort(mutableListOf(3, 2, 1, 5, 10, 6, 9, 8)))
+    println(reverse(listOf(3, 2, 1, 5)))
 }
 
 fun quicksort(arr: List<Int>): List<Int> {
@@ -13,6 +14,6 @@ fun quicksort(arr: List<Int>): List<Int> {
 
 }
 
-fun reverse() {
-
+fun <T>reverse(arr: List<T>): List<T> {
+    return arr.foldRight(listOf<T>()) { current, acc ->  acc + current }
 }
