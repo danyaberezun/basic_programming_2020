@@ -5,6 +5,10 @@ fun main() {
     println(filterWithFoldR(listOf(1, 2, 3, 4, 5)) {it >= 2})
     println(lengths(listOf("123", "12", "1")))
     println(sumsq(3))
+
+    println(listOf(1, 2, 3).mapAccumL(0) { acc, value ->
+        Pair(value + acc, value * value)
+    })
 }
 
 fun quicksort(arr: List<Int>): List<Int> {
@@ -52,3 +56,17 @@ fun sumsq(n: Int): Int {
     (1..n).map {sum += it * it}
     return sum
 }
+
+fun <T, R> List<T>.mapAccumL(initialValue: R, mapFun: (accumulator: R, value: T) -> Pair<R, R>): Pair<R, List<R>> {
+    var acc: R = initialValue
+
+    val mappedList: List<R> = this.map {
+        val result = mapFun(acc, it)
+        acc = result.first
+        result.second
+    }
+
+    return Pair(acc, mappedList)
+}
+
+// фукнция возвращает два значения: одно исползьуется для замены в map, другое возвращается как аккумулятор
