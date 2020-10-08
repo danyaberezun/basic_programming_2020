@@ -3,6 +3,7 @@ fun main() {
     println(reverse(listOf(3, 2, 1, 5)))
     println(filter(listOf(1, 2, 3, 4)) { it>2 })
     println(filterWithFoldR(listOf(1, 2, 3, 4, 5)) {it >= 2})
+    println(lengths(listOf("123", "12", "1")))
 }
 
 fun quicksort(arr: List<Int>): List<Int> {
@@ -39,4 +40,8 @@ fun <T> filterWithFoldR(arr: List<T>, filterFun: (element: T) -> Boolean) : List
             acc
         }
     }
+}
+
+fun lengths(strings: List<String>): List<Int> {
+    return strings.map { it.length }
 }
