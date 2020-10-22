@@ -4,7 +4,7 @@ import kotlin.math.exp
 
 internal class VisitorKtTest {
     fun e(value: Int): Expression {
-        return Expression.Literal(value)
+        return Literal(value)
     }
 
     val product = (e(1) + e(2)) * ((e(2) + e(3)) * e(2))

@@ -1,10 +1,4 @@
-import java.lang.IllegalArgumentException
-
-open class Expression {
-    class Literal(val value: Int) : Expression()
-    class Sum(val left: Expression, val right: Expression) : Expression()
-    class Product(val left: Expression, val right: Expression) : Expression()
-
+sealed class Expression {
     operator fun plus(other: Expression): Expression {
         return Sum(this, other)
     }
@@ -12,6 +6,10 @@ open class Expression {
         return Product(this, other)
     }
 }
+
+class Literal(val value: Int) : Expression()
+class Sum(val left: Expression, val right: Expression) : Expression()
+class Product(val left: Expression, val right: Expression) : Expression()
 
 fun <T, R> createVisitor(
     literal: (Int) -> T,
@@ -21,10 +19,9 @@ fun <T, R> createVisitor(
 ): (Expression) -> R {
     fun apply(expression: Expression): T {
         return when (expression) {
-            is Expression.Literal -> literal(expression.value)
-            is Expression.Sum -> add(apply(expression.left), apply(expression.right))
-            is Expression.Product -> multiply(apply(expression.left), apply(expression.right))
-            else -> throw(IllegalArgumentException("Unknown expression"))
+            is Literal -> literal(expression.value)
+            is Sum -> add(apply(expression.left), apply(expression.right))
+            is Product -> multiply(apply(expression.left), apply(expression.right))
         }
     }
     return { finalize(apply(it)) }
