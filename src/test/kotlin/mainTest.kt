@@ -12,7 +12,7 @@ internal class mainTest {
 
     @Test
     fun `qsort should sort full array`() {
-        var x = listOf(0, 243, 2, 3, 4, 3, 3, 5, 3, 4, 2, 4234, 433, 22, -10)
+        var x = listOf(0, 243, 2, 3, 4, 3, 3, 5, 3, 4, 2, 4234, 433, 22)
         assertEquals(x.sorted(), foo.qsort(x))
     }
 
