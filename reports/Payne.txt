@@ -1,0 +1,591 @@
+1a) id
+uid=0(root) gid=0(root) groups=0(root)
+1b) time
+Thu Oct 22 13:16:36 UTC 2020
+1c) pwd
+/
+1d) ls
+bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+
+ ls -l
+total 64
+drwxr-xr-x   2 root root 4096 Apr 24  2019 bin
+drwxr-xr-x   2 root root 4096 Apr 24  2018 boot
+drwxr-xr-x   5 root root  360 Oct 22 13:16 dev
+drwxr-xr-x   1 root root 4096 Oct 22 13:16 etc
+drwxr-xr-x   2 root root 4096 Apr 24  2018 home
+drwxr-xr-x   8 root root 4096 May 23  2017 lib
+drwxr-xr-x   2 root root 4096 Apr 24  2019 lib64
+drwxr-xr-x   2 root root 4096 Apr 24  2019 media
+drwxr-xr-x   2 root root 4096 Apr 24  2019 mnt
+drwxr-xr-x   2 root root 4096 Apr 24  2019 opt
+dr-xr-xr-x 218 root root    0 Oct 22 13:16 proc
+drwx------   2 root root 4096 Apr 24  2019 root
+drwxr-xr-x   1 root root 4096 Apr 26  2019 run
+drwxr-xr-x   1 root root 4096 Apr 26  2019 sbin
+drwxr-xr-x   2 root root 4096 Apr 24  2019 srv
+dr-xr-xr-x  13 root root    0 Oct 22 13:16 sys
+drwxrwxrwt   2 root root 4096 Apr 24  2019 tmp
+drwxr-xr-x   1 root root 4096 Apr 24  2019 usr
+drwxr-xr-x   1 root root 4096 Apr 24  2019 var
+
+ls -a
+.  ..  .dockerenv  bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+
+2a) ls -l /dev
+total 0
+crw--w---- 1 root tty  136, 0 Oct 22 13:18 console
+lrwxrwxrwx 1 root root     11 Oct 22 13:16 core -> /proc/kcore
+lrwxrwxrwx 1 root root     13 Oct 22 13:16 fd -> /proc/self/fd
+crw-rw-rw- 1 root root   1, 7 Oct 22 13:16 full
+drwxrwxrwt 2 root root     40 Oct 22 13:16 mqueue
+crw-rw-rw- 1 root root   1, 3 Oct 22 13:16 null
+lrwxrwxrwx 1 root root      8 Oct 22 13:16 ptmx -> pts/ptmx
+drwxr-xr-x 2 root root      0 Oct 22 13:16 pts
+crw-rw-rw- 1 root root   1, 8 Oct 22 13:16 random
+drwxrwxrwt 2 root root     40 Oct 22 13:16 shm
+lrwxrwxrwx 1 root root     15 Oct 22 13:16 stderr -> /proc/self/fd/2
+lrwxrwxrwx 1 root root     15 Oct 22 13:16 stdin -> /proc/self/fd/0
+lrwxrwxrwx 1 root root     15 Oct 22 13:16 stdout -> /proc/self/fd/1
+crw-rw-rw- 1 root root   5, 0 Oct 22 13:16 tty
+crw-rw-rw- 1 root root   1, 9 Oct 22 13:16 urandom
+crw-rw-rw- 1 root root   1, 5 Oct 22 13:16 zero
+
+2b)  file /dev/*
+/dev/afsc_type5:                     character special (19/1)
+/dev/auditpipe:                      character special (11/0)
+/dev/auditsessions:                  character special (10/4)
+/dev/autofs:                         character special (31/0)
+/dev/autofs_control:                 character special (35/0)
+/dev/autofs_homedirmounter:          character special (34/260)
+/dev/autofs_notrigger:               character special (33/260)
+/dev/autofs_nowait:                  character special (32/36466)
+/dev/bpf0:                           character special (23/0)
+/dev/bpf1:                           character special (23/1)
+/dev/bpf2:                           character special (23/2)
+/dev/bpf3:                           character special (23/3)
+/dev/bpf4:                           character special (23/4)
+/dev/console:                        character special (0/0)
+/dev/cu.Bluetooth-Incoming-Port:     character special (9/1)
+/dev/cu.JacobsiPhone-WirelessiA:     character special (9/3)
+/dev/cu.NikasAirPods-WirelessiAP-3:  character special (9/5)
+/dev/disk0:                          block special (1/0)
+/dev/disk0s1:                        block special (1/1)
+/dev/disk0s2:                        block special (1/2)
+/dev/disk1:                          block special (1/3)
+/dev/disk1s1:                        block special (1/4)
+/dev/disk1s2:                        block special (1/5)
+/dev/disk1s3:                        block special (1/6)
+/dev/disk1s4:                        block special (1/7)
+/dev/dtrace:                         character special (24/0)
+/dev/dtracehelper:                   character special (25/0)
+/dev/fbt:                            character special (0/0)
+/dev/fd:                             directory
+/dev/fsevents:                       character special (14/0)
+/dev/io8log:                         character special (20/16)
+/dev/io8logmt:                       character special (20/17)
+/dev/io8logtemp:                     character special (20/14)
+/dev/klog:                           character special (6/0)
+/dev/lockstat:                       character special (0/0)
+/dev/machtrace:                      character special (0/0)
+/dev/null:                           character special (3/2)
+/dev/oslog:                          character special (7/0)
+/dev/oslog_stream:                   character special (8/0)
+/dev/pf:                             character special (13/0)
+/dev/pfm:                            character special (13/1)
+/dev/profile:                        character special (0/0)
+/dev/ptmx:                           character special (15/3)
+/dev/ptyp0:                          character special (5/0)
+/dev/ptyp1:                          character special (5/1)
+/dev/ptyp2:                          character special (5/2)
+/dev/ptyp3:                          character special (5/3)
+/dev/ptyp4:                          character special (5/4)
+/dev/ptyp5:                          character special (5/5)
+/dev/ptyp6:                          character special (5/6)
+/dev/ptyp7:                          character special (5/7)
+/dev/ptyp8:                          character special (5/8)
+/dev/ptyp9:                          character special (5/9)
+/dev/ptypa:                          character special (5/10)
+/dev/ptypb:                          character special (5/11)
+/dev/ptypc:                          character special (5/12)
+/dev/ptypd:                          character special (5/13)
+/dev/ptype:                          character special (5/14)
+/dev/ptypf:                          character special (5/15)
+/dev/ptyq0:                          character special (5/16)
+/dev/ptyq1:                          character special (5/17)
+/dev/ptyq2:                          character special (5/18)
+/dev/ptyq3:                          character special (5/19)
+/dev/ptyq4:                          character special (5/20)
+/dev/ptyq5:                          character special (5/21)
+/dev/ptyq6:                          character special (5/22)
+/dev/ptyq7:                          character special (5/23)
+/dev/ptyq8:                          character special (5/24)
+/dev/ptyq9:                          character special (5/25)
+/dev/ptyqa:                          character special (5/26)
+/dev/ptyqb:                          character special (5/27)
+/dev/ptyqc:                          character special (5/28)
+/dev/ptyqd:                          character special (5/29)
+/dev/ptyqe:                          character special (5/30)
+/dev/ptyqf:                          character special (5/31)
+/dev/ptyr0:                          character special (5/32)
+/dev/ptyr1:                          character special (5/33)
+/dev/ptyr2:                          character special (5/34)
+/dev/ptyr3:                          character special (5/35)
+/dev/ptyr4:                          character special (5/36)
+/dev/ptyr5:                          character special (5/37)
+/dev/ptyr6:                          character special (5/38)
+/dev/ptyr7:                          character special (5/39)
+/dev/ptyr8:                          character special (5/40)
+/dev/ptyr9:                          character special (5/41)
+/dev/ptyra:                          character special (5/42)
+/dev/ptyrb:                          character special (5/43)
+/dev/ptyrc:                          character special (5/44)
+/dev/ptyrd:                          character special (5/45)
+/dev/ptyre:                          character special (5/46)
+/dev/ptyrf:                          character special (5/47)
+/dev/ptys0:                          character special (5/48)
+/dev/ptys1:                          character special (5/49)
+/dev/ptys2:                          character special (5/50)
+/dev/ptys3:                          character special (5/51)
+/dev/ptys4:                          character special (5/52)
+/dev/ptys5:                          character special (5/53)
+/dev/ptys6:                          character special (5/54)
+/dev/ptys7:                          character special (5/55)
+/dev/ptys8:                          character special (5/56)
+/dev/ptys9:                          character special (5/57)
+/dev/ptysa:                          character special (5/58)
+/dev/ptysb:                          character special (5/59)
+/dev/ptysc:                          character special (5/60)
+/dev/ptysd:                          character special (5/61)
+/dev/ptyse:                          character special (5/62)
+/dev/ptysf:                          character special (5/63)
+/dev/ptyt0:                          character special (5/64)
+/dev/ptyt1:                          character special (5/65)
+/dev/ptyt2:                          character special (5/66)
+/dev/ptyt3:                          character special (5/67)
+/dev/ptyt4:                          character special (5/68)
+/dev/ptyt5:                          character special (5/69)
+/dev/ptyt6:                          character special (5/70)
+/dev/ptyt7:                          character special (5/71)
+/dev/ptyt8:                          character special (5/72)
+/dev/ptyt9:                          character special (5/73)
+/dev/ptyta:                          character special (5/74)
+/dev/ptytb:                          character special (5/75)
+/dev/ptytc:                          character special (5/76)
+/dev/ptytd:                          character special (5/77)
+/dev/ptyte:                          character special (5/78)
+/dev/ptytf:                          character special (5/79)
+/dev/ptyu0:                          character special (5/80)
+/dev/ptyu1:                          character special (5/81)
+/dev/ptyu2:                          character special (5/82)
+/dev/ptyu3:                          character special (5/83)
+/dev/ptyu4:                          character special (5/84)
+/dev/ptyu5:                          character special (5/85)
+/dev/ptyu6:                          character special (5/86)
+/dev/ptyu7:                          character special (5/87)
+/dev/ptyu8:                          character special (5/88)
+/dev/ptyu9:                          character special (5/89)
+/dev/ptyua:                          character special (5/90)
+/dev/ptyub:                          character special (5/91)
+/dev/ptyuc:                          character special (5/92)
+/dev/ptyud:                          character special (5/93)
+/dev/ptyue:                          character special (5/94)
+/dev/ptyuf:                          character special (5/95)
+/dev/ptyv0:                          character special (5/96)
+/dev/ptyv1:                          character special (5/97)
+/dev/ptyv2:                          character special (5/98)
+/dev/ptyv3:                          character special (5/99)
+/dev/ptyv4:                          character special (5/100)
+/dev/ptyv5:                          character special (5/101)
+/dev/ptyv6:                          character special (5/102)
+/dev/ptyv7:                          character special (5/103)
+/dev/ptyv8:                          character special (5/104)
+/dev/ptyv9:                          character special (5/105)
+/dev/ptyva:                          character special (5/106)
+/dev/ptyvb:                          character special (5/107)
+/dev/ptyvc:                          character special (5/108)
+/dev/ptyvd:                          character special (5/109)
+/dev/ptyve:                          character special (5/110)
+/dev/ptyvf:                          character special (5/111)
+/dev/ptyw0:                          character special (5/112)
+/dev/ptyw1:                          character special (5/113)
+/dev/ptyw2:                          character special (5/114)
+/dev/ptyw3:                          character special (5/115)
+/dev/ptyw4:                          character special (5/116)
+/dev/ptyw5:                          character special (5/117)
+/dev/ptyw6:                          character special (5/118)
+/dev/ptyw7:                          character special (5/119)
+/dev/ptyw8:                          character special (5/120)
+/dev/ptyw9:                          character special (5/121)
+/dev/ptywa:                          character special (5/122)
+/dev/ptywb:                          character special (5/123)
+/dev/ptywc:                          character special (5/124)
+/dev/ptywd:                          character special (5/125)
+/dev/ptywe:                          character special (5/126)
+/dev/ptywf:                          character special (5/127)
+/dev/random:                         character special (17/0)
+/dev/rdisk0:                         character special (1/0)
+/dev/rdisk0s1:                       character special (1/1)
+/dev/rdisk0s2:                       character special (1/2)
+/dev/rdisk1:                         character special (1/3)
+/dev/rdisk1s1:                       character special (1/4)
+/dev/rdisk1s2:                       character special (1/5)
+/dev/rdisk1s3:                       character special (1/6)
+/dev/rdisk1s4:                       character special (1/7)
+/dev/sdt:                            character special (0/0)
+/dev/stderr:                         character special (16/1)
+/dev/stdin:                          character special (16/1)
+/dev/stdout:                         character special (16/1)
+/dev/systrace:                       character special (0/0)
+/dev/tty:                            character special (2/0)
+/dev/tty.Bluetooth-Incoming-Port:    character special (9/0)
+/dev/tty.JacobsiPhone-WirelessiA:    character special (9/2)
+/dev/tty.NikasAirPods-WirelessiAP-3: character special (9/4)
+/dev/ttyp0:                          character special (4/0)
+/dev/ttyp1:                          character special (4/1)
+/dev/ttyp2:                          character special (4/2)
+/dev/ttyp3:                          character special (4/3)
+/dev/ttyp4:                          character special (4/4)
+/dev/ttyp5:                          character special (4/5)
+/dev/ttyp6:                          character special (4/6)
+/dev/ttyp7:                          character special (4/7)
+/dev/ttyp8:                          character special (4/8)
+/dev/ttyp9:                          character special (4/9)
+/dev/ttypa:                          character special (4/10)
+/dev/ttypb:                          character special (4/11)
+/dev/ttypc:                          character special (4/12)
+/dev/ttypd:                          character special (4/13)
+/dev/ttype:                          character special (4/14)
+/dev/ttypf:                          character special (4/15)
+/dev/ttyq0:                          character special (4/16)
+/dev/ttyq1:                          character special (4/17)
+/dev/ttyq2:                          character special (4/18)
+/dev/ttyq3:                          character special (4/19)
+/dev/ttyq4:                          character special (4/20)
+/dev/ttyq5:                          character special (4/21)
+/dev/ttyq6:                          character special (4/22)
+/dev/ttyq7:                          character special (4/23)
+/dev/ttyq8:                          character special (4/24)
+/dev/ttyq9:                          character special (4/25)
+/dev/ttyqa:                          character special (4/26)
+/dev/ttyqb:                          character special (4/27)
+/dev/ttyqc:                          character special (4/28)
+/dev/ttyqd:                          character special (4/29)
+/dev/ttyqe:                          character special (4/30)
+/dev/ttyqf:                          character special (4/31)
+/dev/ttyr0:                          character special (4/32)
+/dev/ttyr1:                          character special (4/33)
+/dev/ttyr2:                          character special (4/34)
+/dev/ttyr3:                          character special (4/35)
+/dev/ttyr4:                          character special (4/36)
+/dev/ttyr5:                          character special (4/37)
+/dev/ttyr6:                          character special (4/38)
+/dev/ttyr7:                          character special (4/39)
+/dev/ttyr8:                          character special (4/40)
+/dev/ttyr9:                          character special (4/41)
+/dev/ttyra:                          character special (4/42)
+/dev/ttyrb:                          character special (4/43)
+/dev/ttyrc:                          character special (4/44)
+/dev/ttyrd:                          character special (4/45)
+/dev/ttyre:                          character special (4/46)
+/dev/ttyrf:                          character special (4/47)
+/dev/ttys0:                          character special (4/48)
+/dev/ttys000:                        character special (16/0)
+/dev/ttys001:                        character special (16/1)
+/dev/ttys002:                        character special (16/2)
+/dev/ttys1:                          character special (4/49)
+/dev/ttys2:                          character special (4/50)
+/dev/ttys3:                          character special (4/51)
+/dev/ttys4:                          character special (4/52)
+/dev/ttys5:                          character special (4/53)
+/dev/ttys6:                          character special (4/54)
+/dev/ttys7:                          character special (4/55)
+/dev/ttys8:                          character special (4/56)
+/dev/ttys9:                          character special (4/57)
+/dev/ttysa:                          character special (4/58)
+/dev/ttysb:                          character special (4/59)
+/dev/ttysc:                          character special (4/60)
+/dev/ttysd:                          character special (4/61)
+/dev/ttyse:                          character special (4/62)
+/dev/ttysf:                          character special (4/63)
+/dev/ttyt0:                          character special (4/64)
+/dev/ttyt1:                          character special (4/65)
+/dev/ttyt2:                          character special (4/66)
+/dev/ttyt3:                          character special (4/67)
+/dev/ttyt4:                          character special (4/68)
+/dev/ttyt5:                          character special (4/69)
+/dev/ttyt6:                          character special (4/70)
+/dev/ttyt7:                          character special (4/71)
+/dev/ttyt8:                          character special (4/72)
+/dev/ttyt9:                          character special (4/73)
+/dev/ttyta:                          character special (4/74)
+/dev/ttytb:                          character special (4/75)
+/dev/ttytc:                          character special (4/76)
+/dev/ttytd:                          character special (4/77)
+/dev/ttyte:                          character special (4/78)
+/dev/ttytf:                          character special (4/79)
+/dev/ttyu0:                          character special (4/80)
+/dev/ttyu1:                          character special (4/81)
+/dev/ttyu2:                          character special (4/82)
+/dev/ttyu3:                          character special (4/83)
+/dev/ttyu4:                          character special (4/84)
+/dev/ttyu5:                          character special (4/85)
+/dev/ttyu6:                          character special (4/86)
+/dev/ttyu7:                          character special (4/87)
+/dev/ttyu8:                          character special (4/88)
+/dev/ttyu9:                          character special (4/89)
+/dev/ttyua:                          character special (4/90)
+/dev/ttyub:                          character special (4/91)
+/dev/ttyuc:                          character special (4/92)
+/dev/ttyud:                          character special (4/93)
+/dev/ttyue:                          character special (4/94)
+/dev/ttyuf:                          character special (4/95)
+/dev/ttyv0:                          character special (4/96)
+/dev/ttyv1:                          character special (4/97)
+/dev/ttyv2:                          character special (4/98)
+/dev/ttyv3:                          character special (4/99)
+/dev/ttyv4:                          character special (4/100)
+/dev/ttyv5:                          character special (4/101)
+/dev/ttyv6:                          character special (4/102)
+/dev/ttyv7:                          character special (4/103)
+/dev/ttyv8:                          character special (4/104)
+/dev/ttyv9:                          character special (4/105)
+/dev/ttyva:                          character special (4/106)
+/dev/ttyvb:                          character special (4/107)
+/dev/ttyvc:                          character special (4/108)
+/dev/ttyvd:                          character special (4/109)
+/dev/ttyve:                          character special (4/110)
+/dev/ttyvf:                          character special (4/111)
+/dev/ttyw0:                          character special (4/112)
+/dev/ttyw1:                          character special (4/113)
+/dev/ttyw2:                          character special (4/114)
+/dev/ttyw3:                          character special (4/115)
+/dev/ttyw4:                          character special (4/116)
+/dev/ttyw5:                          character special (4/117)
+/dev/ttyw6:                          character special (4/118)
+/dev/ttyw7:                          character special (4/119)
+/dev/ttyw8:                          character special (4/120)
+/dev/ttyw9:                          character special (4/121)
+/dev/ttywa:                          character special (4/122)
+/dev/ttywb:                          character special (4/123)
+/dev/ttywc:                          character special (4/124)
+/dev/ttywd:                          character special (4/125)
+/dev/ttywe:                          character special (4/126)
+/dev/ttywf:                          character special (4/127)
+/dev/uart.BLTH:                      character special (36/0)
+/dev/urandom:                        character special (17/1)
+/dev/vboxdrv:                        character special (22/0)
+/dev/vboxdrvu:                       character special (22/1)
+/dev/vboxnetctl:                     character special (37/0)
+/dev/xcpm:                           character special (21/0)
+/dev/zero:                           character special (3/3)
+
+2c) file /sbin/ifconfig
+/sbin/ifconfig: Mach-O 64-bit executable x86_64
+
+2d) file /dev/sda1
+/dev/sda1: cannot open `/dev/sda1' (No such file or directory)
+
+2e)  file /proc/cpuinfo
+/proc/cpuinfo: cannot open `/proc/cpuinfo' (No such file or directory)
+
+file -s /proc/cpuinfo
+/proc/cpuinfo: cannot open `/proc/cpuinfo' (No such file or directory)
+
+2f) stat /etc/init.d/*
+  File: /etc/init.d/hwclock.sh
+  Size: 3809            Blocks: 8          IO Block: 4096   regular file
+Device: 801h/2049d      Inode: 3670231     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2018-02-14 22:20:24.000000000 +0000
+Modify: 2018-02-14 22:20:24.000000000 +0000
+Change: 2019-05-08 00:13:03.249553982 +0000
+ Birth: -
+  File: /etc/init.d/procps
+  Size: 1191            Blocks: 8          IO Block: 4096   regular file
+Device: 801h/2049d      Inode: 3670232     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2018-01-17 22:35:48.000000000 +0000
+Modify: 2018-01-17 22:35:48.000000000 +0000
+Change: 20
+
+3a) mkdir -p /var/tmp/test/test && cd /var/tmp/test/test
+
+3b) touch 1 2 3 && file ./* 
+./1: empty
+./2: empty
+./3: empty
+
+3c) cp /etc/hosts ./
+ ls -lc
+total 68
+-rw-r--r--   1 root root    0 Oct 22 13:25 1
+-rw-r--r--   1 root root    0 Oct 22 13:25 2
+-rw-r--r--   1 root root    0 Oct 22 13:25 3
+drwxr-xr-x   2 root root 4096 May  8  2019 bin
+drwxr-xr-x   2 root root 4096 May  8  2019 boot
+drwxr-xr-x   5 root root  360 Oct 22 13:16 dev
+drwxr-xr-x   1 root root 4096 Oct 22 13:16 etc
+drwxr-xr-x   2 root root 4096 May  8  2019 home
+-rw-r--r--   1 root root  174 Oct 22 13:23 hosts
+drwxr-xr-x   8 root root 4096 May  8  2019 lib
+drwxr-xr-x   2 root root 4096 May  8  2019 lib64
+drwxr-xr-x   2 root root 4096 May  8  2019 media
+drwxr-xr-x   2 root root 4096 May  8  2019 mnt
+drwxr-xr-x   2 root root 4096 May  8  2019 opt
+dr-xr-xr-x 215 root root    0 Oct 22 13:16 proc
+drwx------   2 root root 4096 May  8  2019 root
+drwxr-xr-x   1 root root 4096 May  8  2019 run
+drwxr-xr-x   1 root root 4096 May  8  2019 sbin
+drwxr-xr-x   2 root root 4096 May  8  2019 srv
+dr-xr-xr-x  13 root root    0 Oct 22 13:17 sys
+drwxrwxrwt   2 root root 4096 May  8  2019 tmp
+drwxr-xr-x   1 root root 4096 May  8  2019 usr
+
+3d)  mv 1 hosts
+ ls -lc
+-rw-r--r--   1 root root    0 Oct 22 13:25 2
+-rw-r--r--   1 root root    0 Oct 22 13:25 3
+drwxr-xr-x   2 root root 4096 May  8  2019 bin
+drwxr-xr-x   2 root root 4096 May  8  2019 boot
+drwxr-xr-x   5 root root  360 Oct 22 13:16 dev
+drwxr-xr-x   1 root root 4096 Oct 22 13:16 etc
+drwxr-xr-x   2 root root 4096 May  8  2019 home
+-rw-r--r--   1 root root  174 Oct 22 13:23 hosts
+drwxr-xr-x   8 root root 4096 May  8  2019 lib
+drwxr-xr-x   2 root root 4096 May  8  2019 lib64
+drwxr-xr-x   2 root root 4096 May  8  2019 media
+drwxr-xr-x   2 root root 4096 May  8  2019 mnt
+drwxr-xr-x   2 root root 4096 May  8  2019 opt
+dr-xr-xr-x 215 root root    0 Oct 22 13:16 proc
+drwx------   2 root root 4096 May  8  2019 root
+drwxr-xr-x   1 root root 4096 May  8  2019 run
+drwxr-xr-x   1 root root 4096 May  8  2019 sbin
+drwxr-xr-x   2 root root 4096 May  8  2019 srv
+dr-xr-xr-x  13 root root    0 Oct 22 13:17 sys
+drwxrwxrwt   2 root root 4096 May  8  2019 tmp
+drwxr-xr-x   1 root root 4096 May  8  2019 usr
+
+3e) ls -lc
+-rw-r--r--   1 root root    0 Oct 22 13:25 3
+drwxr-xr-x   2 root root 4096 May  8  2019 bin
+drwxr-xr-x   2 root root 4096 May  8  2019 boot
+drwxr-xr-x   5 root root  360 Oct 22 13:16 dev
+drwxr-xr-x   1 root root 4096 Oct 22 13:16 etc
+drwxr-xr-x   2 root root 4096 May  8  2019 home
+-rw-r--r--   1 root root  174 Oct 22 13:23 hosts
+drwxr-xr-x   8 root root 4096 May  8  2019 lib
+drwxr-xr-x   2 root root 4096 May  8  2019 lib64
+drwxr-xr-x   2 root root 4096 May  8  2019 media
+drwxr-xr-x   2 root root 4096 May  8  2019 mnt
+drwxr-xr-x   2 root root 4096 May  8  2019 opt
+dr-xr-xr-x 215 root root    0 Oct 22 13:16 proc
+drwx------   2 root root 4096 May  8  2019 root
+drwxr-xr-x   1 root root 4096 May  8  2019 run
+drwxr-xr-x   1 root root 4096 May  8  2019 sbin
+drwxr-xr-x   2 root root 4096 May  8  2019 srv
+dr-xr-xr-x  13 root root    0 Oct 22 13:17 sys
+drwxrwxrwt   2 root root 4096 May  8  2019 tmp
+drwxr-xr-x   1 root root 4096 May  8  2019 usr
+
+3f) mkdir ~/tmp/
+cp ./* ~/tmp/
+
+3g) cd ~ && rm ./tmp
+
+3h) rm -r ../../test
+
+3i) cd ~/tmp/
+
+3j) echo 0 1 2 3 4 5 6 7 8 9 > digits.txt
+ cat digits.txt 
+0 1 2 3 4 5 6 7 8 9
+
+3k) touch two_lines.txt
+ for ((i = 1; i <= 2; i++)); do
+ cat digits.txt >> two_lines.txt;
+ done
+ cat two_lines.txt 
+0 1 2 3 4 5 6 7 8 9
+0 1 2 3 4 5 6 7 8 9
+
+3l) > lines.txt
+ for ((i = 1; i <= 65; i++));
+ do cat digits.txt >> lines.txt;
+ done
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+
+3m)  wc -l lines.txt
+65 lines.txt
+
+3n) head -5 /etc/passwd > head.txt
+ tail -5 /etc/passwd > tail.txt
+
+3o) ls -al /etc > files.txt
+
+3p) ls -la /etc | wc -l
+70
