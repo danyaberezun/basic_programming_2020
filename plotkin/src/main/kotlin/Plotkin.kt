@@ -8,9 +8,9 @@ class InvalidProgramException(message: String) : Exception(message)
 sealed class Instruction
 typealias Var = Int
 
-class Increment(val index: Var) : Instruction()
-class Decrement(val index: Var) : Instruction()
-class Zero(val index: Var, val line1: Int, val line2: Int) : Instruction()
+data class Increment(val index: Var) : Instruction()
+data class Decrement(val index: Var) : Instruction()
+data class Zero(val index: Var, val line1: Int, val line2: Int) : Instruction()
 object Stop : Instruction()
 
 fun charToVar(char: Char): Var {
@@ -24,7 +24,7 @@ fun parseProgram(lines: List<String>): List<Instruction> {
             Regex("dec [xyz]").matches(it) -> Decrement(charToVar(it.last()))
             it == "stop" -> Stop
             else -> {
-                val (index, line1, line2) = Regex("zero ([xyz]) ([0-9]+) else ([0-9]+)").matchEntire(it)?.destructured
+                val (index, line1, line2) = Regex("zero ([xyz]) ([1-9][0-9]*) else ([1-9][0-9]*)").matchEntire(it)?.destructured
                     ?: throw InvalidInputException("Invalid instruction")
                 Zero(charToVar(index[0]), line1.toInt() - 1, line2.toInt() - 1)
             }
@@ -71,6 +71,7 @@ data class Range(val first: Int, val last: Int) {
     fun increment() = Range(first + 1, last + 1)
     fun decrement() = Range(max(first - 1, 0), max(last, 0) - 1)
     fun isEmpty() = last < first
+    override fun toString(): String = if (isEmpty()) "()" else "$first..$last"
 }
 
 fun union(left: Range, right: Range): Range {
@@ -81,10 +82,12 @@ fun union(left: Range, right: Range): Range {
     return Range(min(left.first, right.first), max(left.last, right.last))
 }
 
-class VarRanges(val ranges: MutableList<Range>) {
+data class VarRanges(val ranges: MutableList<Range>) {
+    constructor(rangeX: Range, rangeY: Range, rangeZ: Range): this(mutableListOf(rangeX, rangeY, rangeZ))
     fun update(other: VarRanges): Boolean {
         if (other.ranges.any { it.isEmpty() })
             return false
+        assert(ranges.all {it.isEmpty()} || ranges.none {it.isEmpty()})
         var result = false
         for (index in 0..2) {
             val newRange = union(ranges[index], other.ranges[index])
@@ -102,9 +105,12 @@ class VarRanges(val ranges: MutableList<Range>) {
     fun decrement(index: Var): VarRanges = modify(index, ranges[index].decrement())
     fun setZero(index: Var): VarRanges = modify(index, Range(ranges[index].first, 0))
     fun setNotZero(index: Var): VarRanges = modify(index, Range(1, ranges[index].last))
+    override fun toString(): String {
+        return listOf("x", "y", "z").zip(ranges).joinToString(" ") { (varName, interval) -> "$varName $interval" }
+    }
 }
 
-fun executeIntervals(program: List<Instruction>, input: Range, maxSteps: Int = 10000): Range {
+fun executeIntervals(program: List<Instruction>, input: Range, maxSteps: Int = 10000): List<VarRanges> {
     val intervals = MutableList(program.size + 1) { VarRanges(MutableList(3) { Range(0, -1) }) }
     intervals[0] = VarRanges(mutableListOf(input, Range(0, 0), Range(0, 0)))
     for (step in 1..maxSteps) {
@@ -134,13 +140,21 @@ fun executeIntervals(program: List<Instruction>, input: Range, maxSteps: Int = 1
         if (!changed)
             break
     }
-    for (interval in intervals) {
-        for (range in interval.ranges)
-            println(range)
-        println()
-    }
+    return intervals
+}
+
+fun getResultRange(program: List<Instruction>, intervals: List<VarRanges>): Range {
     return intervals.withIndex().filter { (line, _) -> line >= program.size || program[line] is Stop }
         .fold(Range(0, -1), { range, (_, current) -> union(range, current.ranges[1]) })
+}
+
+private fun processIntervals(inputRange: String, program: List<Instruction>) {
+    val (l, r) = inputRange.split('-').map { it.toIntOrNull() }
+    if (l == null || r == null || l > r || l < 0)
+        throw InvalidInputException("Input limits are not valid")
+    val intervals = executeIntervals(program, Range(l, r))
+    println(intervals.withIndex().joinToString("\n") { (line, varRanges) -> "${line+1} $varRanges" })
+    println("result ${getResultRange(program, intervals)}")
 }
 
 fun main(args: Array<String>) {
@@ -149,10 +163,7 @@ fun main(args: Array<String>) {
             throw InvalidInputException("Arguments should be input file name and input or range of inputs")
         val program = parseProgram(File(args[0]).readLines())
         if ('-' in args[1]) {
-            val (l, r) = args[1].split('-').map { it.toIntOrNull() }
-            if (l == null || r == null || l > r || l < 0)
-                throw InvalidInputException("Input limits are not valid")
-            println(executeIntervals(program, Range(l, r)))
+            processIntervals(args[1], program)
         } else {
             val input = args[1].toIntOrNull()
                 ?: throw InvalidInputException("Input is not integer")
