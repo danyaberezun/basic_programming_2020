@@ -1,0 +1,5 @@
+zero x 5 else 2
+dec x
+inc y
+zero x 5 else 2
+stop
