@@ -9,6 +9,8 @@ internal class VisitorKtTest {
 
     val product = (e(1) + e(2)) * ((e(2) + e(3)) * e(2))
     val chain = ((e(1) + e(2)) * e(3) + e(2)) * e(4) + e(5)
+    val expanded = e(2) * e(3) * e(4) + e(3) * e(4) * e(5)
+
     @Test
     fun printVisitorProduct() {
         assertEquals("(1 + 2) * (2 + 3) * 2", printVisitor(product))
@@ -32,5 +34,17 @@ internal class VisitorKtTest {
     @Test
     fun expandVisitorChain() {
         assertEquals("1*3*4 + 2*3*4 + 2*4 + 5", expandVisitor(chain))
+    }
+    @Test
+    fun printVisitorExpanded() {
+        assertEquals("2 * 3 * 4 + 3 * 4 * 5", printVisitor(expanded))
+    }
+    @Test
+    fun calculateVisitorExpanded() {
+        assertEquals(84, calculateVisitor(expanded))
+    }
+    @Test
+    fun expandVisitorExpanded() {
+        assertEquals("2*3*4 + 3*4*5", expandVisitor(expanded))
     }
 }
