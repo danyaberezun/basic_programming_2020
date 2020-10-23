@@ -85,9 +85,25 @@ internal class PlotkinKtTest {
             )
         )
     }
+
     @Test
     fun `empty result range`() {
         assertTrue(getResultRange(listOf(), listOf(VarRanges(Range(0, -1), Range(0, -1), Range(0, -1)))).isEmpty())
+    }
+
+    @Test
+    fun executeIntervals() {
+        val program = listOf(Increment(0), Zero(0, 3, 2), Increment(1))
+        val intervals = executeIntervals(program, Range(0, 1))
+        assertEquals(
+            listOf(
+                VarRanges(Range(0, 1), Range(0, 0), Range(0, 0)),
+                VarRanges(Range(1, 2), Range(0, 0), Range(0, 0)),
+                VarRanges(Range(1, 2), Range(0, 0), Range(0, 0)),
+                VarRanges(Range(1, 2), Range(1, 1), Range(0, 0))
+            ), intervals
+        )
+        println(intervals)
     }
 
 }

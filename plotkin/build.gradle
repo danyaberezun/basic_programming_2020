@@ -24,5 +24,6 @@ dependencies {
 }
 
 run {
-    args = ["data/copy", "3-5"]
+    args = ["data/iszero.txt", "0-2"]
+//    args = ["data/copy.txt", "5"]
 }
