@@ -1,60 +1,55 @@
 @file: JvmName("main")
 
-import java.util.*
-import kotlin.random.Random
-
-// Does an access to memory and returns number of replacements needed (0 or 1).
-fun processFIFO(currentMemory: MutableList<Int>, queueOfBlocks: LinkedList<Int>, query: Int): Int {
-    if (query in currentMemory) {
-        return 0
-    }
-    val index = queueOfBlocks.remove()
-    queueOfBlocks.add(index)
-    currentMemory[index] = query
-    return 1
+interface Expr {
+    fun calc(): Int
+    override fun toString(): String
 }
 
-// Does an access to memory and returns number of replacements needed (0 or 1).
-fun processLRU(currentMemory: MutableList<Int>, queueOfBlocks: MutableList<Int>, query: Int): Int {
-    var answer = 0
-    val index: Int
-    if (query in currentMemory) {
-        index = currentMemory.indexOf(query)
-    } else {
-        index = queueOfBlocks.first()
-        currentMemory[index] = query
-        answer = 1
+class Var(x: Int) : Expr {
+    val value = x
+
+    override fun calc(): Int {
+        return value
     }
-    queueOfBlocks.remove(index)
-    queueOfBlocks.add(index)
-    return answer
+
+    override fun toString(): String {
+        return "$value"
+    }
 }
 
-fun run(seed: Int): Pair<Int, Int> {
-    val rnd = Random(seed)
-    val memSize = 100
-    val ramSize = 50
-    // $currentMemory is a collection of blocks that are in RAM at the moment.
-    val currentMemoryForFIFO = (1..ramSize).toMutableList()
-    val currentMemoryForLRU = (1..ramSize).toMutableList()
-    // $queueOfBlocksForFIFO is a queue of RAM blocks ordered by the chance of replacing in FIFO.
-    val queueOfBlocksForFIFO = LinkedList<Int>((0 until ramSize).toList())
-    // $queueOfBlocksForLRU is a priority queue ordered by the chance of replacing in LRU.
-    val queueOfBlocksForLRU = MutableList(ramSize) { i -> i }
-    val seq = generateSequence(rnd.nextInt() % memSize + 1) { rnd.nextInt() % memSize + 1 }
-    val iter = seq.iterator()
-    var answerFIFO = 0
-    var answerLRU = 0
-    repeat(10000) {
-        val query = iter.next()
-        answerFIFO += processFIFO(currentMemoryForFIFO, queueOfBlocksForFIFO, query)
-        answerLRU += processLRU(currentMemoryForLRU, queueOfBlocksForLRU, query)
+class Sum(a: Expr, b: Expr) : Expr {
+    val left = a
+    val right = b
+
+    override fun calc(): Int {
+        return left.calc() + right.calc()
     }
-    return answerFIFO to answerLRU
+
+    override fun toString(): String {
+        return "($left + $right)"
+    }
+}
+
+class Mul(a: Expr, b: Expr) : Expr {
+    val left = a
+    val right = b
+
+    override fun calc(): Int {
+        return left.calc() * right.calc()
+    }
+
+    override fun toString(): String {
+        return "$left * $right"
+    }
 }
 
 fun main() {
-    repeat(10) {
-        println(run(it))
-    }
+    println("${Mul(Sum(Var(2), Var(3)), Var(4))} = ${Mul(Sum(Var(2), Var(3)), Var(4)).calc()}")
+    println("${Mul(Sum(Sum(Var(2), Var(2)), Mul(Sum(Mul(Var(2), Var(4)), Var(3)), Var(4))), Var(10))} = ${Mul(Sum(Sum(Var(2), Var(2)), Mul(Sum(Mul(Var(2), Var(4)), Var(3)), Var(4))), Var(10)).calc()}")
+    println("${Var(5)} = ${Var(5).calc()}")
+    println("${Sum(Var(2), Var(3))} = ${Sum(Var(2), Var(3)).calc()}")
+    println("${Mul(Var(2), Var(2))} = ${Mul(Var(2), Var(2)).calc()}")
+    println("${Mul(Var(3), Sum(Var(4), Var(5)))} = ${Mul(Var(3), Sum(Var(4), Var(5))).calc()}")
+    println("${Sum(Mul(Var(3), Var(3)), Mul(Var(4), Var(4)))} = ${Sum(Mul(Var(3), Var(3)), Mul(Var(4), Var(4))).calc()}")
+    println("${Sum(Sum(Sum(Sum(Var(1), Var(2)), Var(3)), Var(4)), Var(5))} = ${Sum(Sum(Sum(Sum(Var(1), Var(2)), Var(3)), Var(4)), Var(5)).calc()}")
 }
