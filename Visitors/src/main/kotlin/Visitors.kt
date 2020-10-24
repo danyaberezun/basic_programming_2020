@@ -9,10 +9,20 @@ class PrintVisitor {
         return "${node.value}"
     }
     fun visit(node: Multiplication): String {
-        return "(${node.firstMultiplier.accept(PrintVisitor())} * ${node.secondMultiplier.accept(PrintVisitor())})"
+        val firstMultiplier = if (node.firstMultiplier is Addition) {
+            "(${node.firstMultiplier.accept(PrintVisitor())})"
+        } else {
+            node.firstMultiplier.accept(PrintVisitor())
+        }
+        val secondMultiplier = if (node.secondMultiplier is Addition) {
+            "(${node.secondMultiplier.accept(PrintVisitor())})"
+        } else {
+            node.secondMultiplier.accept(PrintVisitor())
+        }
+        return "$firstMultiplier * $secondMultiplier"
     }
     fun visit(node: Addition): String {
-        return "(${node.firstTerm.accept(PrintVisitor())} + ${node.secondTerm.accept(PrintVisitor())})"
+        return "${node.firstTerm.accept(PrintVisitor())} + ${node.secondTerm.accept(PrintVisitor())}"
     }
 }
 
@@ -78,7 +88,8 @@ class Addition(val firstTerm: Node, val secondTerm: Node) : Node {
     }
 }
 
-fun buildExp(): Node {
+//(1 + 2) * 3 = 9
+fun buildExpression1(): Node {
     val var1 = Variable(1)
     val var2 = Variable(2)
     val var3 = Variable(3)
@@ -87,7 +98,7 @@ fun buildExp(): Node {
 }
 
 fun main() {
-    println(buildExp().accept(PrintVisitor()))
-    println(buildExp().accept(CalculateVisitor()))
-    println(buildExp().accept(ExpandVisitor()).joinToString(" + "))
+    println(buildExpression1().accept(PrintVisitor()))
+    println(buildExpression1().accept(CalculateVisitor()))
+    println(buildExpression1().accept(ExpandVisitor()).joinToString(" + "))
 }
