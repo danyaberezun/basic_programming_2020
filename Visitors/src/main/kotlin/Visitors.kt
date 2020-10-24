@@ -88,17 +88,59 @@ class Addition(val firstTerm: Node, val secondTerm: Node) : Node {
     }
 }
 
-//(1 + 2) * 3 = 9
-fun buildExpression1(): Node {
+// (1 + 2) * 3
+fun buildExpressionForTest1(): Node {
     val var1 = Variable(1)
     val var2 = Variable(2)
     val var3 = Variable(3)
-    val sum12 = Addition(var1, var2)
-    return Multiplication(sum12, var3)
+    val sum1 = Addition(var1, var2)
+    return Multiplication(sum1, var3)
+}
+
+// (1 + 2) * 3 * 5 * 5
+fun buildExpressionForTest2(): Node {
+    val exp1 = buildExpressionForTest1()
+    val var1 = Variable(5)
+    val mult1 = Multiplication(exp1, var1)
+    return Multiplication(mult1, var1)
+}
+
+// 25 * (107 + 23) * (9 + 9) + 2 * ((1 + 1) * 2 + 1 + 1) * 7
+fun buildExpressionForTest3(): Node {
+    val var1 = Variable(25)
+    val var2 = Variable(107)
+    val var3 = Variable(23)
+    val var4 = Variable(9)
+    val var5 = Variable(2)
+    val var6 = Variable(1)
+    val var7 = Variable(7)
+    val sum1 = Addition(var2, var3)
+    val sum2 = Addition(var4, var4)
+    val sum3 = Addition(var6, var6)
+    val mult1 = Multiplication(var1, sum1)
+    val mult2 = Multiplication(mult1, sum2)
+    val mult3 = Multiplication(sum3, var5)
+    val sum4 = Addition(mult3, var6)
+    val sum5 = Addition(sum4, var6)
+    val mult4 = Multiplication(var5, sum5)
+    val mult5 = Multiplication(mult4, var7)
+    return Addition(mult2, mult5)
+}
+
+fun runPrintVisitor(expression: Node): String {
+    return expression.accept(PrintVisitor())
+}
+
+fun runCalculateVisitor(expression: Node): Int {
+    return expression.accept(CalculateVisitor())
+}
+
+fun runExpandVisitor(expression: Node): String {
+    return expression.accept(ExpandVisitor()).joinToString(" + ")
 }
 
 fun main() {
-    println(buildExpression1().accept(PrintVisitor()))
-    println(buildExpression1().accept(CalculateVisitor()))
-    println(buildExpression1().accept(ExpandVisitor()).joinToString(" + "))
+    println(runPrintVisitor(buildExpressionForTest1()))
+    println(runCalculateVisitor(buildExpressionForTest1()))
+    println(runExpandVisitor(buildExpressionForTest1()))
 }
