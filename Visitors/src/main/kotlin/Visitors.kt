@@ -1,5 +1,6 @@
 interface Node {
     fun accept(printVisitor: PrintVisitor): String
+    fun accept(calculateVisitor: CalculateVisitor): Int
 }
 
 class PrintVisitor {
@@ -14,9 +15,24 @@ class PrintVisitor {
     }
 }
 
+class CalculateVisitor {
+    fun visit(node: Variable): Int {
+        return node.value
+    }
+    fun visit(node: Multiplication): Int {
+        return node.firstMultiplier.accept(CalculateVisitor()) * node.secondMultiplier.accept(CalculateVisitor())
+    }
+    fun visit(node: Addition): Int {
+        return node.firstTerm.accept(CalculateVisitor()) + node.secondTerm.accept(CalculateVisitor())
+    }
+}
+
 class Variable(val value: Int) : Node {
     override fun accept(printVisitor: PrintVisitor): String {
         return printVisitor.visit(this)
+    }
+    override fun accept(calculateVisitor: CalculateVisitor): Int {
+        return calculateVisitor.visit(this)
     }
 }
 
@@ -24,11 +40,17 @@ class Multiplication(val firstMultiplier: Node, val secondMultiplier: Node) : No
     override fun accept(printVisitor: PrintVisitor): String {
         return printVisitor.visit(this)
     }
+    override fun accept(calculateVisitor: CalculateVisitor): Int {
+        return calculateVisitor.visit(this)
+    }
 }
 
 class Addition(val firstTerm: Node, val secondTerm: Node) : Node {
     override fun accept(printVisitor: PrintVisitor): String {
         return printVisitor.visit(this)
+    }
+    override fun accept(calculateVisitor: CalculateVisitor): Int {
+        return calculateVisitor.visit(this)
     }
 }
 
@@ -42,4 +64,5 @@ fun buildExp(): Node {
 
 fun main() {
     println(buildExp().accept(PrintVisitor()))
+    println(buildExp().accept(CalculateVisitor()))
 }
