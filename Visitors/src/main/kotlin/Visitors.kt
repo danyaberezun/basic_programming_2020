@@ -1,17 +1,18 @@
 interface Node {
     fun accept(printVisitor: PrintVisitor): String
     fun accept(calculateVisitor: CalculateVisitor): Int
+    fun accept(expandVisitor: ExpandVisitor): List<String>
 }
 
 class PrintVisitor {
     fun visit(node: Variable): String {
-        return node.value.toString()
+        return "${node.value}"
     }
     fun visit(node: Multiplication): String {
-        return "(" + node.firstMultiplier.accept(PrintVisitor()) + " * " + node.secondMultiplier.accept(PrintVisitor()) + ")"
+        return "(${node.firstMultiplier.accept(PrintVisitor())} * ${node.secondMultiplier.accept(PrintVisitor())})"
     }
     fun visit(node: Addition): String {
-        return "(" + node.firstTerm.accept(PrintVisitor()) + " + " + node.secondTerm.accept(PrintVisitor()) + ")"
+        return "(${node.firstTerm.accept(PrintVisitor())} + ${node.secondTerm.accept(PrintVisitor())})"
     }
 }
 
@@ -27,12 +28,29 @@ class CalculateVisitor {
     }
 }
 
+class ExpandVisitor {
+    fun visit(node: Variable): List<String> {
+        return listOf(node.value.toString())
+    }
+    fun visit(node: Multiplication): List<String> {
+        val listForFirst = node.firstMultiplier.accept(ExpandVisitor())
+        val listForSecond = node.secondMultiplier.accept(ExpandVisitor())
+        return listForFirst.fold(listOf(), { curList, curString -> curList + listForSecond.map {"$curString * $it"} } )
+    }
+    fun visit(node: Addition): List<String> {
+        return node.firstTerm.accept(ExpandVisitor()) + node.secondTerm.accept(ExpandVisitor())
+    }
+}
+
 class Variable(val value: Int) : Node {
     override fun accept(printVisitor: PrintVisitor): String {
         return printVisitor.visit(this)
     }
     override fun accept(calculateVisitor: CalculateVisitor): Int {
         return calculateVisitor.visit(this)
+    }
+    override fun accept(expandVisitor: ExpandVisitor): List<String> {
+        return expandVisitor.visit(this)
     }
 }
 
@@ -43,6 +61,9 @@ class Multiplication(val firstMultiplier: Node, val secondMultiplier: Node) : No
     override fun accept(calculateVisitor: CalculateVisitor): Int {
         return calculateVisitor.visit(this)
     }
+    override fun accept(expandVisitor: ExpandVisitor): List<String> {
+        return expandVisitor.visit(this)
+    }
 }
 
 class Addition(val firstTerm: Node, val secondTerm: Node) : Node {
@@ -51,6 +72,9 @@ class Addition(val firstTerm: Node, val secondTerm: Node) : Node {
     }
     override fun accept(calculateVisitor: CalculateVisitor): Int {
         return calculateVisitor.visit(this)
+    }
+    override fun accept(expandVisitor: ExpandVisitor): List<String> {
+        return expandVisitor.visit(this)
     }
 }
 
@@ -65,4 +89,5 @@ fun buildExp(): Node {
 fun main() {
     println(buildExp().accept(PrintVisitor()))
     println(buildExp().accept(CalculateVisitor()))
+    println(buildExp().accept(ExpandVisitor()).joinToString(" + "))
 }
