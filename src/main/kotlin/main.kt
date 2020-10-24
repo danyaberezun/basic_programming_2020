@@ -1,6 +1,7 @@
 @file: JvmName("main")
 
 import java.util.*
+import kotlin.random.Random
 
 // Does an access to memory and returns number of replacements needed (0 or 1).
 fun processFIFO(currentMemory: MutableList<Int>, queueOfBlocks: LinkedList<Int>, query: Int): Int {
@@ -29,8 +30,8 @@ fun processLRU(currentMemory: MutableList<Int>, queueOfBlocks: MutableList<Int>,
     return answer
 }
 
-fun run() {
-    val rnd = Random()
+fun run(seed: Int): Pair<Int, Int> {
+    val rnd = Random(seed)
     val memSize = 100
     val ramSize = 50
     // $currentMemory is a collection of blocks that are in RAM at the moment.
@@ -49,13 +50,11 @@ fun run() {
         answerFIFO += processFIFO(currentMemoryForFIFO, queueOfBlocksForFIFO, query)
         answerLRU += processLRU(currentMemoryForLRU, queueOfBlocksForLRU, query)
     }
-    println("FIFO: $answerFIFO")
-    println("LRU: $answerLRU")
-    println()
+    return answerFIFO to answerLRU
 }
 
 fun main() {
     repeat(10) {
-        run()
+        println(run(it))
     }
 }
