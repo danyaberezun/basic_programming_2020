@@ -45,7 +45,7 @@ class ExpandVisitor {
     fun visit(node: Multiplication): List<String> {
         val listForFirst = node.firstMultiplier.accept(ExpandVisitor())
         val listForSecond = node.secondMultiplier.accept(ExpandVisitor())
-        return listForFirst.fold(listOf(), { curList, curString -> curList + listForSecond.map {"$curString * $it"} } )
+        return listForFirst.fold(listOf(), { curList, curString -> curList + listForSecond.map { "$curString * $it" } })
     }
     fun visit(node: Addition): List<String> {
         return node.firstTerm.accept(ExpandVisitor()) + node.secondTerm.accept(ExpandVisitor())
@@ -127,6 +127,11 @@ fun buildExpressionForTest3(): Node {
     return Addition(mult2, mult5)
 }
 
+// (25 * (107 + 23) * (9 + 9) + 2 * ((1 + 1) * 2 + 1 + 1) * 7) * (1 + 2) * 3 * 5 * 5
+fun buildExpressionForTest4(): Node {
+    return Multiplication(buildExpressionForTest3(), buildExpressionForTest2())
+}
+
 fun runPrintVisitor(expression: Node): String {
     return expression.accept(PrintVisitor())
 }
@@ -140,7 +145,7 @@ fun runExpandVisitor(expression: Node): String {
 }
 
 fun main() {
-    println(runPrintVisitor(buildExpressionForTest1()))
-    println(runCalculateVisitor(buildExpressionForTest1()))
-    println(runExpandVisitor(buildExpressionForTest1()))
+    println(runPrintVisitor(buildExpressionForTest4()))
+    println(runCalculateVisitor(buildExpressionForTest4()))
+    println(runExpandVisitor(buildExpressionForTest4()))
 }
