@@ -6,7 +6,7 @@ class CalculateVisitor: Visitor<Int> {
         return node.left.accept(CalculateVisitor()) + node.right.accept(CalculateVisitor())
     }
     override fun visit(node: Multiply): Int {
-        return node.left.accept(CalculateVisitor()) + node.right.accept(CalculateVisitor())
+        return node.left.accept(CalculateVisitor()) * node.right.accept(CalculateVisitor())
     }
 }
 
