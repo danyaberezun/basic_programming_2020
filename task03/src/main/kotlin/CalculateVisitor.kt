@@ -1,13 +1,13 @@
 package main
 
-class CalculateVisitor {
-    fun visit(node: Multiply): Int {
+class CalculateVisitor: Visitor<Int> {
+    override fun visit(node: Multiply): Int {
         return node.left.accept(CalculateVisitor()) * node.right.accept(CalculateVisitor())
     }
-    fun visit(node: Sum): Int{
+    override fun visit(node: Sum): Int{
         return node.left.accept(CalculateVisitor()) + node.right.accept(CalculateVisitor())
     }
-    fun visit(node: Variable): Int{
+    override fun visit(node: Variable): Int{
         return node.data
     }
 }
