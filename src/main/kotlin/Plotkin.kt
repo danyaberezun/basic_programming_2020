@@ -55,21 +55,42 @@ fun nextState(instructions: List<Instruction>, state: State): State? {
     }
 }
 
-fun main(vararg args: String){
-    if(args.size != 1 || args[0].toIntOrNull() == null){
-
-        throw IllegalArgumentException("Start value required")
-    }
-    val instructions = getInstructions()
-
-    val initialState = State(0, listOf(args[0].toInt(), 0, 0))
+fun runInstructions(initialState: State, instructions: List<Instruction>): State{
     var currentState = initialState
     while(nextState(instructions, currentState) != null){
         currentState = nextState(instructions, currentState)!!
         println("${currentState.pc} ${currentState.list[0]} ${currentState.list[1]} ${currentState.list[2]}")
     }
-    val finalState = currentState
+    return currentState
+}
 
-    println(finalState.list[1])
+fun main(vararg args: String){
+
+    val instructions = getInstructions()
+
+    if(args.isNotEmpty() || args[0] == "-ia"){
+        if(args[1].toIntOrNull() == null || args[2].toIntOrNull() == null){
+            throw IllegalArgumentException("Wrong interval format")
+        }
+        for(i in args[1].toInt()..args[2].toInt()){
+            val initialState = State(0, listOf(i, 0, 0))
+
+            val finalState = runInstructions(initialState, instructions)
+
+            println(finalState.list[1])
+        }
+
+    }else {
+        if (args.size != 0 || args[0].toIntOrNull() == null) {
+
+            throw IllegalArgumentException("Wrong start value format")
+        }
+
+        val initialState = State(0, listOf(args[0].toInt(), 0, 0))
+
+        val finalState = runInstructions(initialState, instructions)
+
+        println(finalState.list[1])
+    }
 
 }
