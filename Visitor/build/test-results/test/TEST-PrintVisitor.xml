@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PrintVisitor" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-10-26T16:04:14" hostname="maria-TM1701" time="0.014">
+  <properties/>
+  <testcase name="one()" classname="PrintVisitor" time="0.01"/>
+  <testcase name="diff()" classname="PrintVisitor" time="0.001"/>
+  <testcase name="equal()" classname="PrintVisitor" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
