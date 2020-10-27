@@ -85,7 +85,10 @@ fun main(vararg args: String){
 
             val finalState = runInstructions(initialState, instructions)
 
-            print("${finalState.list[1]} ")
+            if(i < args[2].toInt())
+                print("${finalState.list[1]} ")
+            else
+                print("${finalState.list[1]}")
         }
 
     }else {
