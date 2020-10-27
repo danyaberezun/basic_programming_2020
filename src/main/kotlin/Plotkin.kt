@@ -2,7 +2,7 @@ package src
 
 import java.io.File
 import java.io.FileNotFoundException
-import java.io.IOException
+import kotlin.system.exitProcess
 
 data class State(val pc: Int, val list: List<Int>){}
 
@@ -15,6 +15,11 @@ typealias PC = Int
 
 data class Instruction(val instructionType: InstructionType, val varId: VarId = 1, val pc: PC = 1, val pc1: PC = 1)
 
+fun sayUserAndExit(exitFraze: String){
+    println("ERROR: $exitFraze")
+    exitProcess(0)
+}
+
 fun getInstructions(): List<Instruction>{
     val instructions = mutableListOf<Instruction>()
     try {
@@ -25,21 +30,24 @@ fun getInstructions(): List<Instruction>{
                 "Dec" -> Instruction(InstructionType.Dec, splittedLine[1].toInt())
                 "Stop" -> Instruction(InstructionType.Stop)
                 "Zero" -> Instruction(InstructionType.Zero, splittedLine[1].toInt(), splittedLine[2].toInt(), splittedLine[3].toInt())
-                else -> throw Exception("Wrong format of instruction!")
+                else -> {sayUserAndExit("Wrong format of instruction!")
+                    Instruction(InstructionType.Stop)}
             }
             instructions.add(instruction)
         }
     } catch(e : FileNotFoundException){
-        throw FileNotFoundException()
+        sayUserAndExit("File 'input.txt' not found!")
     } catch(e : IndexOutOfBoundsException){
-        throw Exception("Wrong format of instruction!")
+        sayUserAndExit("Wrong format of instruction!")
     }catch(e : NullPointerException){
-        throw Exception("Wrong format of instruction!")
+        sayUserAndExit("Wrong format of instruction!")
     }
     return instructions
 }
 
 fun nextState(instructions: List<Instruction>, state: State): State? {
+    if(state.pc >= instructions.size)
+        sayUserAndExit("State counter out of bounds!")
     val instruction = instructions[state.pc]
     return when(instruction.instructionType) {
         InstructionType.Inc ->
@@ -59,7 +67,7 @@ fun runInstructions(initialState: State, instructions: List<Instruction>): State
     var currentState = initialState
     while(nextState(instructions, currentState) != null){
         currentState = nextState(instructions, currentState)!!
-        println("${currentState.pc} ${currentState.list[0]} ${currentState.list[1]} ${currentState.list[2]}")
+        //println("${currentState.pc} ${currentState.list[0]} ${currentState.list[1]} ${currentState.list[2]}")
     }
     return currentState
 }
@@ -68,29 +76,32 @@ fun main(vararg args: String){
 
     val instructions = getInstructions()
 
-    if(args.isNotEmpty() || args[0] == "-ia"){
+    if(args.size == 3 && args[0] == "-ia"){
         if(args[1].toIntOrNull() == null || args[2].toIntOrNull() == null){
-            throw IllegalArgumentException("Wrong interval format")
+            sayUserAndExit("Wrong interval format!")
         }
         for(i in args[1].toInt()..args[2].toInt()){
             val initialState = State(0, listOf(i, 0, 0))
 
             val finalState = runInstructions(initialState, instructions)
 
-            println(finalState.list[1])
+            print("${finalState.list[1]} ")
         }
 
     }else {
-        if (args.size != 0 || args[0].toIntOrNull() == null) {
+        if (args.size != 1 || args[0].toIntOrNull() == null) {
+            if (args.size == 1)
+                sayUserAndExit("Wrong start value format!")
+            else
+                sayUserAndExit("Wrong command line options!")
+        }else {
 
-            throw IllegalArgumentException("Wrong start value format")
+            val initialState = State(0, listOf(args[0].toInt(), 0, 0))
+
+            val finalState = runInstructions(initialState, instructions)
+
+            println(finalState.list[1])
         }
-
-        val initialState = State(0, listOf(args[0].toInt(), 0, 0))
-
-        val finalState = runInstructions(initialState, instructions)
-
-        println(finalState.list[1])
     }
 
 }

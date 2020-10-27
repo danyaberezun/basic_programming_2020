@@ -1,0 +1,5 @@
+Inc 1
+Inc 1
+Inc 1
+Inc 1
+Stop

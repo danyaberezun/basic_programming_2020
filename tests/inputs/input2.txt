@@ -1,0 +1,6 @@
+Zero 0 5 1
+Inc 1
+Inc 1
+Dec 0
+Zero 0 5 1
+Stop

@@ -4,12 +4,21 @@ plugins {
 }
 
 group 'ru.mkn.robozmey.plotkin'
-version '1.1'
+version '1'
 
 mainClassName = "src.PlotkinKt"
 
 repositories {
     mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'src.PlotkinKt'
+        )
+    }
+    from { configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
 }
 
 sourceSets {
@@ -19,6 +28,12 @@ sourceSets {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.4.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.4.2'
+}
+
+test {
+    useJUnitPlatform()
 }
 
 run{
