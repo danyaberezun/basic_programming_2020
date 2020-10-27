@@ -1,6 +1,6 @@
 language: java
 
 jdk:
-  - oraclejdk14
+  - oraclejdk9
 script:
   - bash run_tests.sh
