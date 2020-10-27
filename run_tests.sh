@@ -12,7 +12,7 @@ do
   if [ "$actual_out" != "$expected_out" ]
     then
       echo "ERROR in test $i"
-
+      echo $actual_out
       exit 1
   fi
 done
