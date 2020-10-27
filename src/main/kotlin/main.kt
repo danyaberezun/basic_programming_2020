@@ -23,6 +23,21 @@ fun calculateVisitor(node: Node) : Int {
     return node.key.toInt()
 }
 
+fun expandVisitor(node: Node) : String {
+    if (node.key == "+")
+        return "${expandVisitor(node.left!!)}+${expandVisitor(node.right!!)}"
+    if (node.key == "*") {
+        val leftPart = expandVisitor(node.left!!).split('+')
+        val rightPart = expandVisitor(node.right!!).split('+')
+        var ans = ""
+        for (leftItem in leftPart)
+            for (rightItem in rightPart)
+                ans += "$leftItem*$rightItem+"
+        return ans.substring(0, ans.length - 1)
+    }
+    return node.key
+}
+
 fun main() {
     val inputList = readLine().toString().split(" ").toList()
     val root = build(0, inputList)!!
@@ -30,5 +45,7 @@ fun main() {
     println(expr.substring(1, expr.length - 1))
     val value = calculateVisitor(root)
     println(value)
+    val expressionWithoutBrackets = expandVisitor(root)
+    println(expressionWithoutBrackets)
 }
 
